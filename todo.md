@@ -129,3 +129,9 @@
 - [x] Section 7: Cancellations (Cancel rate by month/hour/stop)
 - [x] Section 8: Booking Method Analysis (TripShot vs Dispatch Call breakdown)
 - [x] Add navigation links to Detailed Analysis page
+
+## Time Format Improvements
+- [x] Convert all hour labels from 24-hour format (13, 14, 15) to 12-hour AM/PM format (1 PM, 2 PM, 3 PM)
+- [x] Update data generation script to include formatted time labels
+- [x] Update all time-based charts on Detailed Analysis page to display AM/PM format
+- [x] Ensure consistency across all hourly visualizations

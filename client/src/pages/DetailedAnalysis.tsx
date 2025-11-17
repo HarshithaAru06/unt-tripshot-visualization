@@ -39,6 +39,14 @@ const COLORS = {
   pink: '#ec4899'
 };
 
+// Helper function to convert 24-hour time to 12-hour AM/PM format
+const formatHour = (hour: number): string => {
+  if (hour === 0) return '12 AM';
+  if (hour < 12) return `${hour} AM`;
+  if (hour === 12) return '12 PM';
+  return `${hour - 12} PM`;
+};
+
 export default function DetailedAnalysis() {
   const [data, setData] = useState<DetailedData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -219,9 +227,9 @@ export default function DetailedAnalysis() {
                   <ResponsiveContainer width="100%" height={300}>
                     <BarChart data={data.hourly_rides}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                      <XAxis dataKey="hour" stroke="#fff" />
+                      <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
                       <YAxis stroke="#fff" />
-                      <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} />
+                      <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                       <Bar dataKey="total_rides" fill={COLORS.secondary} />
                     </BarChart>
                   </ResponsiveContainer>
@@ -238,9 +246,9 @@ export default function DetailedAnalysis() {
                   <ResponsiveContainer width="100%" height={300}>
                     <LineChart data={data.hourly_wait}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                      <XAxis dataKey="hour" stroke="#fff" />
+                      <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
                       <YAxis stroke="#fff" />
-                      <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} />
+                      <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                       <Line type="monotone" dataKey="avg_wait" stroke={COLORS.pink} strokeWidth={3} dot={{ r: 4 }} />
                     </LineChart>
                   </ResponsiveContainer>
@@ -294,9 +302,9 @@ export default function DetailedAnalysis() {
                       return acc;
                     }, [] as any[])}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                      <XAxis dataKey="hour" stroke="#fff" />
+                      <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
                       <YAxis stroke="#fff" />
-                      <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} />
+                      <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                       <Legend />
                       <Bar dataKey="Spring (7PM-2AM)" fill={COLORS.primary} />
                       <Bar dataKey="Fall (9PM-2AM)" fill={COLORS.purple} />
@@ -561,9 +569,9 @@ export default function DetailedAnalysis() {
                   <ResponsiveContainer width="100%" height={300}>
                     <LineChart data={data.cancel_by_hour}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                      <XAxis dataKey="hour" stroke="#fff" />
+                      <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
                       <YAxis stroke="#fff" />
-                      <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} />
+                      <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                       <Line type="monotone" dataKey="cancel_rate" stroke={COLORS.accent} strokeWidth={3} dot={{ r: 4 }} />
                     </LineChart>
                   </ResponsiveContainer>
@@ -650,9 +658,9 @@ export default function DetailedAnalysis() {
                   <ResponsiveContainer width="100%" height={400}>
                     <BarChart data={bookingByHourGrouped}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                      <XAxis dataKey="hour" stroke="#fff" />
+                      <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
                       <YAxis stroke="#fff" />
-                      <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} />
+                      <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                       <Legend />
                       <Bar dataKey="TripShot" fill={COLORS.primary} />
                       <Bar dataKey="Dispatch Call" fill={COLORS.accent} />
