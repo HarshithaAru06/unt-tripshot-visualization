@@ -55,7 +55,24 @@ export default function DetailedAnalysis() {
     fetch('/detailed_analysis_data.json')
       .then(res => res.json())
       .then(jsonData => {
-        setData(jsonData);
+        // Transform hourly data to use formatted hour labels to preserve order
+        const transformHourlyData = (hourlyArray: Array<{hour?: number; Hour?: number; [key: string]: any}>) => {
+          return hourlyArray.map(item => ({
+            ...item,
+            hourLabel: formatHour(item.hour || item.Hour || 0)
+          }));
+        };
+        
+        const transformedData = {
+          ...jsonData,
+          hourly_rides: transformHourlyData(jsonData.hourly_rides || []),
+          hourly_wait: transformHourlyData(jsonData.hourly_wait || []),
+          phase_hourly: transformHourlyData(jsonData.phase_hourly || []),
+          cancel_by_hour: transformHourlyData(jsonData.cancel_by_hour || []),
+          booking_by_hour: transformHourlyData(jsonData.booking_by_hour || [])
+        };
+        
+        setData(transformedData);
         setLoading(false);
       })
       .catch(err => {
@@ -227,7 +244,7 @@ export default function DetailedAnalysis() {
                   <ResponsiveContainer width="100%" height={300}>
                     <BarChart data={data.hourly_rides}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                      <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
+                      <XAxis dataKey="hourLabel" stroke="#fff" />
                       <YAxis stroke="#fff" />
                       <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                       <Bar dataKey="total_rides" fill={COLORS.secondary} />
@@ -246,7 +263,7 @@ export default function DetailedAnalysis() {
                   <ResponsiveContainer width="100%" height={300}>
                     <LineChart data={data.hourly_wait}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                      <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
+                      <XAxis dataKey="hourLabel" stroke="#fff" />
                       <YAxis stroke="#fff" />
                       <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                       <Line type="monotone" dataKey="avg_wait" stroke={COLORS.pink} strokeWidth={3} dot={{ r: 4 }} />
@@ -302,7 +319,7 @@ export default function DetailedAnalysis() {
                       return acc;
                     }, [] as any[])}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                      <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
+                      <XAxis dataKey="hourLabel" stroke="#fff" />
                       <YAxis stroke="#fff" />
                       <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                       <Legend />
@@ -569,7 +586,7 @@ export default function DetailedAnalysis() {
                   <ResponsiveContainer width="100%" height={300}>
                     <LineChart data={data.cancel_by_hour}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                      <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
+                      <XAxis dataKey="hourLabel" stroke="#fff" />
                       <YAxis stroke="#fff" />
                       <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                       <Line type="monotone" dataKey="cancel_rate" stroke={COLORS.accent} strokeWidth={3} dot={{ r: 4 }} />
@@ -658,7 +675,7 @@ export default function DetailedAnalysis() {
                   <ResponsiveContainer width="100%" height={400}>
                     <BarChart data={bookingByHourGrouped}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                      <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
+                      <XAxis dataKey="hourLabel" stroke="#fff" />
                       <YAxis stroke="#fff" />
                       <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                       <Legend />

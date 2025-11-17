@@ -51,6 +51,26 @@
   ],
   "hourly_rides": [
     {
+      "hour": 19,
+      "total_rides": 1165
+    },
+    {
+      "hour": 20,
+      "total_rides": 1176
+    },
+    {
+      "hour": 21,
+      "total_rides": 2973
+    },
+    {
+      "hour": 22,
+      "total_rides": 3289
+    },
+    {
+      "hour": 23,
+      "total_rides": 3054
+    },
+    {
       "hour": 0,
       "total_rides": 2955
     },
@@ -81,29 +101,29 @@
     {
       "hour": 18,
       "total_rides": 38
-    },
-    {
-      "hour": 19,
-      "total_rides": 1165
-    },
-    {
-      "hour": 20,
-      "total_rides": 1176
-    },
-    {
-      "hour": 21,
-      "total_rides": 2973
-    },
-    {
-      "hour": 22,
-      "total_rides": 3289
-    },
-    {
-      "hour": 23,
-      "total_rides": 3054
     }
   ],
   "hourly_wait": [
+    {
+      "hour": 19,
+      "avg_wait": 2.98
+    },
+    {
+      "hour": 20,
+      "avg_wait": 2.53
+    },
+    {
+      "hour": 21,
+      "avg_wait": 2.54
+    },
+    {
+      "hour": 22,
+      "avg_wait": 2.7
+    },
+    {
+      "hour": 23,
+      "avg_wait": 2.57
+    },
     {
       "hour": 0,
       "avg_wait": 2.68
@@ -135,26 +155,6 @@
     {
       "hour": 18,
       "avg_wait": 12.41
-    },
-    {
-      "hour": 19,
-      "avg_wait": 2.98
-    },
-    {
-      "hour": 20,
-      "avg_wait": 2.53
-    },
-    {
-      "hour": 21,
-      "avg_wait": 2.54
-    },
-    {
-      "hour": 22,
-      "avg_wait": 2.7
-    },
-    {
-      "hour": 23,
-      "avg_wait": 2.57
     }
   ],
   "weekday_weekend": [
@@ -172,6 +172,31 @@
     }
   ],
   "phase_hourly": [
+    {
+      "phase": "Fall (9PM-2AM)",
+      "hour": 19,
+      "total_rides": 12
+    },
+    {
+      "phase": "Fall (9PM-2AM)",
+      "hour": 20,
+      "total_rides": 12
+    },
+    {
+      "phase": "Fall (9PM-2AM)",
+      "hour": 21,
+      "total_rides": 1554
+    },
+    {
+      "phase": "Fall (9PM-2AM)",
+      "hour": 22,
+      "total_rides": 1493
+    },
+    {
+      "phase": "Fall (9PM-2AM)",
+      "hour": 23,
+      "total_rides": 1352
+    },
     {
       "phase": "Fall (9PM-2AM)",
       "hour": 0,
@@ -198,29 +223,29 @@
       "total_rides": 22
     },
     {
-      "phase": "Fall (9PM-2AM)",
+      "phase": "Spring (7PM-2AM)",
       "hour": 19,
-      "total_rides": 12
+      "total_rides": 1153
     },
     {
-      "phase": "Fall (9PM-2AM)",
+      "phase": "Spring (7PM-2AM)",
       "hour": 20,
-      "total_rides": 12
+      "total_rides": 1164
     },
     {
-      "phase": "Fall (9PM-2AM)",
+      "phase": "Spring (7PM-2AM)",
       "hour": 21,
-      "total_rides": 1554
+      "total_rides": 1419
     },
     {
-      "phase": "Fall (9PM-2AM)",
+      "phase": "Spring (7PM-2AM)",
       "hour": 22,
-      "total_rides": 1493
+      "total_rides": 1796
     },
     {
-      "phase": "Fall (9PM-2AM)",
+      "phase": "Spring (7PM-2AM)",
       "hour": 23,
-      "total_rides": 1352
+      "total_rides": 1702
     },
     {
       "phase": "Spring (7PM-2AM)",
@@ -261,31 +286,6 @@
       "phase": "Spring (7PM-2AM)",
       "hour": 18,
       "total_rides": 16
-    },
-    {
-      "phase": "Spring (7PM-2AM)",
-      "hour": 19,
-      "total_rides": 1153
-    },
-    {
-      "phase": "Spring (7PM-2AM)",
-      "hour": 20,
-      "total_rides": 1164
-    },
-    {
-      "phase": "Spring (7PM-2AM)",
-      "hour": 21,
-      "total_rides": 1419
-    },
-    {
-      "phase": "Spring (7PM-2AM)",
-      "hour": 22,
-      "total_rides": 1796
-    },
-    {
-      "phase": "Spring (7PM-2AM)",
-      "hour": 23,
-      "total_rides": 1702
     }
   ],
   "phase_wait": [
@@ -7640,6 +7640,26 @@
   ],
   "cancel_by_hour": [
     {
+      "hour": 19,
+      "cancel_rate": 42.23
+    },
+    {
+      "hour": 20,
+      "cancel_rate": 36.99
+    },
+    {
+      "hour": 21,
+      "cancel_rate": 37.07
+    },
+    {
+      "hour": 22,
+      "cancel_rate": 38.8
+    },
+    {
+      "hour": 23,
+      "cancel_rate": 31.11
+    },
+    {
       "hour": 0,
       "cancel_rate": 30.15
     },
@@ -7670,26 +7690,6 @@
     {
       "hour": 18,
       "cancel_rate": 36.84
-    },
-    {
-      "hour": 19,
-      "cancel_rate": 42.23
-    },
-    {
-      "hour": 20,
-      "cancel_rate": 36.99
-    },
-    {
-      "hour": 21,
-      "cancel_rate": 37.07
-    },
-    {
-      "hour": 22,
-      "cancel_rate": 38.8
-    },
-    {
-      "hour": 23,
-      "cancel_rate": 31.11
     }
   ],
   "cancel_by_stop": [
@@ -7823,19 +7823,69 @@
   ],
   "booking_by_hour": [
     {
+      "Hour": 19,
+      "Booking_Method": "Dispatch Call",
+      "total_rides": 18
+    },
+    {
+      "Hour": 20,
+      "Booking_Method": "Dispatch Call",
+      "total_rides": 42
+    },
+    {
+      "Hour": 21,
+      "Booking_Method": "Dispatch Call",
+      "total_rides": 231
+    },
+    {
+      "Hour": 22,
+      "Booking_Method": "Dispatch Call",
+      "total_rides": 310
+    },
+    {
+      "Hour": 23,
+      "Booking_Method": "Dispatch Call",
+      "total_rides": 341
+    },
+    {
       "Hour": 0,
       "Booking_Method": "Dispatch Call",
       "total_rides": 367
     },
     {
-      "Hour": 0,
-      "Booking_Method": "TripShot",
-      "total_rides": 2588
-    },
-    {
       "Hour": 1,
       "Booking_Method": "Dispatch Call",
       "total_rides": 232
+    },
+    {
+      "Hour": 19,
+      "Booking_Method": "TripShot",
+      "total_rides": 1147
+    },
+    {
+      "Hour": 20,
+      "Booking_Method": "TripShot",
+      "total_rides": 1134
+    },
+    {
+      "Hour": 21,
+      "Booking_Method": "TripShot",
+      "total_rides": 2742
+    },
+    {
+      "Hour": 22,
+      "Booking_Method": "TripShot",
+      "total_rides": 2979
+    },
+    {
+      "Hour": 23,
+      "Booking_Method": "TripShot",
+      "total_rides": 2713
+    },
+    {
+      "Hour": 0,
+      "Booking_Method": "TripShot",
+      "total_rides": 2588
     },
     {
       "Hour": 1,
@@ -7871,56 +7921,6 @@
       "Hour": 18,
       "Booking_Method": "TripShot",
       "total_rides": 38
-    },
-    {
-      "Hour": 19,
-      "Booking_Method": "Dispatch Call",
-      "total_rides": 18
-    },
-    {
-      "Hour": 19,
-      "Booking_Method": "TripShot",
-      "total_rides": 1147
-    },
-    {
-      "Hour": 20,
-      "Booking_Method": "Dispatch Call",
-      "total_rides": 42
-    },
-    {
-      "Hour": 20,
-      "Booking_Method": "TripShot",
-      "total_rides": 1134
-    },
-    {
-      "Hour": 21,
-      "Booking_Method": "Dispatch Call",
-      "total_rides": 231
-    },
-    {
-      "Hour": 21,
-      "Booking_Method": "TripShot",
-      "total_rides": 2742
-    },
-    {
-      "Hour": 22,
-      "Booking_Method": "Dispatch Call",
-      "total_rides": 310
-    },
-    {
-      "Hour": 22,
-      "Booking_Method": "TripShot",
-      "total_rides": 2979
-    },
-    {
-      "Hour": 23,
-      "Booking_Method": "Dispatch Call",
-      "total_rides": 341
-    },
-    {
-      "Hour": 23,
-      "Booking_Method": "TripShot",
-      "total_rides": 2713
     }
   ]
 }

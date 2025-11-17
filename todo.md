@@ -153,3 +153,10 @@
 - [x] Update Detailed Analysis page hourly charts
 - [x] Update Analytics page hourly charts
 - [x] Verify all time-based visualizations display in correct order
+
+## Verify Hour Display Order in All Charts
+- [x] Verify Schedule Comparison page: busiest hours charts show 12 AM-2 AM at END
+- [x] Verify Schedule Comparison page: cancellation rate charts show 12 AM-2 AM at END
+- [x] Verify Detailed Analysis page: all hourly charts show 12 AM-2 AM at END
+- [x] Verify Analytics page: hourly charts show 12 AM-2 AM at END
+- [x] Ensure Recharts is respecting the data order from JSON (not auto-sorting by numeric hour value)

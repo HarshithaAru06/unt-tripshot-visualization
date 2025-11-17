@@ -46,7 +46,25 @@ export default function ScheduleComparison() {
     fetch('/filtered_analysis_data.json')
       .then(res => res.json())
       .then(jsonData => {
-        setData(jsonData);
+        // Transform hourly data to use formatted hour labels to preserve order
+        const transformHourlyData = (hourlyArray: Array<{hour?: number; Hour?: number; [key: string]: any}>) => {
+          return hourlyArray.map(item => ({
+            ...item,
+            hourLabel: formatHour(item.hour || item.Hour || 0)
+          }));
+        };
+        
+        const transformedData = {
+          ...jsonData,
+          jan_may_hourly_rides: transformHourlyData(jsonData.jan_may_hourly_rides || []),
+          jan_may_hourly_wait: transformHourlyData(jsonData.jan_may_hourly_wait || []),
+          jan_may_cancel_by_hour: transformHourlyData(jsonData.jan_may_cancel_by_hour || []),
+          aug_oct_hourly_rides: transformHourlyData(jsonData.aug_oct_hourly_rides || []),
+          aug_oct_hourly_wait: transformHourlyData(jsonData.aug_oct_hourly_wait || []),
+          aug_oct_cancel_by_hour: transformHourlyData(jsonData.aug_oct_cancel_by_hour || [])
+        };
+        
+        setData(transformedData);
         setLoading(false);
       })
       .catch(err => {
@@ -181,9 +199,9 @@ export default function ScheduleComparison() {
                 <ResponsiveContainer width="100%" height={350}>
                   <BarChart data={data.jan_may_hourly_rides}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                    <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
+                    <XAxis dataKey="hourLabel" stroke="#fff" />
                     <YAxis stroke="#fff" />
-                    <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
+                    <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} />
                     <Bar dataKey="total_rides" fill={COLORS.janMay} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -200,9 +218,9 @@ export default function ScheduleComparison() {
                 <ResponsiveContainer width="100%" height={350}>
                   <BarChart data={data.aug_oct_hourly_rides}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                    <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
+                    <XAxis dataKey="hourLabel" stroke="#fff" />
                     <YAxis stroke="#fff" />
-                    <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
+                    <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} />
                     <Bar dataKey="total_rides" fill={COLORS.augOct} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -225,7 +243,7 @@ export default function ScheduleComparison() {
                 <ResponsiveContainer width="100%" height={300}>
                   <LineChart data={data.jan_may_hourly_wait}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                    <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
+                    <XAxis dataKey="hourLabel" stroke="#fff" />
                     <YAxis stroke="#fff" />
                     <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                     <Line type="monotone" dataKey="avg_wait" stroke={COLORS.janMay} strokeWidth={3} dot={{ r: 4 }} />
@@ -244,7 +262,7 @@ export default function ScheduleComparison() {
                 <ResponsiveContainer width="100%" height={300}>
                   <LineChart data={data.aug_oct_hourly_wait}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                    <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
+                    <XAxis dataKey="hourLabel" stroke="#fff" />
                     <YAxis stroke="#fff" />
                     <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                     <Line type="monotone" dataKey="avg_wait" stroke={COLORS.augOct} strokeWidth={3} dot={{ r: 4 }} />
@@ -313,7 +331,7 @@ export default function ScheduleComparison() {
                 <ResponsiveContainer width="100%" height={300}>
                   <LineChart data={data.jan_may_cancel_by_hour}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                    <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
+                    <XAxis dataKey="hourLabel" stroke="#fff" />
                     <YAxis stroke="#fff" />
                     <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                     <Line type="monotone" dataKey="cancel_rate" stroke={COLORS.accent} strokeWidth={3} dot={{ r: 4 }} />
@@ -332,7 +350,7 @@ export default function ScheduleComparison() {
                 <ResponsiveContainer width="100%" height={300}>
                   <LineChart data={data.aug_oct_cancel_by_hour}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                    <XAxis dataKey="hour" stroke="#fff" tickFormatter={formatHour} />
+                    <XAxis dataKey="hourLabel" stroke="#fff" />
                     <YAxis stroke="#fff" />
                     <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
                     <Line type="monotone" dataKey="cancel_rate" stroke={COLORS.danger} strokeWidth={3} dot={{ r: 4 }} />
