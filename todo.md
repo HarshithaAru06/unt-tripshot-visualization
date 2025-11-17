@@ -25,5 +25,10 @@
 - [x] Add real 3D terrain and geography
 - [x] Implement proper map-based location coordinates
 - [x] Remove all Manus branding from footer and UI
-- [ ] Deploy website for public access
-- [ ] Generate and test live access link
+- [x] Deploy website for public access
+- [x] Generate and test live access link
+
+## Bug Fixes
+- [x] Fix Mapbox tile loading errors by switching to Google Maps with built-in proxy
+- [x] Implement proper 3D satellite view with Google Maps API
+- [x] Convert normalized coordinates (0-1100) to actual GPS lat/lng for UNT campus

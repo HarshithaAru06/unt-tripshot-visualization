@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { APP_LOGO, APP_TITLE } from '@/const';
-import SatelliteMap3D from '@/components/SatelliteMap3D';
+import GoogleMaps3D from '@/components/GoogleMaps3D';
 import StatsPanel from '@/components/StatsPanel';
 import MonthSelector from '@/components/MonthSelector';
 import { Button } from '@/components/ui/button';
@@ -95,11 +95,54 @@ export default function Home() {
   const currentMonth = data.months[currentMonthIndex];
   const highlightedLocations = Object.keys(currentMonth.top_pickup_locations).slice(0, 10);
 
-  // Get top routes for visualization
-  const topRoutes = currentMonth.top_routes.slice(0, 5).map((route) => {
-    const [from, to] = route.route.split(' → ');
-    return { from, to };
+  // Transform locations to array with lat/lng
+  // UNT Campus bounds: approximately 33.205 to 33.215 lat, -97.155 to -97.140 lng
+  const UNT_LAT_MIN = 33.205;
+  const UNT_LAT_MAX = 33.215;
+  const UNT_LNG_MIN = -97.155;
+  const UNT_LNG_MAX = -97.140;
+  
+  const locationsArray = Object.entries(data.locations).map(([name, coords]) => {
+    // Convert normalized coordinates (0-1100) to actual GPS coordinates
+    const normalizedX = coords.x / 1100; // 0 to 1
+    const normalizedY = coords.y / 1000; // 0 to 1
+    
+    const lat = UNT_LAT_MIN + (normalizedY * (UNT_LAT_MAX - UNT_LAT_MIN));
+    const lng = UNT_LNG_MIN + (normalizedX * (UNT_LNG_MAX - UNT_LNG_MIN));
+    
+    const pickups = currentMonth.top_pickup_locations[name] || 0;
+    const dropoffs = currentMonth.top_dropoff_locations[name] || 0;
+    return {
+      lat,
+      lng,
+      name,
+      pickups,
+      dropoffs,
+    };
   });
+
+  // Get top routes for visualization with coordinates
+  const topRoutes = currentMonth.top_routes.slice(0, 10).map((route) => {
+    const [from, to] = route.route.split(' → ');
+    const fromLoc = data.locations[from];
+    const toLoc = data.locations[to];
+    
+    if (!fromLoc || !toLoc) return null;
+    
+    // Convert normalized coordinates to GPS
+    const fromLat = UNT_LAT_MIN + ((fromLoc.y / 1000) * (UNT_LAT_MAX - UNT_LAT_MIN));
+    const fromLng = UNT_LNG_MIN + ((fromLoc.x / 1100) * (UNT_LNG_MAX - UNT_LNG_MIN));
+    const toLat = UNT_LAT_MIN + ((toLoc.y / 1000) * (UNT_LAT_MAX - UNT_LAT_MIN));
+    const toLng = UNT_LNG_MIN + ((toLoc.x / 1100) * (UNT_LNG_MAX - UNT_LNG_MIN));
+    
+    return {
+      from,
+      to,
+      count: route.count,
+      fromCoords: { lat: fromLat, lng: fromLng },
+      toCoords: { lat: toLat, lng: toLng },
+    };
+  }).filter((r): r is NonNullable<typeof r> => r !== null);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-green-900 to-black">
@@ -181,9 +224,8 @@ export default function Home() {
                 />
               </div>
               <div className="h-[600px]">
-                <SatelliteMap3D
-                  locations={data.locations}
-                  highlightedLocations={highlightedLocations}
+                <GoogleMaps3D
+                  locations={locationsArray}
                   routes={topRoutes}
                 />
               </div>
@@ -207,7 +249,7 @@ export default function Home() {
             Data visualization for UNT Transportation Services • {data.months.length} months analyzed • {data.summary.total_rides.toLocaleString()} total rides
           </p>
           <p className="text-green-600 text-xs mt-2">
-            Built with React, Mapbox GL, and Recharts • © 2025 UNT Transportation Services
+            Built with React, Google Maps, and Recharts • © 2025 UNT Transportation Services
           </p>
         </div>
       </main>
