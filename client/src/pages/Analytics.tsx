@@ -17,10 +17,13 @@ interface MonthlyStats {
   app_adoption_rate: number;
   pooled_rides: number;
   avg_pool_size: number;
-  unique_riders: number;
+  unique_app_riders: number;
   unique_drivers: number;
   unique_vehicles: number;
   peak_hour: number;
+  peak_day: string;
+  avg_wait_time: number;
+  avg_ride_duration: number;
 }
 
 interface AnalyticsData {
@@ -34,10 +37,22 @@ interface AnalyticsData {
   driver_analysis: {
     total_drivers: number;
     top_drivers: Array<{ name: string; rides: number }>;
+    avg_rides_per_driver: number;
   };
   vehicle_analysis: {
     total_vehicles: number;
     vehicle_usage: Array<{ vehicle: string; rides: number }>;
+    avg_rides_per_vehicle: number;
+  };
+  advanced_insights: {
+    total_app_bookings: number;
+    total_call_bookings: number;
+    app_adoption_percentage: number;
+    app_cancellation_rate: number;
+    call_cancellation_rate: number;
+    cancellation_difference: number;
+    busiest_hour: number;
+    busiest_day: number;
   };
 }
 
@@ -116,7 +131,13 @@ export default function Analytics() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-green-900 to-black">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-green-900 to-black relative">
+      {/* Background Image Overlay */}
+      <div 
+        className="fixed inset-0 opacity-5 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/shuttle-2.png)' }}
+      />
+      <div className="relative z-10">
       {/* Header */}
       <header className="border-b border-green-900 bg-black/60 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -473,6 +494,152 @@ export default function Analytics() {
             </div>
           </CardContent>
         </Card>
+
+        {/* Advanced Analytics Section */}
+        <Card className="bg-black/40 border-green-900 mt-6">
+          <CardHeader>
+            <CardTitle className="text-green-100 flex items-center gap-2">
+              <TrendingUp className="h-6 w-6" />
+              Advanced Insights & Statistical Analysis
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            {/* Cancellation Analysis */}
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold text-green-100 mb-4">📊 Cancellation Rate Analysis</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <Card className="bg-red-950/20 border-red-900">
+                  <CardContent className="pt-6">
+                    <div className="text-center">
+                      <p className="text-red-400 text-sm mb-2">App Cancellation Rate</p>
+                      <p className="text-4xl font-bold text-red-300">{data.advanced_insights.app_cancellation_rate.toFixed(2)}%</p>
+                      <p className="text-xs text-red-500 mt-2">Higher cancellation rate</p>
+                    </div>
+                  </CardContent>
+                </Card>
+                <Card className="bg-green-950/20 border-green-900">
+                  <CardContent className="pt-6">
+                    <div className="text-center">
+                      <p className="text-green-400 text-sm mb-2">Phone Call Cancellation Rate</p>
+                      <p className="text-4xl font-bold text-green-300">{data.advanced_insights.call_cancellation_rate.toFixed(2)}%</p>
+                      <p className="text-xs text-green-500 mt-2">More committed riders</p>
+                    </div>
+                  </CardContent>
+                </Card>
+                <Card className="bg-yellow-950/20 border-yellow-900">
+                  <CardContent className="pt-6">
+                    <div className="text-center">
+                      <p className="text-yellow-400 text-sm mb-2">Difference</p>
+                      <p className="text-4xl font-bold text-yellow-300">{Math.abs(data.advanced_insights.cancellation_difference).toFixed(2)}%</p>
+                      <p className="text-xs text-yellow-500 mt-2">Phone users more reliable</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className="mt-4 p-4 bg-yellow-950/10 rounded border-l-4 border-yellow-600">
+                <p className="text-yellow-200 text-sm">
+                  <strong>Key Finding:</strong> Phone call bookings have a significantly lower cancellation rate ({data.advanced_insights.call_cancellation_rate.toFixed(2)}%) 
+                  compared to app bookings ({data.advanced_insights.app_cancellation_rate.toFixed(2)}%). This {Math.abs(data.advanced_insights.cancellation_difference).toFixed(2)}% difference 
+                  suggests that riders who make the effort to call are more committed to completing their rides. This insight could inform strategies to reduce app-based cancellations.
+                </p>
+              </div>
+            </div>
+
+            {/* Monthly Performance Metrics */}
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold text-green-100 mb-4">📈 Monthly Performance Metrics</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-green-900">
+                      <th className="text-left py-3 px-4 text-green-400">Month</th>
+                      <th className="text-right py-3 px-4 text-green-400">Total Rides</th>
+                      <th className="text-right py-3 px-4 text-green-400">Completion %</th>
+                      <th className="text-right py-3 px-4 text-green-400">App %</th>
+                      <th className="text-right py-3 px-4 text-green-400">Avg Wait (min)</th>
+                      <th className="text-right py-3 px-4 text-green-400">Avg Duration (min)</th>
+                      <th className="text-right py-3 px-4 text-green-400">Peak Day</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {data.monthly_stats.map((month, idx) => (
+                      <tr key={idx} className="border-b border-green-900/30 hover:bg-green-950/20">
+                        <td className="py-3 px-4 text-green-200 font-medium">{month.month}</td>
+                        <td className="text-right py-3 px-4 text-green-300">{month.total_rides.toLocaleString()}</td>
+                        <td className="text-right py-3 px-4 text-green-300">{month.completion_rate.toFixed(1)}%</td>
+                        <td className="text-right py-3 px-4 text-green-300">{month.app_adoption_rate.toFixed(1)}%</td>
+                        <td className="text-right py-3 px-4 text-green-300">{month.avg_wait_time.toFixed(1)}</td>
+                        <td className="text-right py-3 px-4 text-green-300">{month.avg_ride_duration.toFixed(1)}</td>
+                        <td className="text-right py-3 px-4 text-green-300">{month.peak_day}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Peak Patterns */}
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold text-green-100 mb-4">⏰ Peak Usage Patterns</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <Card className="bg-purple-950/20 border-purple-900">
+                  <CardContent className="pt-6">
+                    <div className="text-center">
+                      <Calendar className="h-12 w-12 text-purple-400 mx-auto mb-3" />
+                      <p className="text-purple-400 text-sm mb-2">Busiest Hour</p>
+                      <p className="text-4xl font-bold text-purple-300">
+                        {data.advanced_insights.busiest_hour === 0 ? '12 AM' : 
+                         data.advanced_insights.busiest_hour < 12 ? `${data.advanced_insights.busiest_hour} AM` : 
+                         data.advanced_insights.busiest_hour === 12 ? '12 PM' : 
+                         `${data.advanced_insights.busiest_hour - 12} PM`}
+                      </p>
+                      <p className="text-xs text-purple-500 mt-2">Most ride requests</p>
+                    </div>
+                  </CardContent>
+                </Card>
+                <Card className="bg-blue-950/20 border-blue-900">
+                  <CardContent className="pt-6">
+                    <div className="text-center">
+                      <Calendar className="h-12 w-12 text-blue-400 mx-auto mb-3" />
+                      <p className="text-blue-400 text-sm mb-2">Busiest Day</p>
+                      <p className="text-4xl font-bold text-blue-300">
+                        {['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][data.advanced_insights.busiest_day]}
+                      </p>
+                      <p className="text-xs text-blue-500 mt-2">Highest demand day</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            {/* Driver & Vehicle Efficiency */}
+            <div>
+              <h3 className="text-xl font-semibold text-green-100 mb-4">🚗 Fleet Performance Metrics</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <Card className="bg-indigo-950/20 border-indigo-900">
+                  <CardContent className="pt-6">
+                    <div className="text-center">
+                      <Users className="h-12 w-12 text-indigo-400 mx-auto mb-3" />
+                      <p className="text-indigo-400 text-sm mb-2">Average Rides per Driver</p>
+                      <p className="text-4xl font-bold text-indigo-300">{data.driver_analysis.avg_rides_per_driver.toFixed(0)}</p>
+                      <p className="text-xs text-indigo-500 mt-2">Across {data.driver_analysis.total_drivers} drivers</p>
+                    </div>
+                  </CardContent>
+                </Card>
+                <Card className="bg-cyan-950/20 border-cyan-900">
+                  <CardContent className="pt-6">
+                    <div className="text-center">
+                      <Car className="h-12 w-12 text-cyan-400 mx-auto mb-3" />
+                      <p className="text-cyan-400 text-sm mb-2">Average Rides per Vehicle</p>
+                      <p className="text-4xl font-bold text-cyan-300">{data.vehicle_analysis.avg_rides_per_vehicle.toFixed(0)}</p>
+                      <p className="text-xs text-cyan-500 mt-2">Across {data.vehicle_analysis.total_vehicles} vehicles</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </main>
 
       {/* Footer */}
@@ -484,8 +651,12 @@ export default function Analytics() {
           <p className="text-green-600 text-xs mt-2">
             Built with React, Google Maps, and Recharts • © 2025 UNT Transportation Services
           </p>
+          <p className="text-green-500 text-sm mt-3 font-semibold">
+            Harshitha Arugonda - Comprehensive Data Analysis
+          </p>
         </div>
       </footer>
+      </div> {/* Close z-10 div */}
     </div>
   );
 }

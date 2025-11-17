@@ -146,7 +146,13 @@ export default function Home() {
   }).filter((r): r is NonNullable<typeof r> => r !== null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-green-900 to-black">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-green-900 to-black relative">
+      {/* Background Image Overlay */}
+      <div 
+        className="fixed inset-0 opacity-10 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/shuttle-1.png)' }}
+      />
+      <div className="relative z-10">
       {/* Header */}
       <header className="border-b border-green-900 bg-black/60 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -258,8 +264,12 @@ export default function Home() {
           <p className="text-green-600 text-xs mt-2">
             Built with React, Google Maps, and Recharts • © 2025 UNT Transportation Services
           </p>
+          <p className="text-green-500 text-sm mt-3 font-semibold">
+            Harshitha Arugonda - Comprehensive Data Analysis
+          </p>
         </div>
       </main>
+      </div> {/* Close z-10 div */}
     </div>
   );
 }

@@ -44,3 +44,13 @@
 - [x] Show booking method transitions (call to app adoption)
 - [x] Display comprehensive metrics and insights
 - [x] Add navigation between main visualization and analytics pages
+
+## Advanced Analytics and Design Improvements
+- [x] Fix call detection logic (6-10 digits in rider name = phone call)
+- [x] Re-analyze all data with correct call/app classification
+- [x] Add advanced statistical analysis and insights
+- [x] Add predictive patterns and correlations
+- [x] Add shuttle background images to both pages
+- [x] Add author credit: Harshitha Arugonda - Comprehensive Data Analysis
+- [x] Make design more graphic and professional (less AI-generated)
+- [x] Enhance visual design with better graphics
