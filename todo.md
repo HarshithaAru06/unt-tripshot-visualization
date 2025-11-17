@@ -107,3 +107,10 @@
 - [ ] Add scatter plots for correlation analysis (wait time vs duration, etc.)
 - [x] Add stacked bar charts for composition analysis
 - [x] Add navigation links to Deep Insights page from other pages
+
+## Bug Fixes - Deep Insights Data
+- [x] Fix deep_insights_data.json generation - currently all values are 0
+- [x] Regenerate heatmap data with actual ride counts by day and hour
+- [x] Fix monthly_trends to include correct completed/cancelled counts
+- [x] Fix grouped_bar and stacked_bar data
+- [x] Verify all Deep Insights visualizations display data correctly
