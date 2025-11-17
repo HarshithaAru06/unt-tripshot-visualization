@@ -158,6 +158,23 @@ export default function Analytics() {
       </header>
 
       <main className="container mx-auto px-4 py-8">
+        {/* Privacy Notice */}
+        <div className="mb-6 p-4 bg-yellow-900/30 border border-yellow-700 rounded-lg">
+          <div className="flex items-start gap-3">
+            <div className="flex-shrink-0 mt-0.5">
+              <svg className="h-5 w-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-sm font-semibold text-yellow-100 mb-1">Privacy Protection Notice</h3>
+              <p className="text-xs text-yellow-200/90">
+                All personal information including rider names and driver names have been redacted and blurred for privacy protection. 
+                This data anonymization ensures compliance with privacy regulations and protects the identity of service users and operators.
+              </p>
+            </div>
+          </div>
+        </div>
         {/* Key Metrics Overview */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           <Card className="bg-gradient-to-br from-green-900/50 to-green-800/30 border-green-700">
@@ -382,7 +399,8 @@ export default function Analytics() {
                   <div key={idx} className="flex items-center justify-between p-2 bg-green-950/30 rounded border border-green-900/50">
                     <div className="flex items-center gap-2">
                       <span className="text-green-400 font-bold text-sm">#{idx + 1}</span>
-                      <span className="text-sm text-green-50">{rider.name}</span>
+                      <span className="text-sm text-green-50 blur-sm select-none">████████</span>
+                      <span className="text-xs text-green-400/60 ml-2">(Privacy Protected)</span>
                     </div>
                     <span className="text-sm font-bold text-green-400">{rider.rides} rides</span>
                   </div>
@@ -405,7 +423,8 @@ export default function Analytics() {
                   <div key={idx} className="flex items-center justify-between p-2 bg-blue-950/30 rounded border border-blue-900/50">
                     <div className="flex items-center gap-2">
                       <span className="text-blue-400 font-bold text-sm">#{idx + 1}</span>
-                      <span className="text-sm text-blue-50">{driver.name}</span>
+                      <span className="text-sm text-blue-50 blur-sm select-none">████████</span>
+                      <span className="text-xs text-blue-400/60 ml-2">(Privacy Protected)</span>
                     </div>
                     <span className="text-sm font-bold text-blue-400">{driver.rides} rides</span>
                   </div>

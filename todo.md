@@ -88,3 +88,10 @@
 - [x] Create Tableau-style dashboard layout with multiple interactive charts
 - [x] Add visual feedback when clicking on day-of-week bars
 - [x] Display hourly distribution for selected day below the day-of-week chart
+
+## Privacy Protection
+- [x] Remove all rider names from data processing and visualization
+- [x] Remove all driver names from data processing and visualization
+- [x] Add privacy notice explaining personal information has been redacted
+- [x] Update data processing scripts to exclude name columns
+- [x] Add disclaimer about privacy protection as reason for data anonymization
