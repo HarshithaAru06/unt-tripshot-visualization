@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, TrendingUp, Users, Phone, Smartphone, Car, Calendar } from 'lucide-react';
 import { Link } from 'wouter';
-import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, AreaChart, Area, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 interface MonthlyStats {
   month: string;
@@ -221,19 +221,38 @@ export default function Analytics() {
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
-                <LineChart data={monthlyTrendData}>
+                <AreaChart data={monthlyTrendData}>
+                  <defs>
+                    <linearGradient id="colorTotal" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#00853E" stopOpacity={0.8}/>
+                      <stop offset="95%" stopColor="#00853E" stopOpacity={0.2}/>
+                    </linearGradient>
+                    <linearGradient id="colorCompleted" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#3B82F6" stopOpacity={0.8}/>
+                      <stop offset="95%" stopColor="#3B82F6" stopOpacity={0.2}/>
+                    </linearGradient>
+                    <linearGradient id="colorCancelled" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#DC2626" stopOpacity={0.8}/>
+                      <stop offset="95%" stopColor="#DC2626" stopOpacity={0.2}/>
+                    </linearGradient>
+                  </defs>
                   <CartesianGrid strokeDasharray="3 3" stroke="#333" />
-                  <XAxis dataKey="month" stroke="#888" />
-                  <YAxis stroke="#888" />
+                  <XAxis dataKey="month" stroke="#888" style={{ fontSize: '12px' }} />
+                  <YAxis stroke="#888" style={{ fontSize: '12px' }} />
                   <Tooltip
-                    contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #00853E' }}
-                    labelStyle={{ color: '#fff' }}
+                    contentStyle={{ 
+                      backgroundColor: 'rgba(0, 0, 0, 0.95)', 
+                      border: '1px solid #00853E',
+                      borderRadius: '8px',
+                      padding: '12px'
+                    }}
+                    labelStyle={{ color: '#fff', fontWeight: 'bold' }}
                   />
-                  <Legend />
-                  <Line type="monotone" dataKey="total" stroke="#00853E" strokeWidth={2} name="Total Rides" />
-                  <Line type="monotone" dataKey="completed" stroke="#3B82F6" strokeWidth={2} name="Completed" />
-                  <Line type="monotone" dataKey="cancelled" stroke="#DC2626" strokeWidth={2} name="Cancelled" />
-                </LineChart>
+                  <Legend wrapperStyle={{ paddingTop: '20px' }} />
+                  <Area type="monotone" dataKey="total" stroke="#00853E" strokeWidth={3} fillOpacity={1} fill="url(#colorTotal)" name="Total Rides" />
+                  <Area type="monotone" dataKey="completed" stroke="#3B82F6" strokeWidth={2} fillOpacity={1} fill="url(#colorCompleted)" name="Completed" />
+                  <Area type="monotone" dataKey="cancelled" stroke="#DC2626" strokeWidth={2} fillOpacity={1} fill="url(#colorCancelled)" name="Cancelled" />
+                </AreaChart>
               </ResponsiveContainer>
             </CardContent>
           </Card>
@@ -610,6 +629,43 @@ export default function Analytics() {
                   </CardContent>
                 </Card>
               </div>
+            </div>
+
+            {/* Radar Chart for Month Comparison */}
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold text-green-100 mb-4">📊 Monthly Performance Comparison</h3>
+              <Card className="bg-black/40 border-green-900">
+                <CardContent className="pt-6">
+                  <ResponsiveContainer width="100%" height={400}>
+                    <RadarChart data={data.monthly_stats.map(m => ({
+                      month: m.month.substring(0, 3),
+                      completion: m.completion_rate,
+                      appAdoption: m.app_adoption_rate,
+                      efficiency: (m.pooled_rides / m.total_rides) * 100,
+                    }))}>
+                      <PolarGrid stroke="#333" />
+                      <PolarAngleAxis dataKey="month" stroke="#888" style={{ fontSize: '12px' }} />
+                      <PolarRadiusAxis angle={90} domain={[0, 100]} stroke="#888" />
+                      <Radar name="Completion Rate" dataKey="completion" stroke="#00853E" fill="#00853E" fillOpacity={0.6} />
+                      <Radar name="App Adoption" dataKey="appAdoption" stroke="#3B82F6" fill="#3B82F6" fillOpacity={0.4} />
+                      <Radar name="Pooling Efficiency" dataKey="efficiency" stroke="#FFA500" fill="#FFA500" fillOpacity={0.3} />
+                      <Legend wrapperStyle={{ paddingTop: '20px' }} />
+                      <Tooltip
+                        contentStyle={{ 
+                          backgroundColor: 'rgba(0, 0, 0, 0.95)', 
+                          border: '1px solid #00853E',
+                          borderRadius: '8px',
+                          padding: '12px'
+                        }}
+                        labelStyle={{ color: '#fff', fontWeight: 'bold' }}
+                      />
+                    </RadarChart>
+                  </ResponsiveContainer>
+                  <p className="text-sm text-green-400 mt-4 text-center">
+                    Radar chart comparing completion rate, app adoption, and pooling efficiency across all months
+                  </p>
+                </CardContent>
+              </Card>
             </div>
 
             {/* Driver & Vehicle Efficiency */}

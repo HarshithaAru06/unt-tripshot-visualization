@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, AreaChart, Area, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from 'recharts';
 
 interface MonthData {
   name: string;
@@ -17,9 +17,13 @@ interface StatsPanelProps {
 }
 
 export default function StatsPanel({ monthData }: StatsPanelProps) {
-  // Prepare hourly data - Service hours: 7 PM (19:00) to 2 AM (02:00)
-  // Order: 19, 20, 21, 22, 23, 0, 1, 2
-  const serviceHourOrder = [19, 20, 21, 22, 23, 0, 1, 2];
+  // Determine service hours based on month
+  // Jan-May: 7 PM (19:00) to 2 AM (02:00)
+  // Aug-Oct: 10 PM (22:00) to 2 AM (02:00)
+  const isEarlyMonths = ['January', 'February', 'March', 'April', 'May'].includes(monthData.name);
+  const serviceHourOrder = isEarlyMonths 
+    ? [19, 20, 21, 22, 23, 0, 1, 2]  // 7 PM to 2 AM
+    : [22, 23, 0, 1, 2];              // 10 PM to 2 AM
   
   const hourlyData = serviceHourOrder
     .map(hour => {
@@ -88,17 +92,44 @@ export default function StatsPanel({ monthData }: StatsPanelProps) {
             <CardTitle className="text-green-100">Hourly Distribution</CardTitle>
           </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={200}>
-              <BarChart data={hourlyData}>
+            <ResponsiveContainer width="100%" height={250}>
+              <AreaChart data={hourlyData}>
+                <defs>
+                  <linearGradient id="colorRides" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#00853E" stopOpacity={0.8}/>
+                    <stop offset="95%" stopColor="#00853E" stopOpacity={0.1}/>
+                  </linearGradient>
+                </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke="#333" />
-                <XAxis dataKey="hour" stroke="#888" />
-                <YAxis stroke="#888" />
-                <Tooltip
-                  contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #00853E' }}
-                  labelStyle={{ color: '#fff' }}
+                <XAxis 
+                  dataKey="hour" 
+                  stroke="#888" 
+                  style={{ fontSize: '12px' }}
                 />
-                <Bar dataKey="rides" fill="#00853E" />
-              </BarChart>
+                <YAxis 
+                  stroke="#888" 
+                  style={{ fontSize: '12px' }}
+                />
+                <Tooltip
+                  contentStyle={{ 
+                    backgroundColor: 'rgba(0, 0, 0, 0.9)', 
+                    border: '1px solid #00853E',
+                    borderRadius: '8px',
+                    padding: '12px'
+                  }}
+                  labelStyle={{ color: '#fff', fontWeight: 'bold' }}
+                  itemStyle={{ color: '#00853E' }}
+                />
+                <Area 
+                  type="monotone" 
+                  dataKey="rides" 
+                  stroke="#00853E" 
+                  strokeWidth={3}
+                  fillOpacity={1} 
+                  fill="url(#colorRides)" 
+                  animationDuration={1500}
+                />
+              </AreaChart>
             </ResponsiveContainer>
           </CardContent>
         </Card>
