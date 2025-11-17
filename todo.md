@@ -77,3 +77,6 @@
 - [x] Make shuttle animation dynamic based on route data
 - [x] Fix August-October hourly chart to show 21:00 (9 PM) to 2 AM, not 22:00
 - [x] Add day-of-week ride distribution analysis (Monday-Sunday breakdown)
+
+## Bug Fixes
+- [x] Fix Google Maps API being loaded multiple times warning
