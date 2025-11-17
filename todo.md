@@ -32,3 +32,6 @@
 - [x] Fix Mapbox tile loading errors by switching to Google Maps with built-in proxy
 - [x] Implement proper 3D satellite view with Google Maps API
 - [x] Convert normalized coordinates (0-1100) to actual GPS lat/lng for UNT campus
+
+## HTML Validation Fixes
+- [x] Fix invalid HTML nesting: <p> cannot contain <div> or nested <p>

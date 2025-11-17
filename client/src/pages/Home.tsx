@@ -167,8 +167,8 @@ export default function Home() {
               <DialogContent className="bg-gray-900 border-green-700">
                 <DialogHeader>
                   <DialogTitle className="text-green-100">About Night Flight</DialogTitle>
-                  <DialogDescription className="text-green-300">
-                    <div className="space-y-3 mt-4">
+                  <DialogDescription asChild>
+                    <div className="space-y-3 mt-4 text-green-300">
                       <p>
                         <strong>Night Flight</strong> is UNT Transportation Services' late-night shuttle program,
                         providing safe transportation for students across campus.
