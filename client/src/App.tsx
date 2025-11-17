@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import DeepInsights from "./pages/DeepInsights";
 import Analytics from "./pages/Analytics";
+import DetailedAnalysis from "./pages/DetailedAnalysis";
 
 function Router() {
   return (
@@ -14,6 +15,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/analytics"} component={Analytics} />
       <Route path={"/insights"} component={DeepInsights} />
+      <Route path={"/detailed"} component={DetailedAnalysis} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

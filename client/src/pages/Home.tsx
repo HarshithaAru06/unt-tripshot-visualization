@@ -4,7 +4,7 @@ import GoogleMaps3D from '@/components/GoogleMaps3D';
 import StatsPanel from '@/components/StatsPanel';
 import MonthSelector from '@/components/MonthSelector';
 import { Button } from '@/components/ui/button';
-import { Moon, Sun, Info, BarChart3, TrendingUp } from 'lucide-react';
+import { Moon, Sun, Info, BarChart3, TrendingUp, FileBarChart } from 'lucide-react';
 import { Link } from 'wouter';
 import { useTheme } from '@/contexts/ThemeContext';
 import {
@@ -186,6 +186,12 @@ export default function Home() {
                 <Button variant="outline" className="border-purple-700 hover:bg-purple-900/50">
                   <TrendingUp className="mr-2 h-4 w-4" />
                   Deep Insights
+                </Button>
+              </Link>
+              <Link href="/detailed">
+                <Button variant="outline" className="border-blue-700 hover:bg-blue-900/50">
+                  <FileBarChart className="mr-2 h-4 w-4" />
+                  Detailed Analysis
                 </Button>
               </Link>
             <Dialog>

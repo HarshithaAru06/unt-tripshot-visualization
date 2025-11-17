@@ -114,3 +114,18 @@
 - [x] Fix monthly_trends to include correct completed/cancelled counts
 - [x] Fix grouped_bar and stacked_bar data
 - [x] Verify all Deep Insights visualizations display data correctly
+
+## Bug Fixes - Deep Insights
+- [x] Fix empty vertical bar graph (Day of Week Comparison)
+
+## Detailed Analysis Page - 30+ Charts
+- [x] Create fourth "Detailed Analysis" page route
+- [x] Section 1: Big Overview (Rides per month, per active day, avg wait time)
+- [x] Section 2: Time-of-Night Patterns (Rides per hour, wait per hour, heatmap, weekday vs weekend)
+- [x] Section 3: Schedule Change Story (Before May 13 vs After Aug 9 comparison)
+- [x] Section 4: Stops/Locations (Top pickup/dropoff, wait times by stop, origin-destination matrix)
+- [x] Section 5: Rider Experience (Wait time histogram, cumulative %, ride duration, scatter plot)
+- [x] Section 6: Operations & Pooling (Pooled rides distribution, wait vs pooling, rides per driver/vehicle)
+- [x] Section 7: Cancellations (Cancel rate by month/hour/stop)
+- [x] Section 8: Booking Method Analysis (TripShot vs Dispatch Call breakdown)
+- [x] Add navigation links to Detailed Analysis page

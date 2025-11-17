@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { APP_LOGO, APP_TITLE } from '@/const';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, TrendingUp, Activity, BarChart3, Map as MapIcon } from 'lucide-react';
+import { ArrowLeft, TrendingUp, Activity, BarChart3, Map as MapIcon, FileBarChart } from 'lucide-react';
 import { Link } from 'wouter';
 import { 
   LineChart, Line, BarChart, Bar, ScatterChart, Scatter,
@@ -102,7 +102,7 @@ export default function DeepInsights() {
 
   // Prepare grouped bar data for day comparison
   const dayComparison = days.map(day => {
-    const dayData = data.grouped_bar.filter(d => d.day === day.substring(0, 3));
+    const dayData = data.grouped_bar.filter(d => d.day === day);
     const totalRides = dayData.reduce((sum, d) => sum + d.total, 0);
     const completedRides = dayData.reduce((sum, d) => sum + d.completed, 0);
     return {
@@ -147,6 +147,12 @@ export default function DeepInsights() {
                 <Button variant="outline" className="border-purple-700 hover:bg-purple-900/50">
                   <BarChart3 className="mr-2 h-4 w-4" />
                   Analytics
+                </Button>
+              </Link>
+              <Link href="/detailed">
+                <Button variant="outline" className="border-blue-700 hover:bg-blue-900/50">
+                  <FileBarChart className="mr-2 h-4 w-4" />
+                  Detailed Analysis
                 </Button>
               </Link>
               <Link href="/">

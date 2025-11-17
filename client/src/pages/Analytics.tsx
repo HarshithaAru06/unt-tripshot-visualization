@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { APP_LOGO, APP_TITLE } from '@/const';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, TrendingUp, Users, Phone, Smartphone, Car, Calendar } from 'lucide-react';
+import { ArrowLeft, TrendingUp, Users, Phone, Smartphone, Car, Calendar, FileBarChart } from 'lucide-react';
 import { Link } from 'wouter';
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, AreaChart, Area, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
@@ -153,6 +153,12 @@ export default function Analytics() {
               <Button variant="outline" className="border-purple-700 hover:bg-purple-900/50">
                 <TrendingUp className="mr-2 h-4 w-4" />
                 Deep Insights
+              </Button>
+            </Link>
+            <Link href="/detailed">
+              <Button variant="outline" className="border-blue-700 hover:bg-blue-900/50">
+                <FileBarChart className="mr-2 h-4 w-4" />
+                Detailed Analysis
               </Button>
             </Link>
             <Link href="/">
