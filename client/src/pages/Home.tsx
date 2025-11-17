@@ -4,7 +4,7 @@ import GoogleMaps3D from '@/components/GoogleMaps3D';
 import StatsPanel from '@/components/StatsPanel';
 import MonthSelector from '@/components/MonthSelector';
 import { Button } from '@/components/ui/button';
-import { Moon, Sun, Info, BarChart3, TrendingUp, FileBarChart } from 'lucide-react';
+import { Moon, Sun, Info, BarChart3, TrendingUp, FileBarChart, Calendar } from 'lucide-react';
 import { Link } from 'wouter';
 import { useTheme } from '@/contexts/ThemeContext';
 import {
@@ -192,6 +192,12 @@ export default function Home() {
                 <Button variant="outline" className="border-blue-700 hover:bg-blue-900/50">
                   <FileBarChart className="mr-2 h-4 w-4" />
                   Detailed Analysis
+                </Button>
+              </Link>
+              <Link href="/schedule-comparison">
+                <Button variant="outline" className="border-cyan-700 hover:bg-cyan-900/50">
+                  <Calendar className="mr-2 h-4 w-4" />
+                  Schedule Comparison
                 </Button>
               </Link>
             <Dialog>

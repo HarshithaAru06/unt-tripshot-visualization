@@ -135,3 +135,13 @@
 - [x] Update data generation script to include formatted time labels
 - [x] Update all time-based charts on Detailed Analysis page to display AM/PM format
 - [x] Ensure consistency across all hourly visualizations
+
+## Girlfriend's Feedback - Major Changes
+- [x] Filter out 1pm-6pm hours from ALL hourly charts (only show night hours)
+- [x] Split data into two schedule periods: Jan-May (7pm-2am) and Aug-Oct (9pm-2am)
+- [x] Create separate charts for Jan-May and Aug-Oct periods
+- [x] Combine "Eagle Landing" related stops to make it second highest location
+- [x] Keep "Lot 24 temporary" as a separate stop
+- [x] Remove heatmap visualization (not needed)
+- [x] Simplify busiest hours chart - one bar graph for Jan-May, one for Aug-Oct
+- [x] Update cancellation and booking charts to show only night hours

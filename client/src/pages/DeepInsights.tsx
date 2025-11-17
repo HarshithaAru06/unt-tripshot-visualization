@@ -75,30 +75,8 @@ export default function DeepInsights() {
     );
   }
 
-  // Prepare heatmap visualization data
+  // Heatmap removed per girlfriend's feedback
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-  const heatmapMatrix: number[][] = Array(7).fill(0).map(() => Array(24).fill(0));
-  
-  data.heatmap.forEach(item => {
-    const dayIndex = days.indexOf(item.day);
-    if (dayIndex >= 0) {
-      heatmapMatrix[dayIndex][item.hour] = item.rides;
-    }
-  });
-
-  // Get max value for color scaling
-  const maxRides = Math.max(...data.heatmap.map(d => d.rides));
-
-  // Get color based on value
-  const getHeatmapColor = (value: number) => {
-    if (value === 0) return '#1a1a2e';
-    const intensity = value / maxRides;
-    if (intensity < 0.2) return '#1e3a5f';
-    if (intensity < 0.4) return '#2d5a8f';
-    if (intensity < 0.6) return '#3d7abf';
-    if (intensity < 0.8) return '#4d9aef';
-    return '#00ff00';
-  };
 
   // Prepare grouped bar data for day comparison
   const dayComparison = days.map(day => {
@@ -296,59 +274,6 @@ export default function DeepInsights() {
                   <Bar dataKey="cancelled" stackId="a" fill="#ff4444" name="Cancelled" />
                 </BarChart>
               </ResponsiveContainer>
-            </CardContent>
-          </Card>
-
-          {/* Heatmap */}
-          <Card className="mb-8 bg-gradient-to-br from-pink-900/50 to-pink-800/30 border-pink-700">
-            <CardHeader>
-              <CardTitle className="text-pink-100 flex items-center gap-2">
-                <MapIcon className="h-5 w-5" />
-                Heatmap: Ride Density by Day and Hour
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="overflow-x-auto">
-                <div className="inline-block min-w-full">
-                  <div className="flex mb-2">
-                    <div className="w-24"></div>
-                    {Array.from({ length: 24 }, (_, i) => (
-                      <div key={i} className="w-8 text-center text-xs text-pink-300">
-                        {i}
-                      </div>
-                    ))}
-                  </div>
-                  {days.map((day, dayIndex) => (
-                    <div key={day} className="flex mb-1">
-                      <div className="w-24 text-sm text-pink-100 flex items-center">
-                        {day}
-                      </div>
-                      {heatmapMatrix[dayIndex].map((value, hour) => (
-                        <div
-                          key={hour}
-                          className="w-8 h-8 border border-gray-700 flex items-center justify-center text-xs font-bold"
-                          style={{ backgroundColor: getHeatmapColor(value) }}
-                          title={`${day} ${hour}:00 - ${value} rides`}
-                        >
-                          {value > 0 ? value : ''}
-                        </div>
-                      ))}
-                    </div>
-                  ))}
-                  <div className="mt-4 flex items-center gap-4 text-xs text-pink-300">
-                    <span>Low</span>
-                    <div className="flex gap-1">
-                      <div className="w-8 h-4" style={{ backgroundColor: '#1a1a2e' }}></div>
-                      <div className="w-8 h-4" style={{ backgroundColor: '#1e3a5f' }}></div>
-                      <div className="w-8 h-4" style={{ backgroundColor: '#2d5a8f' }}></div>
-                      <div className="w-8 h-4" style={{ backgroundColor: '#3d7abf' }}></div>
-                      <div className="w-8 h-4" style={{ backgroundColor: '#4d9aef' }}></div>
-                      <div className="w-8 h-4" style={{ backgroundColor: '#00ff00' }}></div>
-                    </div>
-                    <span>High</span>
-                  </div>
-                </div>
-              </div>
             </CardContent>
           </Card>
 

@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import DeepInsights from "./pages/DeepInsights";
 import Analytics from "./pages/Analytics";
 import DetailedAnalysis from "./pages/DetailedAnalysis";
+import ScheduleComparison from "./pages/ScheduleComparison";
 
 function Router() {
   return (
@@ -16,6 +17,7 @@ function Router() {
       <Route path={"/analytics"} component={Analytics} />
       <Route path={"/insights"} component={DeepInsights} />
       <Route path={"/detailed"} component={DetailedAnalysis} />
+      <Route path={"/schedule-comparison"} component={ScheduleComparison} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
