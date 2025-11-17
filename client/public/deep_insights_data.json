@@ -1,0 +1,1459 @@
+{
+  "heatmap": [
+    {
+      "day": "Monday",
+      "hour": 0,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 1,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 2,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 3,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 4,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 5,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 6,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 7,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 8,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 9,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 10,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 11,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 12,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 13,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 14,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 15,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 16,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 17,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 18,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 19,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 20,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 21,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 22,
+      "rides": 0
+    },
+    {
+      "day": "Monday",
+      "hour": 23,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 0,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 1,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 2,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 3,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 4,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 5,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 6,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 7,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 8,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 9,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 10,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 11,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 12,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 13,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 14,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 15,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 16,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 17,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 18,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 19,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 20,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 21,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 22,
+      "rides": 0
+    },
+    {
+      "day": "Tuesday",
+      "hour": 23,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 0,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 1,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 2,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 3,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 4,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 5,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 6,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 7,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 8,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 9,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 10,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 11,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 12,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 13,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 14,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 15,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 16,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 17,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 18,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 19,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 20,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 21,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 22,
+      "rides": 0
+    },
+    {
+      "day": "Wednesday",
+      "hour": 23,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 0,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 1,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 2,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 3,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 4,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 5,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 6,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 7,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 8,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 9,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 10,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 11,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 12,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 13,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 14,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 15,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 16,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 17,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 18,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 19,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 20,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 21,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 22,
+      "rides": 0
+    },
+    {
+      "day": "Thursday",
+      "hour": 23,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 0,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 1,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 2,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 3,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 4,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 5,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 6,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 7,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 8,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 9,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 10,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 11,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 12,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 13,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 14,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 15,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 16,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 17,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 18,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 19,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 20,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 21,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 22,
+      "rides": 0
+    },
+    {
+      "day": "Friday",
+      "hour": 23,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 0,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 1,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 2,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 3,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 4,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 5,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 6,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 7,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 8,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 9,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 10,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 11,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 12,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 13,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 14,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 15,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 16,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 17,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 18,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 19,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 20,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 21,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 22,
+      "rides": 0
+    },
+    {
+      "day": "Saturday",
+      "hour": 23,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 0,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 1,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 2,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 3,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 4,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 5,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 6,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 7,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 8,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 9,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 10,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 11,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 12,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 13,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 14,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 15,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 16,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 17,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 18,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 19,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 20,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 21,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 22,
+      "rides": 0
+    },
+    {
+      "day": "Sunday",
+      "hour": 23,
+      "rides": 0
+    }
+  ],
+  "scatter": [],
+  "monthly_trends": [
+    {
+      "month": "January",
+      "total_rides": 1178,
+      "completed": 0,
+      "cancelled": 413,
+      "completion_rate": 0.0,
+      "avg_wait_time": 0,
+      "avg_ride_duration": 0
+    },
+    {
+      "month": "February",
+      "total_rides": 2531,
+      "completed": 0,
+      "cancelled": 923,
+      "completion_rate": 0.0,
+      "avg_wait_time": 0,
+      "avg_ride_duration": 0
+    },
+    {
+      "month": "March",
+      "total_rides": 2384,
+      "completed": 0,
+      "cancelled": 860,
+      "completion_rate": 0.0,
+      "avg_wait_time": 0,
+      "avg_ride_duration": 0
+    },
+    {
+      "month": "April",
+      "total_rides": 3156,
+      "completed": 0,
+      "cancelled": 1071,
+      "completion_rate": 0.0,
+      "avg_wait_time": 0,
+      "avg_ride_duration": 0
+    },
+    {
+      "month": "May",
+      "total_rides": 674,
+      "completed": 0,
+      "cancelled": 270,
+      "completion_rate": 0.0,
+      "avg_wait_time": 0,
+      "avg_ride_duration": 0
+    },
+    {
+      "month": "August",
+      "total_rides": 1216,
+      "completed": 0,
+      "cancelled": 458,
+      "completion_rate": 0.0,
+      "avg_wait_time": 0,
+      "avg_ride_duration": 0
+    },
+    {
+      "month": "September",
+      "total_rides": 2408,
+      "completed": 0,
+      "cancelled": 696,
+      "completion_rate": 0.0,
+      "avg_wait_time": 0,
+      "avg_ride_duration": 0
+    },
+    {
+      "month": "October",
+      "total_rides": 2964,
+      "completed": 0,
+      "cancelled": 942,
+      "completion_rate": 0.0,
+      "avg_wait_time": 0,
+      "avg_ride_duration": 0
+    }
+  ],
+  "grouped_bar": [
+    {
+      "month": "January",
+      "day": "Mon",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "January",
+      "day": "Tue",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "January",
+      "day": "Wed",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "January",
+      "day": "Thu",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "January",
+      "day": "Fri",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "January",
+      "day": "Sat",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "January",
+      "day": "Sun",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "February",
+      "day": "Mon",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "February",
+      "day": "Tue",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "February",
+      "day": "Wed",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "February",
+      "day": "Thu",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "February",
+      "day": "Fri",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "February",
+      "day": "Sat",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "February",
+      "day": "Sun",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "March",
+      "day": "Mon",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "March",
+      "day": "Tue",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "March",
+      "day": "Wed",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "March",
+      "day": "Thu",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "March",
+      "day": "Fri",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "March",
+      "day": "Sat",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "March",
+      "day": "Sun",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "April",
+      "day": "Mon",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "April",
+      "day": "Tue",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "April",
+      "day": "Wed",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "April",
+      "day": "Thu",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "April",
+      "day": "Fri",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "April",
+      "day": "Sat",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "April",
+      "day": "Sun",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "May",
+      "day": "Mon",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "May",
+      "day": "Tue",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "May",
+      "day": "Wed",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "May",
+      "day": "Thu",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "May",
+      "day": "Fri",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "May",
+      "day": "Sat",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "May",
+      "day": "Sun",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "August",
+      "day": "Mon",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "August",
+      "day": "Tue",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "August",
+      "day": "Wed",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "August",
+      "day": "Thu",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "August",
+      "day": "Fri",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "August",
+      "day": "Sat",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "August",
+      "day": "Sun",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "September",
+      "day": "Mon",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "September",
+      "day": "Tue",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "September",
+      "day": "Wed",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "September",
+      "day": "Thu",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "September",
+      "day": "Fri",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "September",
+      "day": "Sat",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "September",
+      "day": "Sun",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "October",
+      "day": "Mon",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "October",
+      "day": "Tue",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "October",
+      "day": "Wed",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "October",
+      "day": "Thu",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "October",
+      "day": "Fri",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "October",
+      "day": "Sat",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    },
+    {
+      "month": "October",
+      "day": "Sun",
+      "total": 0,
+      "completed": 0,
+      "completion_rate": 0
+    }
+  ],
+  "stacked_bar": [
+    {
+      "hour": 0,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 1,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 2,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 3,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 4,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 5,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 6,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 7,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 8,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 9,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 10,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 11,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 12,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 13,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 14,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 15,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 16,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 17,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 18,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 19,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 20,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 21,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 22,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    },
+    {
+      "hour": 23,
+      "completed": 0,
+      "cancelled": 0,
+      "total": 0
+    }
+  ]
+}

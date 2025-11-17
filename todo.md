@@ -95,3 +95,15 @@
 - [x] Add privacy notice explaining personal information has been redacted
 - [x] Update data processing scripts to exclude name columns
 - [x] Add disclaimer about privacy protection as reason for data anonymization
+
+## Deep Insights Page - Tableau-Style Visualizations
+- [x] Create new Deep Insights page route
+- [x] Prepare heatmap data (day of week × hour matrix)
+- [x] Add line charts for trend analysis over time
+- [x] Add vertical bar charts for comparisons
+- [x] Add horizontal bar charts for rankings
+- [x] Add grouped bar charts for multi-dimensional comparisons
+- [x] Add heatmap visualization for time-based patterns
+- [ ] Add scatter plots for correlation analysis (wait time vs duration, etc.)
+- [x] Add stacked bar charts for composition analysis
+- [x] Add navigation links to Deep Insights page from other pages

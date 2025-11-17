@@ -4,7 +4,7 @@ import GoogleMaps3D from '@/components/GoogleMaps3D';
 import StatsPanel from '@/components/StatsPanel';
 import MonthSelector from '@/components/MonthSelector';
 import { Button } from '@/components/ui/button';
-import { Moon, Sun, Info, BarChart3 } from 'lucide-react';
+import { Moon, Sun, Info, BarChart3, TrendingUp } from 'lucide-react';
 import { Link } from 'wouter';
 import { useTheme } from '@/contexts/ThemeContext';
 import {
@@ -176,12 +176,18 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-2">
-            <Link href="/analytics">
-              <Button variant="outline" className="border-green-700 hover:bg-green-900/50">
-                <BarChart3 className="mr-2 h-4 w-4" />
-                Analytics
-              </Button>
-            </Link>
+              <Link href="/analytics">
+                <Button variant="outline" className="border-green-700 hover:bg-green-900/50">
+                  <BarChart3 className="mr-2 h-4 w-4" />
+                  Analytics
+                </Button>
+              </Link>
+              <Link href="/insights">
+                <Button variant="outline" className="border-purple-700 hover:bg-purple-900/50">
+                  <TrendingUp className="mr-2 h-4 w-4" />
+                  Deep Insights
+                </Button>
+              </Link>
             <Dialog>
               <DialogTrigger asChild>
                 <Button variant="outline" size="icon" className="border-green-700 hover:bg-green-900/50">

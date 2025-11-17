@@ -148,12 +148,20 @@ export default function Analytics() {
               <p className="text-sm text-green-400">Comprehensive TripShot Data Analysis</p>
             </div>
           </div>
-          <Link href="/">
-            <Button variant="outline" className="border-green-700 hover:bg-green-900/50">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Map
-            </Button>
-          </Link>
+          <div className="flex gap-2">
+            <Link href="/insights">
+              <Button variant="outline" className="border-purple-700 hover:bg-purple-900/50">
+                <TrendingUp className="mr-2 h-4 w-4" />
+                Deep Insights
+              </Button>
+            </Link>
+            <Link href="/">
+              <Button variant="outline" className="border-green-700 hover:bg-green-900/50">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Map
+              </Button>
+            </Link>
+          </div>
         </div>
       </header>
 
