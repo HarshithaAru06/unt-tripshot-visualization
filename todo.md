@@ -160,3 +160,11 @@
 - [x] Verify Detailed Analysis page: all hourly charts show 12 AM-2 AM at END
 - [x] Verify Analytics page: hourly charts show 12 AM-2 AM at END
 - [x] Ensure Recharts is respecting the data order from JSON (not auto-sorting by numeric hour value)
+
+## Filter Cancellation Data to Service Hours Only
+- [x] Remove outlier hours (4 PM, 6 PM, etc.) from cancellation data
+- [x] Keep only 7 PM to 2 AM hours in cancellation visualizations
+- [x] Update data generation scripts to filter cancellation by service hours
+- [x] Regenerate detailed_analysis_data.json with filtered cancellation data
+- [x] Regenerate filtered_analysis_data.json with filtered cancellation data
+- [x] Verify all cancellation charts show only night service hours

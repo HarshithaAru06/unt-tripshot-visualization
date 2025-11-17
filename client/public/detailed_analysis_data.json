@@ -77,30 +77,6 @@
     {
       "hour": 1,
       "total_rides": 1818
-    },
-    {
-      "hour": 13,
-      "total_rides": 5
-    },
-    {
-      "hour": 14,
-      "total_rides": 3
-    },
-    {
-      "hour": 15,
-      "total_rides": 2
-    },
-    {
-      "hour": 16,
-      "total_rides": 7
-    },
-    {
-      "hour": 17,
-      "total_rides": 26
-    },
-    {
-      "hour": 18,
-      "total_rides": 38
     }
   ],
   "hourly_wait": [
@@ -131,30 +107,6 @@
     {
       "hour": 1,
       "avg_wait": 2.46
-    },
-    {
-      "hour": 13,
-      "avg_wait": 0.0
-    },
-    {
-      "hour": 14,
-      "avg_wait": 0.42
-    },
-    {
-      "hour": 15,
-      "avg_wait": 0.0
-    },
-    {
-      "hour": 16,
-      "avg_wait": 14.1
-    },
-    {
-      "hour": 17,
-      "avg_wait": 10.37
-    },
-    {
-      "hour": 18,
-      "avg_wait": 12.41
     }
   ],
   "weekday_weekend": [
@@ -7666,30 +7618,6 @@
     {
       "hour": 1,
       "cancel_rate": 25.74
-    },
-    {
-      "hour": 13,
-      "cancel_rate": 40.0
-    },
-    {
-      "hour": 14,
-      "cancel_rate": 33.33
-    },
-    {
-      "hour": 15,
-      "cancel_rate": 50.0
-    },
-    {
-      "hour": 16,
-      "cancel_rate": 14.29
-    },
-    {
-      "hour": 17,
-      "cancel_rate": 0.0
-    },
-    {
-      "hour": 18,
-      "cancel_rate": 36.84
     }
   ],
   "cancel_by_stop": [
@@ -7891,36 +7819,6 @@
       "Hour": 1,
       "Booking_Method": "TripShot",
       "total_rides": 1586
-    },
-    {
-      "Hour": 13,
-      "Booking_Method": "TripShot",
-      "total_rides": 5
-    },
-    {
-      "Hour": 14,
-      "Booking_Method": "TripShot",
-      "total_rides": 3
-    },
-    {
-      "Hour": 15,
-      "Booking_Method": "TripShot",
-      "total_rides": 2
-    },
-    {
-      "Hour": 16,
-      "Booking_Method": "TripShot",
-      "total_rides": 7
-    },
-    {
-      "Hour": 17,
-      "Booking_Method": "TripShot",
-      "total_rides": 26
-    },
-    {
-      "Hour": 18,
-      "Booking_Method": "TripShot",
-      "total_rides": 38
     }
   ]
 }
