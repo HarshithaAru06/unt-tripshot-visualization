@@ -17,13 +17,25 @@ interface StatsPanelProps {
 }
 
 export default function StatsPanel({ monthData }: StatsPanelProps) {
-  // Prepare hourly data
-  const hourlyData = Object.entries(monthData.hourly_distribution || {})
-    .map(([hour, count]) => ({
-      hour: `${hour}:00`,
-      rides: count,
-    }))
-    .sort((a, b) => parseInt(a.hour) - parseInt(b.hour));
+  // Prepare hourly data - Service hours: 7 PM (19:00) to 2 AM (02:00)
+  // Order: 19, 20, 21, 22, 23, 0, 1, 2
+  const serviceHourOrder = [19, 20, 21, 22, 23, 0, 1, 2];
+  
+  const hourlyData = serviceHourOrder
+    .map(hour => {
+      const count = monthData.hourly_distribution?.[hour.toString()] || 0;
+      // Format display hour
+      let displayHour;
+      if (hour === 0) displayHour = '0:00';
+      else if (hour === 1) displayHour = '1:00';
+      else if (hour === 2) displayHour = '2:00';
+      else displayHour = `${hour}:00`;
+      
+      return {
+        hour: displayHour,
+        rides: count,
+      };
+    });
 
   // Prepare top routes data
   const topRoutesData = (monthData.top_routes || []).slice(0, 5);

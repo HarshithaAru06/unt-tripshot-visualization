@@ -35,3 +35,12 @@
 
 ## HTML Validation Fixes
 - [x] Fix invalid HTML nesting: <p> cannot contain <div> or nested <p>
+
+## Service Hours and Analytics Features
+- [x] Fix hourly distribution chart to start at 7 PM (19:00) and end at 2 AM (02:00)
+- [x] Reorder hourly data to show proper service flow (7 PM → 2 AM)
+- [x] Create new Analytics page route
+- [x] Analyze call vs TripShot app usage data
+- [x] Show booking method transitions (call to app adoption)
+- [x] Display comprehensive metrics and insights
+- [x] Add navigation between main visualization and analytics pages
