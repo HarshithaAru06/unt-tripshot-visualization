@@ -1,14 +1,6 @@
 {
   "jan_may_hourly_rides": [
     {
-      "Hour": 0,
-      "total_rides": 1646
-    },
-    {
-      "Hour": 1,
-      "total_rides": 999
-    },
-    {
       "Hour": 19,
       "total_rides": 1153
     },
@@ -27,6 +19,14 @@
     {
       "Hour": 23,
       "total_rides": 1702
+    },
+    {
+      "Hour": 0,
+      "total_rides": 1646
+    },
+    {
+      "Hour": 1,
+      "total_rides": 999
     }
   ],
   "jan_may_hourly_wait": [],
@@ -116,14 +116,6 @@
   ],
   "jan_may_cancel_by_hour": [
     {
-      "hour": 0,
-      "cancel_rate": 30.19
-    },
-    {
-      "hour": 1,
-      "cancel_rate": 28.23
-    },
-    {
       "hour": 19,
       "cancel_rate": 41.8
     },
@@ -142,6 +134,14 @@
     {
       "hour": 23,
       "cancel_rate": 32.67
+    },
+    {
+      "hour": 0,
+      "cancel_rate": 30.19
+    },
+    {
+      "hour": 1,
+      "cancel_rate": 28.23
     }
   ],
   "jan_may_booking_by_hour": [],
@@ -153,14 +153,6 @@
   },
   "aug_oct_hourly_rides": [
     {
-      "Hour": 0,
-      "total_rides": 1289
-    },
-    {
-      "Hour": 1,
-      "total_rides": 801
-    },
-    {
       "Hour": 21,
       "total_rides": 1554
     },
@@ -171,6 +163,14 @@
     {
       "Hour": 23,
       "total_rides": 1352
+    },
+    {
+      "Hour": 0,
+      "total_rides": 1289
+    },
+    {
+      "Hour": 1,
+      "total_rides": 801
     }
   ],
   "aug_oct_hourly_wait": [],
@@ -260,14 +260,6 @@
   ],
   "aug_oct_cancel_by_hour": [
     {
-      "hour": 0,
-      "cancel_rate": 30.33
-    },
-    {
-      "hour": 1,
-      "cancel_rate": 22.35
-    },
-    {
       "hour": 21,
       "cancel_rate": 35.97
     },
@@ -278,6 +270,14 @@
     {
       "hour": 23,
       "cancel_rate": 29.14
+    },
+    {
+      "hour": 0,
+      "cancel_rate": 30.33
+    },
+    {
+      "hour": 1,
+      "cancel_rate": 22.35
     }
   ],
   "aug_oct_booking_by_hour": [],

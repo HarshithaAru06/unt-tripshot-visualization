@@ -145,3 +145,11 @@
 - [x] Remove heatmap visualization (not needed)
 - [x] Simplify busiest hours chart - one bar graph for Jan-May, one for Aug-Oct
 - [x] Update cancellation and booking charts to show only night hours
+
+## Hour Ordering Fix
+- [x] Reorder all hourly charts to show service flow: 7PM, 8PM, 9PM, 10PM, 11PM, 12AM, 1AM, 2AM (midnight hours at END, not start)
+- [x] Update data generation script to sort hours in logical service order
+- [x] Update Schedule Comparison page hourly charts
+- [x] Update Detailed Analysis page hourly charts
+- [x] Update Analytics page hourly charts
+- [x] Verify all time-based visualizations display in correct order
