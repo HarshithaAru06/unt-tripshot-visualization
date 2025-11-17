@@ -19,3 +19,11 @@
 - [x] Optimize performance for large datasets
 - [x] Test cross-browser compatibility
 - [x] Final polish and UX refinements
+
+## New Advanced Features
+- [x] Integrate satellite imagery of UNT campus
+- [x] Add real 3D terrain and geography
+- [x] Implement proper map-based location coordinates
+- [x] Remove all Manus branding from footer and UI
+- [ ] Deploy website for public access
+- [ ] Generate and test live access link

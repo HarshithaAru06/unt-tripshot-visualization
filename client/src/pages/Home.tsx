@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { APP_LOGO, APP_TITLE } from '@/const';
-import Scene3D from '@/components/Scene3D';
+import SatelliteMap3D from '@/components/SatelliteMap3D';
 import StatsPanel from '@/components/StatsPanel';
 import MonthSelector from '@/components/MonthSelector';
 import { Button } from '@/components/ui/button';
@@ -181,9 +181,8 @@ export default function Home() {
                 />
               </div>
               <div className="h-[600px]">
-                <Scene3D
+                <SatelliteMap3D
                   locations={data.locations}
-                  selectedMonth={currentMonth.name}
                   highlightedLocations={highlightedLocations}
                   routes={topRoutes}
                 />
@@ -208,7 +207,7 @@ export default function Home() {
             Data visualization for UNT Transportation Services • {data.months.length} months analyzed • {data.summary.total_rides.toLocaleString()} total rides
           </p>
           <p className="text-green-600 text-xs mt-2">
-            Created with React, Three.js, and Recharts
+            Built with React, Mapbox GL, and Recharts • © 2025 UNT Transportation Services
           </p>
         </div>
       </main>
