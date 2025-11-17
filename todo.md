@@ -66,3 +66,14 @@
 - [x] Enhance UI with smoother animations
 - [x] Make interactions more natural and intuitive
 - [x] Improve spacing and visual hierarchy
+
+## Data Preprocessing and Map Improvements
+- [x] Properly clean and preprocess CSV data (remove irrelevant columns, handle missing values)
+- [x] Add January data disclaimer (incomplete records due to post-reopening data collection issues)
+- [x] Note that January doesn't have call/app booking data due to data collection problems
+- [x] Switch from satellite view to regular map view
+- [x] Fix green location markers to show for all months including January
+- [x] Add animated shuttle icon that moves between location dots
+- [x] Make shuttle animation dynamic based on route data
+- [x] Fix August-October hourly chart to show 21:00 (9 PM) to 2 AM, not 22:00
+- [x] Add day-of-week ride distribution analysis (Monday-Sunday breakdown)

@@ -9,6 +9,7 @@ interface MonthData {
   cancelled_rides: number;
   completion_rate: number;
   hourly_distribution: Record<string, number>;
+  day_of_week_distribution?: Record<string, number>;
   top_routes: Array<{ route: string; count: number }>;
 }
 
@@ -19,11 +20,11 @@ interface StatsPanelProps {
 export default function StatsPanel({ monthData }: StatsPanelProps) {
   // Determine service hours based on month
   // Jan-May: 7 PM (19:00) to 2 AM (02:00)
-  // Aug-Oct: 10 PM (22:00) to 2 AM (02:00)
+  // Aug-Oct: 9 PM (21:00) to 2 AM (02:00)
   const isEarlyMonths = ['January', 'February', 'March', 'April', 'May'].includes(monthData.name);
   const serviceHourOrder = isEarlyMonths 
     ? [19, 20, 21, 22, 23, 0, 1, 2]  // 7 PM to 2 AM
-    : [22, 23, 0, 1, 2];              // 10 PM to 2 AM
+    : [21, 22, 23, 0, 1, 2];          // 9 PM to 2 AM
   
   const hourlyData = serviceHourOrder
     .map(hour => {
@@ -130,6 +131,43 @@ export default function StatsPanel({ monthData }: StatsPanelProps) {
                   animationDuration={1500}
                 />
               </AreaChart>
+            </ResponsiveContainer>
+          </CardContent>
+        </Card>
+      )}
+
+      {/* Day of Week Distribution */}
+      {monthData.day_of_week_distribution && (
+        <Card className="bg-black/40 border-green-900">
+          <CardHeader>
+            <CardTitle className="text-green-100">Day of Week Distribution</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ResponsiveContainer width="100%" height={250}>
+              <BarChart data={[
+                { day: 'Mon', rides: monthData.day_of_week_distribution['Monday'] || 0 },
+                { day: 'Tue', rides: monthData.day_of_week_distribution['Tuesday'] || 0 },
+                { day: 'Wed', rides: monthData.day_of_week_distribution['Wednesday'] || 0 },
+                { day: 'Thu', rides: monthData.day_of_week_distribution['Thursday'] || 0 },
+                { day: 'Fri', rides: monthData.day_of_week_distribution['Friday'] || 0 },
+                { day: 'Sat', rides: monthData.day_of_week_distribution['Saturday'] || 0 },
+                { day: 'Sun', rides: monthData.day_of_week_distribution['Sunday'] || 0 },
+              ]}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#333" />
+                <XAxis dataKey="day" stroke="#888" style={{ fontSize: '12px' }} />
+                <YAxis stroke="#888" style={{ fontSize: '12px' }} />
+                <Tooltip
+                  contentStyle={{ 
+                    backgroundColor: 'rgba(0, 0, 0, 0.9)', 
+                    border: '1px solid #00853E',
+                    borderRadius: '8px',
+                    padding: '12px'
+                  }}
+                  labelStyle={{ color: '#fff', fontWeight: 'bold' }}
+                  itemStyle={{ color: '#00853E' }}
+                />
+                <Bar dataKey="rides" fill="#00853E" radius={[8, 8, 0, 0]} />
+              </BarChart>
             </ResponsiveContainer>
           </CardContent>
         </Card>

@@ -25,13 +25,14 @@ export default function GoogleMaps3D({ locations, routes }: GoogleMaps3DProps) {
   const mapRef = useRef<google.maps.Map | null>(null);
   const markersRef = useRef<google.maps.Marker[]>([]);
   const polylinesRef = useRef<google.maps.Polyline[]>([]);
+  const shuttleMarkerRef = useRef<google.maps.Marker | null>(null);
+  const animationFrameRef = useRef<number | null>(null);
 
   const handleMapReady = (map: google.maps.Map) => {
     mapRef.current = map;
     
-    // Set to satellite view with 3D tilt
-    map.setMapTypeId('satellite');
-    map.setTilt(45);
+    // Set to regular roadmap view
+    map.setMapTypeId('roadmap');
     
     // Add map type controls
     map.setOptions({
@@ -129,6 +130,64 @@ export default function GoogleMaps3D({ locations, routes }: GoogleMaps3DProps) {
 
       polylinesRef.current.push(polyline);
     });
+
+    // Animate shuttle along top route
+    if (topRoutes.length > 0 && !shuttleMarkerRef.current) {
+      // Create shuttle marker with bus icon
+      const shuttleMarker = new google.maps.Marker({
+        map,
+        icon: {
+          path: 'M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z',
+          fillColor: '#FFD700',
+          fillOpacity: 1,
+          strokeColor: '#FF6B00',
+          strokeWeight: 2,
+          scale: 1.5,
+          anchor: new google.maps.Point(12, 22),
+        },
+        title: 'Night Flight Shuttle',
+        zIndex: 1000,
+      });
+      shuttleMarkerRef.current = shuttleMarker;
+
+      // Animate shuttle along routes
+      let routeIndex = 0;
+      let progress = 0;
+      const animateShuttle = () => {
+        if (!shuttleMarkerRef.current || topRoutes.length === 0) return;
+
+        const currentRoute = topRoutes[routeIndex];
+        const { fromCoords, toCoords } = currentRoute;
+
+        // Linear interpolation
+        const lat = fromCoords.lat + (toCoords.lat - fromCoords.lat) * progress;
+        const lng = fromCoords.lng + (toCoords.lng - fromCoords.lng) * progress;
+
+        shuttleMarkerRef.current.setPosition({ lat, lng });
+
+        progress += 0.005; // Speed of animation
+
+        if (progress >= 1) {
+          progress = 0;
+          routeIndex = (routeIndex + 1) % topRoutes.length;
+        }
+
+        animationFrameRef.current = requestAnimationFrame(animateShuttle);
+      };
+
+      animateShuttle();
+    }
+
+    // Cleanup animation on unmount
+    return () => {
+      if (animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+      }
+      if (shuttleMarkerRef.current) {
+        shuttleMarkerRef.current.setMap(null);
+        shuttleMarkerRef.current = null;
+      }
+    };
   }, [routes]);
 
   // UNT Campus center coordinates

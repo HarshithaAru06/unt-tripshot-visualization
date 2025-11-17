@@ -30,6 +30,7 @@ interface MonthData {
   cancelled_rides: number;
   completion_rate: number;
   hourly_distribution: Record<string, number>;
+  day_of_week_distribution?: Record<string, number>;
   top_routes: Array<{ route: string; count: number }>;
   top_pickup_locations: Record<string, number>;
   top_dropoff_locations: Record<string, number>;
@@ -59,11 +60,21 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Load the data
-    fetch('/tripshot_data.json')
-      .then((res) => res.json())
-      .then((jsonData) => {
-        setData(jsonData);
+    // Load both trip data and day-of-week data
+    Promise.all([
+      fetch('/tripshot_data.json').then(res => res.json()),
+      fetch('/day_of_week_analysis.json').then(res => res.json())
+    ])
+      .then(([tripData, dowData]) => {
+        // Merge day-of-week data into month data
+        const monthNames = ['january', 'february', 'march', 'april', 'may', 'august', 'september', 'october'];
+        tripData.months.forEach((month: MonthData, idx: number) => {
+          const monthKey = monthNames[idx];
+          if (dowData[monthKey]) {
+            month.day_of_week_distribution = dowData[monthKey];
+          }
+        });
+        setData(tripData);
         setLoading(false);
       })
       .catch((error) => {
