@@ -80,3 +80,11 @@
 
 ## Bug Fixes
 - [x] Fix Google Maps API being loaded multiple times warning
+
+## Interactive Tableau-Style Visualizations
+- [x] Analyze data to extract hourly breakdown by day of week for each month
+- [x] Add diverse graph types (bar, line, pie, scatter, stacked area)
+- [x] Make day-of-week bars clickable to filter and show hourly breakdown
+- [x] Create Tableau-style dashboard layout with multiple interactive charts
+- [x] Add visual feedback when clicking on day-of-week bars
+- [x] Display hourly distribution for selected day below the day-of-week chart

@@ -1,5 +1,6 @@
+import { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, AreaChart, Area, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, AreaChart, Area, PieChart, Pie, Cell, Legend } from 'recharts';
 
 interface MonthData {
   name: string;
@@ -18,6 +19,16 @@ interface StatsPanelProps {
 }
 
 export default function StatsPanel({ monthData }: StatsPanelProps) {
+  const [selectedDay, setSelectedDay] = useState<string | null>(null);
+  const [hourlyByDayData, setHourlyByDayData] = useState<Record<string, Record<string, Record<string, number>>>>({});
+
+  // Load hourly by day data
+  useEffect(() => {
+    fetch('/hourly_by_day_data.json')
+      .then(res => res.json())
+      .then(data => setHourlyByDayData(data))
+      .catch(err => console.error('Error loading hourly by day data:', err));
+  }, []);
   // Determine service hours based on month
   // Jan-May: 7 PM (19:00) to 2 AM (02:00)
   // Aug-Oct: 9 PM (21:00) to 2 AM (02:00)
@@ -166,8 +177,74 @@ export default function StatsPanel({ monthData }: StatsPanelProps) {
                   labelStyle={{ color: '#fff', fontWeight: 'bold' }}
                   itemStyle={{ color: '#00853E' }}
                 />
-                <Bar dataKey="rides" fill="#00853E" radius={[8, 8, 0, 0]} />
+                <Bar 
+                  dataKey="rides" 
+                  fill="#00853E" 
+                  radius={[8, 8, 0, 0]}
+                  onClick={(data: any) => {
+                    const dayMap: Record<string, string> = {
+                      'Mon': 'Monday',
+                      'Tue': 'Tuesday',
+                      'Wed': 'Wednesday',
+                      'Thu': 'Thursday',
+                      'Fri': 'Friday',
+                      'Sat': 'Saturday',
+                      'Sun': 'Sunday'
+                    };
+                    const fullDay = dayMap[data.day];
+                    setSelectedDay(selectedDay === fullDay ? null : fullDay);
+                  }}
+                  cursor="pointer"
+                />
               </BarChart>
+            </ResponsiveContainer>
+          </CardContent>
+        </Card>
+      )}
+
+      {/* Hourly Breakdown for Selected Day */}
+      {selectedDay && hourlyByDayData[monthData.name.toLowerCase()]?.[selectedDay] && (
+        <Card className="bg-gradient-to-br from-blue-900/50 to-blue-800/30 border-blue-700">
+          <CardHeader>
+            <CardTitle className="text-blue-100">
+              {selectedDay} - Hourly Breakdown
+              <button 
+                onClick={() => setSelectedDay(null)}
+                className="ml-4 text-sm px-3 py-1 bg-blue-700 hover:bg-blue-600 rounded"
+              >
+                Clear
+              </button>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ResponsiveContainer width="100%" height={250}>
+              <LineChart data={serviceHourOrder.map(hour => ({
+                hour: hour === 0 ? '0:00' : hour === 1 ? '1:00' : hour === 2 ? '2:00' : `${hour}:00`,
+                rides: Number(hourlyByDayData[monthData.name.toLowerCase()][selectedDay][String(hour)] || 0)
+              }))}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#333" />
+                <XAxis dataKey="hour" stroke="#888" style={{ fontSize: '12px' }} />
+                <YAxis stroke="#888" style={{ fontSize: '12px' }} />
+                <Tooltip
+                  contentStyle={{ 
+                    backgroundColor: 'rgba(0, 0, 0, 0.9)', 
+                    border: '1px solid #3B82F6',
+                    borderRadius: '8px',
+                    padding: '12px'
+                  }}
+                  labelStyle={{ color: '#fff', fontWeight: 'bold' }}
+                  itemStyle={{ color: '#3B82F6' }}
+                />
+                <Line 
+                  type="monotone" 
+                  dataKey="rides" 
+                  stroke="#3B82F6" 
+                  strokeWidth={3}
+                  dot={{ fill: '#3B82F6', r: 5 }}
+                  activeDot={{ r: 8 }}
+                  animationDuration={1000}
+                />
+              </LineChart>
             </ResponsiveContainer>
           </CardContent>
         </Card>
