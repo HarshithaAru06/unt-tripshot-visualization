@@ -165,6 +165,9 @@ export default function DetailedAnalysis() {
               <TrendingUp className="w-8 h-8" />
               1. Big Picture Overview
             </h2>
+            <p className="text-gray-300 mb-6 text-lg">
+              This section shows the overall trends - total rides per month, average daily demand, and how wait times changed over the 8 months.
+            </p>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Monthly Rides */}
@@ -232,6 +235,9 @@ export default function DetailedAnalysis() {
               <Clock className="w-8 h-8" />
               2. Time Patterns
             </h2>
+            <p className="text-gray-300 mb-6 text-lg">
+              This breaks down when rides happen - which hours are busiest, how wait times vary by hour, and how weekdays compare to weekends.
+            </p>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Hourly Rides */}
@@ -299,7 +305,9 @@ export default function DetailedAnalysis() {
           {/* Section 3: Schedule Change (Spring vs Fall) */}
           <section>
             <h2 className="text-3xl font-bold text-white mb-6">3. Schedule Change Analysis</h2>
-            
+            <p className="text-gray-300 mb-6 text-lg">
+              This compares Spring semester (7PM-2AM schedule) with Fall semester (9PM-2AM schedule). Spring had significantly more rides because of the earlier start time.
+            </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Phase Hourly Distribution */}
               <Card className="bg-white/10 backdrop-blur-md border-white/20 lg:col-span-2">
@@ -357,6 +365,9 @@ export default function DetailedAnalysis() {
               <MapPin className="w-8 h-8" />
               4. Locations & Stops Analysis
             </h2>
+            <p className="text-gray-300 mb-6 text-lg">
+              This shows which locations are most popular for pickups and dropoffs, and how wait times vary depending on where students are.
+            </p>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Top Pickup Stops */}
@@ -424,6 +435,9 @@ export default function DetailedAnalysis() {
               <Users className="w-8 h-8" />
               5. Rider Experience
             </h2>
+            <p className="text-gray-300 mb-6 text-lg">
+              This focuses on the student experience - how long they wait, how long rides take, and how these metrics are distributed across all trips.
+            </p>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Cumulative Wait Time Distribution */}
@@ -469,7 +483,9 @@ export default function DetailedAnalysis() {
           {/* Section 6: Operations & Pooling */}
           <section>
             <h2 className="text-3xl font-bold text-white mb-6">6. Operations & Pooling</h2>
-            
+            <p className="text-gray-300 mb-6 text-lg">
+              This looks at ride pooling (when multiple students share a shuttle), driver workload, and vehicle usage patterns.
+            </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Pooled Rides Distribution */}
               <Card className="bg-white/10 backdrop-blur-md border-white/20">
@@ -555,6 +571,9 @@ export default function DetailedAnalysis() {
               <AlertTriangle className="w-8 h-8" />
               7. Cancellation Analysis
             </h2>
+            <p className="text-gray-300 mb-6 text-lg">
+              This analyzes cancellation patterns - which months, hours, and locations have the highest cancellation rates and why.
+            </p>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Cancellation Rate by Month */}
@@ -619,7 +638,9 @@ export default function DetailedAnalysis() {
           {/* Section 8: Booking Method (TripShot vs Dispatch Call) */}
           <section>
             <h2 className="text-3xl font-bold text-white mb-6">8. Booking Method: TripShot vs Dispatch Call</h2>
-            
+            <p className="text-gray-300 mb-6 text-lg">
+              This compares how students book rides - through the TripShot app (90%+) versus calling dispatch. App usage is dominant across all hours and months.
+            </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Overall Booking Method Split */}
               <Card className="bg-white/10 backdrop-blur-md border-white/20">

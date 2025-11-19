@@ -249,6 +249,9 @@ export default function Analytics() {
           <Card className="bg-black/40 border-green-900">
             <CardHeader>
               <CardTitle className="text-green-100">Monthly Ride Trends</CardTitle>
+              <p className="text-sm text-muted-foreground/80 mt-2 leading-relaxed">
+                This shows total rides each month, split between completed and cancelled trips. You can see how demand changes throughout the year.
+              </p>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
@@ -291,6 +294,9 @@ export default function Analytics() {
           <Card className="bg-black/40 border-green-900">
             <CardHeader>
               <CardTitle className="text-green-100">App vs Call Bookings by Month</CardTitle>
+              <p className="text-sm text-muted-foreground/80 mt-2 leading-relaxed">
+                This shows what percentage of students book through the TripShot app versus calling dispatch. Over 90% use the app.
+              </p>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
@@ -362,6 +368,9 @@ export default function Analytics() {
           <Card className="bg-black/40 border-green-900">
             <CardHeader>
               <CardTitle className="text-green-100">Ride Status Distribution</CardTitle>
+              <p className="text-sm text-muted-foreground/80 mt-2 leading-relaxed">
+                This pie chart shows the overall split between completed rides (66%) and cancelled rides (34%) across all months.
+              </p>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
@@ -478,6 +487,9 @@ export default function Analytics() {
         <Card className="bg-black/40 border-green-900 mb-8">
           <CardHeader>
             <CardTitle className="text-green-100">Ride Pooling Analysis</CardTitle>
+            <p className="text-sm text-muted-foreground/80 mt-2 leading-relaxed">
+              This shows how often multiple students share the same shuttle ride. About 30% of rides have 2 or more passengers.
+            </p>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -508,6 +520,9 @@ export default function Analytics() {
         <Card className="bg-black/40 border-green-900">
           <CardHeader>
             <CardTitle className="text-green-100">Key Insights & Findings</CardTitle>
+            <p className="text-sm text-muted-foreground/80 mt-2 leading-relaxed">
+              These are important patterns I noticed - cancellation rates, wait times, and efficiency metrics.
+            </p>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">

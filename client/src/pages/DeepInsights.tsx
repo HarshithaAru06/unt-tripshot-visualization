@@ -151,6 +151,9 @@ export default function DeepInsights() {
                 <TrendingUp className="h-5 w-5" />
                 Line Chart: Monthly Performance Trends
               </CardTitle>
+              <p className="text-sm text-muted-foreground/80 mt-2 leading-relaxed">
+                This tracks how key metrics changed over 8 months - total rides, completed rides, cancelled rides, and average wait times.
+              </p>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={350}>
@@ -181,6 +184,9 @@ export default function DeepInsights() {
                   <BarChart3 className="h-5 w-5" />
                   Vertical Bar: Day of Week Comparison
                 </CardTitle>
+                <p className="text-sm text-muted-foreground/80 mt-2 leading-relaxed">
+                  This compares total rides for each day of the week. Wednesday and Thursday are clearly the busiest days.
+                </p>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={300}>
@@ -207,6 +213,9 @@ export default function DeepInsights() {
                   <Activity className="h-5 w-5" />
                   Horizontal Bar: Top 10 Busiest Hours
                 </CardTitle>
+                <p className="text-sm text-muted-foreground/80 mt-2 leading-relaxed">
+                  This shows which hours had the most rides across all months. 10 PM, 11 PM, and midnight are the peak times.
+                </p>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={300}>
@@ -232,6 +241,9 @@ export default function DeepInsights() {
                 <BarChart3 className="h-5 w-5" />
                 Grouped Bar: Completion Rate by Day Across Months
               </CardTitle>
+              <p className="text-sm text-muted-foreground/80 mt-2 leading-relaxed">
+                This compares completion rates for each day of the week across different months. You can see which days consistently perform better.
+              </p>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={350}>
@@ -258,6 +270,9 @@ export default function DeepInsights() {
                 <Activity className="h-5 w-5" />
                 Stacked Bar: Ride Status Distribution by Hour
               </CardTitle>
+              <p className="text-sm text-muted-foreground/80 mt-2 leading-relaxed">
+                This shows how completed and cancelled rides stack up for each hour. You can see both the total volume and the split.
+              </p>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={350}>

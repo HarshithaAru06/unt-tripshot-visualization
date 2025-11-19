@@ -188,6 +188,9 @@ export default function ScheduleComparison() {
             <TrendingUp className="w-8 h-8" />
             Busiest Hours Comparison
           </h2>
+          <p className="text-gray-300 mb-6 text-lg">
+            These charts compare which hours were busiest in each semester. Spring (7PM-2AM) had more total rides, but the peak hours (10PM-midnight) are similar in both periods.
+          </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Jan-May Busiest Hours */}
             <Card className="bg-white/10 backdrop-blur-md border-white/20">
@@ -232,6 +235,9 @@ export default function ScheduleComparison() {
         {/* Wait Times Comparison */}
         <section className="mb-8">
           <h2 className="text-3xl font-bold text-white mb-6">Wait Times by Hour</h2>
+          <p className="text-gray-300 mb-6 text-lg">
+            This shows average wait times for each hour. Most students wait under 3 minutes regardless of when they book or which semester.
+          </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Jan-May Wait Times */}
             <Card className="bg-white/10 backdrop-blur-md border-white/20">
@@ -276,6 +282,9 @@ export default function ScheduleComparison() {
         {/* Top Locations Comparison */}
         <section className="mb-8">
           <h2 className="text-3xl font-bold text-white mb-6">Top Pickup Locations</h2>
+          <p className="text-gray-300 mb-6 text-lg">
+            These are the most popular pickup spots in each semester. Victory Hall and Eagle Landing are consistently at the top in both Spring and Fall.
+          </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Jan-May Top Pickups */}
             <Card className="bg-white/10 backdrop-blur-md border-white/20">
@@ -320,6 +329,9 @@ export default function ScheduleComparison() {
         {/* Cancellation Rates Comparison */}
         <section className="mb-8">
           <h2 className="text-3xl font-bold text-white mb-6">Cancellation Rates by Hour</h2>
+          <p className="text-gray-300 mb-6 text-lg">
+            This shows what percentage of rides get cancelled during each hour. Early evening hours (7-9PM) have higher cancellation rates than late night.
+          </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Jan-May Cancellations */}
             <Card className="bg-white/10 backdrop-blur-md border-white/20">

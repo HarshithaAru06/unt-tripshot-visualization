@@ -102,6 +102,9 @@ export default function StatsPanel({ monthData }: StatsPanelProps) {
         <Card className="bg-black/40 border-green-900">
           <CardHeader>
             <CardTitle className="text-green-100">Hourly Distribution</CardTitle>
+            <p className="text-sm text-green-300/80 mt-2">
+              This shows how many rides happened during each hour of the night. The peak hours are usually between 10 PM and midnight when students are heading home from studying or activities.
+            </p>
           </CardHeader>
           <CardContent>
             <ResponsiveContainer width="100%" height={250}>
@@ -152,6 +155,9 @@ export default function StatsPanel({ monthData }: StatsPanelProps) {
         <Card className="bg-black/40 border-green-900">
           <CardHeader>
             <CardTitle className="text-green-100">Day of Week Distribution</CardTitle>
+            <p className="text-sm text-green-300/80 mt-2">
+              This compares how busy each day of the week is. Wednesday and Thursday are usually the busiest because students have more evening activities and study sessions. Weekends are quieter.
+            </p>
           </CardHeader>
           <CardContent>
             <ResponsiveContainer width="100%" height={250}>
@@ -255,6 +261,9 @@ export default function StatsPanel({ monthData }: StatsPanelProps) {
         <Card className="bg-black/40 border-green-900">
           <CardHeader>
             <CardTitle className="text-green-100">Top Routes</CardTitle>
+            <p className="text-sm text-green-300/80 mt-2">
+              These are the most common routes students take. The number shows how many times that route was requested during this month.
+            </p>
           </CardHeader>
           <CardContent>
             <div className="space-y-2">
