@@ -359,42 +359,7 @@ export default function Analytics() {
             </CardContent>
           </Card>
 
-          <Card className="bg-black/40 border-green-900">
-            <CardHeader>
-              <CardTitle className="text-green-100">Ride Status Distribution</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ResponsiveContainer width="100%" height={300}>
-                <PieChart>
-                  <Pie
-                    data={rideStatusPieData}
-                    cx="50%"
-                    cy="50%"
-                    labelLine={false}
-                    label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(1)}%`}
-                    outerRadius={100}
-                    fill="#8884d8"
-                    dataKey="value"
-                  >
-                    {rideStatusPieData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={entry.color} />
-                    ))}
-                  </Pie>
-                  <Tooltip contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #00853E' }} />
-                </PieChart>
-              </ResponsiveContainer>
-              <div className="mt-4 space-y-2">
-                <div className="flex justify-between items-center p-2 bg-green-950/30 rounded">
-                  <span className="text-green-100">Completed Rides</span>
-                  <span className="text-green-400 font-bold">{totalCompleted.toLocaleString()} ({overallCompletionRate}%)</span>
-                </div>
-                <div className="flex justify-between items-center p-2 bg-red-950/30 rounded">
-                  <span className="text-red-100">Cancelled Rides</span>
-                  <span className="text-red-400 font-bold">{totalCancelled.toLocaleString()} ({((totalCancelled / totalRides) * 100).toFixed(2)}%)</span>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+
         </div>
 
         {/* Additional Insights */}

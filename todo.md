@@ -233,3 +233,10 @@
 - [x] Fix stacked bar to remove hours 13-18
 - [x] Regenerate all affected charts
 - [x] Push updates to GitHub
+
+## Additional Cleanup
+- [x] Remove Ride Status Distribution stacked bar chart (DeepInsights)
+- [x] Remove Ride Status Distribution pie chart (Analytics)
+- [x] Remove Top 10 Busiest Hours horizontal bar chart
+- [x] Remove Tableau-style heading near logo
+- [ ] Push changes to GitHub

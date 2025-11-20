@@ -200,29 +200,7 @@ export default function DeepInsights() {
               </CardContent>
             </Card>
 
-            {/* Horizontal Bar Chart */}
-            <Card className="bg-gradient-to-br from-cyan-900/50 to-cyan-800/30 border-cyan-700">
-              <CardHeader>
-                <CardTitle className="text-cyan-100 flex items-center gap-2">
-                  <Activity className="h-5 w-5" />
-                  Horizontal Bar: Top 10 Busiest Hours
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ResponsiveContainer width="100%" height={300}>
-                  <BarChart data={hourlyTotals} layout="vertical">
-                    <CartesianGrid strokeDasharray="3 3" stroke="#444" />
-                    <XAxis type="number" stroke="#67e8f9" />
-                    <YAxis type="category" dataKey="hour" stroke="#67e8f9" />
-                    <Tooltip 
-                      contentStyle={{ backgroundColor: '#1a1a2e', border: '1px solid #67e8f9' }}
-                      labelStyle={{ color: '#67e8f9' }}
-                    />
-                    <Bar dataKey="total" fill="#67e8f9" name="Total Rides" />
-                  </BarChart>
-                </ResponsiveContainer>
-              </CardContent>
-            </Card>
+
           </div>
 
           {/* Grouped Bar Chart */}
@@ -251,31 +229,7 @@ export default function DeepInsights() {
             </CardContent>
           </Card>
 
-          {/* Stacked Bar Chart */}
-          <Card className="mb-8 bg-gradient-to-br from-orange-900/50 to-orange-800/30 border-orange-700">
-            <CardHeader>
-              <CardTitle className="text-orange-100 flex items-center gap-2">
-                <Activity className="h-5 w-5" />
-                Stacked Bar: Ride Status Distribution by Hour
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ResponsiveContainer width="100%" height={350}>
-                <BarChart data={data.stacked_bar.filter(d => d.total > 0)}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#444" />
-                  <XAxis dataKey="hour" stroke="#fdba74" />
-                  <YAxis stroke="#fdba74" />
-                  <Tooltip 
-                    contentStyle={{ backgroundColor: '#1a1a2e', border: '1px solid #fdba74' }}
-                    labelStyle={{ color: '#fdba74' }}
-                  />
-                  <Legend />
-                  <Bar dataKey="completed" stackId="a" fill="#00ff00" name="Completed" />
-                  <Bar dataKey="cancelled" stackId="a" fill="#ff4444" name="Cancelled" />
-                </BarChart>
-              </ResponsiveContainer>
-            </CardContent>
-          </Card>
+
 
 
         </main>

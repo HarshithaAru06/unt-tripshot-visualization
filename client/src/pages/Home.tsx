@@ -171,7 +171,6 @@ export default function Home() {
             <img src={APP_LOGO} alt="UNT Logo" className="h-12 w-12 rounded-full object-cover" />
             <div>
               <h1 className="text-2xl font-bold text-green-100">{APP_TITLE}</h1>
-              <p className="text-sm text-green-400">Interactive 3D Data Visualization</p>
             </div>
           </div>
 
