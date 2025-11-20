@@ -18,20 +18,23 @@
 - [x] Create checkpoint for simplified version
 
 ## Rebuild with Report Structure (11 Charts)
-- [ ] Save current simplified version as checkpoint
-- [ ] Analyze night_flight_all_months.csv structure
-- [ ] Create data cleaning script matching report Function 1
-- [ ] Build Chart 1: Total Rides by Month
-- [ ] Build Chart 2: Total Rides by Day of Week
-- [ ] Build Chart 3: Rides by Hour of Night
-- [ ] Build Chart 4: Heatmap - Rides by Day and Hour
-- [ ] Build Chart 5: Top Pickup Stops
-- [ ] Build Chart 6: Top Dropoff Stops
-- [ ] Build Chart 7: Average Wait Time by Pickup Stop
-- [ ] Build Chart 8: Distribution of Wait Times
-- [ ] Build Chart 9: Trip Duration Overview
-- [ ] Build Chart 10: Monthly Ride Trend & Rides per Active Day
-- [ ] Build Chart 11: Rides per Driver
-- [ ] Create simple student-style webpage layout
-- [ ] Test all charts match report descriptions
-- [ ] Create final checkpoint
+- [x] Save current simplified version as checkpoint
+- [x] Analyze night_flight_all_months.csv structure
+- [x] Create data cleaning script matching report Function 1
+- [x] Fix Chart 1: Change to Spring vs Fall side-by-side comparison
+- [x] Fix hourly charts: Show only hours 19,20,21,22,23,0,1
+- [x] Implement Eagle Landing stop name combining
+- [x] Apply stop name cleaning throughout all charts
+- [x] Build Chart 2: Total Rides by Day of Week
+- [x] Build Chart 3: Rides by Hour of Night
+- [x] Build Chart 4: Heatmap - Rides by Day and Hour
+- [x] Build Chart 5: Top Pickup Stops
+- [x] Build Chart 6: Top Dropoff Stops
+- [x] Build Chart 7: Average Wait Time by Pickup Stop
+- [x] Build Chart 8: Distribution of Wait Times
+- [x] Build Chart 9: Trip Duration Overview
+- [x] Build Chart 10: Monthly Ride Trend & Rides per Active Day
+- [x] Build Chart 11: Rides per Driver
+- [x] Create simple student-style webpage layout
+- [x] Test all charts match report descriptions
+- [x] Create final checkpoint
