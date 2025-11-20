@@ -146,10 +146,10 @@
   ],
   "jan_may_booking_by_hour": [],
   "jan_may_stats": {
-    "total_rides": 9879,
-    "completed_rides": 0,
-    "cancelled_rides": 3528,
-    "avg_wait_minutes": 0
+    "total_rides": 6386,
+    "completed_rides": 6386,
+    "cancelled_rides": 3537,
+    "avg_wait_minutes": 2.4163795803319763
   },
   "aug_oct_hourly_rides": [
     {
@@ -282,9 +282,9 @@
   ],
   "aug_oct_booking_by_hour": [],
   "aug_oct_stats": {
-    "total_rides": 6489,
-    "completed_rides": 0,
-    "cancelled_rides": 2056,
-    "avg_wait_minutes": 0
+    "total_rides": 4464,
+    "completed_rides": 4464,
+    "cancelled_rides": 2086,
+    "avg_wait_minutes": 2.4670698924731185
   }
 }
