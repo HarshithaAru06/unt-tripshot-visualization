@@ -116,8 +116,7 @@ export default function DeepInsights() {
             <div className="flex items-center gap-4">
               <img src={APP_LOGO} alt="UNT Logo" className="h-12 w-12 rounded-full object-cover" />
               <div>
-                <h1 className="text-2xl font-bold text-purple-100">Deep Insights Dashboard</h1>
-                <p className="text-sm text-purple-400">Tableau-Style Advanced Visualizations</p>
+                <h1 className="text-2xl font-bold text-purple-100">Completed and Cancelled Rides</h1>
               </div>
             </div>
             <div className="flex gap-2">

@@ -245,3 +245,6 @@
 - [x] Fix average wait time showing 0
 - [x] Fix completed rides showing 0
 - [x] Push changes to GitHub
+
+## Title and Subtitle Updates
+- [x] Update Deep Insights page title to "Completed and Cancelled Rides" and remove Tableau-style subtitle
