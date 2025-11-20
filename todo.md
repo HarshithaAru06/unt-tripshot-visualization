@@ -239,4 +239,9 @@
 - [x] Remove Ride Status Distribution pie chart (Analytics)
 - [x] Remove Top 10 Busiest Hours horizontal bar chart
 - [x] Remove Tableau-style heading near logo
-- [ ] Push changes to GitHub
+- [x] Push changes to GitHub
+
+## Fix Schedule Comparison Data
+- [x] Fix average wait time showing 0
+- [x] Fix completed rides showing 0
+- [x] Push changes to GitHub
