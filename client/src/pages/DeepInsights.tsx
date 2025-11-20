@@ -10,6 +10,15 @@ import {
   Cell
 } from 'recharts';
 
+interface CancellationByBookingMethod {
+  booking_method: string;
+  completed: number;
+  cancelled: number;
+  total: number;
+  completion_rate: number;
+  cancellation_rate: number;
+}
+
 interface DeepInsightsData {
   heatmap: Array<{ day: string; hour: number; rides: number }>;
   scatter: Array<{ wait_time: number; ride_duration: number; status: string; month: string }>;
@@ -39,9 +48,11 @@ interface DeepInsightsData {
 
 export default function DeepInsights() {
   const [data, setData] = useState<DeepInsightsData | null>(null);
+  const [bookingMethodData, setBookingMethodData] = useState<CancellationByBookingMethod[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Load deep insights data
     fetch('/deep_insights_data.json')
       .then(res => res.json())
       .then(jsonData => {
@@ -51,6 +62,16 @@ export default function DeepInsights() {
       .catch(err => {
         console.error('Error loading deep insights:', err);
         setLoading(false);
+      });
+    
+    // Load booking method cancellation data
+    fetch('/cancellation_by_booking_method.json')
+      .then(res => res.json())
+      .then(jsonData => {
+        setBookingMethodData(jsonData.cancellation_by_booking_method);
+      })
+      .catch(err => {
+        console.error('Error loading booking method data:', err);
       });
   }, []);
 
@@ -228,8 +249,92 @@ export default function DeepInsights() {
             </CardContent>
           </Card>
 
+          {/* Cancellation Rate by Booking Method */}
+          {bookingMethodData.length > 0 && (
+            <Card className="mb-8 bg-gradient-to-br from-orange-900/50 to-orange-800/30 border-orange-700">
+              <CardHeader>
+                <CardTitle className="text-orange-100 flex items-center gap-2">
+                  <Activity className="h-5 w-5" />
+                  Cancellation Rate: Dispatch Calls vs TripShot App
+                </CardTitle>
+                <p className="text-sm text-orange-300 mt-2">
+                  Dispatch call bookings show {bookingMethodData[0]?.cancellation_rate}% cancellation rate compared to {bookingMethodData[1]?.cancellation_rate}% for app bookings - a {(bookingMethodData[1]?.cancellation_rate - bookingMethodData[0]?.cancellation_rate).toFixed(2)} percentage point difference
+                </p>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  {/* Bar Chart Comparison */}
+                  <div>
+                    <h3 className="text-orange-200 text-center mb-4 font-semibold">Cancellation Rate Comparison</h3>
+                    <ResponsiveContainer width="100%" height={300}>
+                      <BarChart data={bookingMethodData}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="#444" />
+                        <XAxis 
+                          dataKey="booking_method" 
+                          stroke="#fdba74"
+                          tick={{ fill: '#fdba74' }}
+                        />
+                        <YAxis 
+                          stroke="#fdba74"
+                          label={{ value: 'Cancellation Rate (%)', angle: -90, position: 'insideLeft', fill: '#fdba74' }}
+                        />
+                        <Tooltip 
+                          contentStyle={{ backgroundColor: '#1a1a2e', border: '1px solid #fdba74' }}
+                          labelStyle={{ color: '#fdba74' }}
+                          formatter={(value: any) => `${value}%`}
+                        />
+                        <Bar dataKey="cancellation_rate" name="Cancellation Rate">
+                          {bookingMethodData.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={index === 0 ? '#22c55e' : '#ef4444'} />
+                          ))}
+                        </Bar>
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </div>
 
+                  {/* Grouped Bar Chart - Completed vs Cancelled */}
+                  <div>
+                    <h3 className="text-orange-200 text-center mb-4 font-semibold">Completed vs Cancelled Rides</h3>
+                    <ResponsiveContainer width="100%" height={300}>
+                      <BarChart data={bookingMethodData}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="#444" />
+                        <XAxis 
+                          dataKey="booking_method" 
+                          stroke="#fdba74"
+                          tick={{ fill: '#fdba74' }}
+                        />
+                        <YAxis 
+                          stroke="#fdba74"
+                          label={{ value: 'Number of Rides', angle: -90, position: 'insideLeft', fill: '#fdba74' }}
+                        />
+                        <Tooltip 
+                          contentStyle={{ backgroundColor: '#1a1a2e', border: '1px solid #fdba74' }}
+                          labelStyle={{ color: '#fdba74' }}
+                        />
+                        <Legend />
+                        <Bar dataKey="completed" fill="#22c55e" name="Completed" />
+                        <Bar dataKey="cancelled" fill="#ef4444" name="Cancelled" />
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </div>
+                </div>
 
+                {/* Statistics Summary */}
+                <div className="grid grid-cols-2 gap-4 mt-6">
+                  {bookingMethodData.map((method, index) => (
+                    <div key={index} className="bg-black/40 p-4 rounded-lg border border-orange-700/50">
+                      <h4 className="text-orange-200 font-semibold mb-2">{method.booking_method}</h4>
+                      <div className="space-y-1 text-sm">
+                        <p className="text-gray-300">Total Rides: <span className="text-white font-semibold">{method.total.toLocaleString()}</span></p>
+                        <p className="text-green-400">Completed: <span className="text-white font-semibold">{method.completed.toLocaleString()}</span> ({method.completion_rate}%)</p>
+                        <p className="text-red-400">Cancelled: <span className="text-white font-semibold">{method.cancelled.toLocaleString()}</span> ({method.cancellation_rate}%)</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          )}
 
         </main>
       </div>

@@ -248,3 +248,9 @@
 
 ## Title and Subtitle Updates
 - [x] Update Deep Insights page title to "Completed and Cancelled Rides" and remove Tableau-style subtitle
+
+## Presentation Materials
+- [x] Create comprehensive technical presentation script with all technologies, functions, and hosting details
+
+## New Visualization Features
+- [x] Add chart showing cancellation rates by booking method (dispatch calls vs TripShot app)

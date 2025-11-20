@@ -1,0 +1,25 @@
+{
+  "cancellation_by_booking_method": [
+    {
+      "booking_method": "Dispatch Call",
+      "completed": 1055,
+      "cancelled": 482,
+      "total": 1537,
+      "completion_rate": 68.64,
+      "cancellation_rate": 31.36
+    },
+    {
+      "booking_method": "TripShot App",
+      "completed": 9823,
+      "cancelled": 5151,
+      "total": 14974,
+      "completion_rate": 65.6,
+      "cancellation_rate": 34.4
+    }
+  ],
+  "summary": {
+    "dispatch_cancellation_rate": 31.36,
+    "app_cancellation_rate": 34.4,
+    "difference": 3.04
+  }
+}
