@@ -67,7 +67,7 @@ export default function HomeReport() {
         header: true,
         skipEmptyLines: true,
         complete: (results) => {
-          // Keep ALL rows with valid timestamps, regardless of other empty fields
+          // Keep ALL rows with valid timestamps for completed rides
           const completedRides = results.data.filter(row => 
             row.State === 'Complete' && 
             row['Actual Pickup'] && 
@@ -75,8 +75,12 @@ export default function HomeReport() {
             row['Actual Dropoff'] && 
             row['Actual Dropoff'].trim() !== ''
           );
-          console.log(`Parsed ${results.data.length} total rows, ${completedRides.length} completed rides with valid timestamps`);
-          processAllCharts(completedRides);
+          
+          // Also get cancelled rides for Chart 12
+          const cancelledRides = results.data.filter(row => row.State === 'Cancelled');
+          
+          console.log(`Parsed ${results.data.length} total rows, ${completedRides.length} completed, ${cancelledRides.length} cancelled`);
+          processAllCharts(completedRides, cancelledRides);
         },
         error: (error: Error) => {
           console.error('CSV parsing error:', error);
@@ -89,7 +93,7 @@ export default function HomeReport() {
     }
   };
 
-  const processAllCharts = (data: RideData[]) => {
+  const processAllCharts = (data: RideData[], cancelledData: RideData[] = []) => {
     console.log(`Processing ${data.length} completed rides`);
     
     // Process each ride with calculated fields
@@ -239,6 +243,22 @@ export default function HomeReport() {
       .slice(0, 10)
       .map(([driver, count]) => ({ driver: `Driver ${Object.keys(driverCounts).indexOf(driver) + 1}`, count }));
 
+    // Chart 12: Cancelled Rate per Month
+    const cancelledRateChart = monthOrder.map(month => {
+      const completed = processedData.filter(d => d.Month === month).length;
+      const cancelled = cancelledData.filter(d => d.Month === month).length;
+      const total = completed + cancelled;
+      const rate = total > 0 ? (cancelled / total) : 0;
+      
+      return {
+        month,
+        completed,
+        cancelled,
+        rate: rate * 100, // Convert to percentage
+        rateDecimal: rate
+      };
+    }).filter(d => d.completed > 0 || d.cancelled > 0); // Only months with data
+
     setCharts({
       semesterChart,
       dayChart,
@@ -250,7 +270,8 @@ export default function HomeReport() {
       waitBins,
       tripBins,
       monthlyTrend,
-      driverChart
+      driverChart,
+      cancelledRateChart
     });
     
     setStats({
@@ -520,6 +541,43 @@ export default function HomeReport() {
               <YAxis />
               <Tooltip />
               <Bar dataKey="count" fill="#00853E" />
+            </BarChart>
+          </ResponsiveContainer>
+        </section>
+
+        {/* Chart 12: Cancelled Rate per Month */}
+        <section className="bg-white rounded-lg shadow-sm p-6">
+          <h2 className="text-xl font-bold mb-3 text-center">7. Service Reliability</h2>
+          
+          <h3 className="text-lg font-bold mb-2">Chart 12 – Cancelled Ride Rate per Month</h3>
+          <p className="text-sm text-gray-600 mb-4">
+            This chart shows the cancellation rate for each month. A higher rate means more rides were cancelled compared to completed rides.
+          </p>
+          <ResponsiveContainer width="100%" height={350}>
+            <BarChart data={charts.cancelledRateChart} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+              <XAxis dataKey="month" tick={{ fontSize: 11 }} />
+              <YAxis 
+                label={{ value: 'Cancelled Rate (%)', angle: -90, position: 'insideLeft', style: { fontSize: 12 } }}
+                domain={[0, 100]}
+              />
+              <Tooltip 
+                content={({ active, payload }) => {
+                  if (active && payload && payload.length) {
+                    const data = payload[0].payload;
+                    return (
+                      <div className="bg-white p-3 border border-gray-300 rounded shadow-sm text-xs">
+                        <p className="font-semibold mb-1">{data.month}</p>
+                        <p className="text-green-700">Completed: {data.completed.toLocaleString()}</p>
+                        <p className="text-orange-600">Cancelled: {data.cancelled.toLocaleString()}</p>
+                        <p className="font-semibold mt-1">Cancelled Rate: {data.rate.toFixed(1)}%</p>
+                      </div>
+                    );
+                  }
+                  return null;
+                }}
+              />
+              <Bar dataKey="rate" fill="#E07B39" barSize={40} />
             </BarChart>
           </ResponsiveContainer>
         </section>

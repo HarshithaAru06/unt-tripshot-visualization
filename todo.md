@@ -38,3 +38,10 @@
 - [x] Create simple student-style webpage layout
 - [x] Test all charts match report descriptions
 - [x] Create final checkpoint
+
+## Add Chart 12 - Cancelled Ride Rate
+- [x] Calculate cancelled rate per month (cancelled / (cancelled + completed))
+- [x] Create bar chart with slim bars in soft red/orange
+- [x] Add custom tooltip showing completed, cancelled, and rate
+- [x] Add under new "7. Service Reliability" section
+- [x] Test and create checkpoint
