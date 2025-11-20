@@ -277,11 +277,7 @@ export default function DeepInsights() {
             </CardContent>
           </Card>
 
-          {/* Footer */}
-          <footer className="text-center py-6 text-purple-400 text-sm">
-            <p>Advanced data visualization for UNT Transportation Services • Tableau-style analytics</p>
-            <p className="mt-2 text-purple-300">Harshitha Arugonda - Comprehensive Data Analysis</p>
-          </footer>
+
         </main>
       </div>
     </div>

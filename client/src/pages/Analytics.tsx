@@ -731,20 +731,7 @@ export default function Analytics() {
         </Card>
       </main>
 
-      {/* Footer */}
-      <footer className="mt-12 py-6 border-t border-green-900 bg-black/60">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-green-400 text-sm">
-            Comprehensive analysis of UNT Night Flight TripShot service • {data.monthly_stats.length} months • {totalRides.toLocaleString()} total rides
-          </p>
-          <p className="text-green-600 text-xs mt-2">
-            Built with React, Google Maps, and Recharts • © 2025 UNT Transportation Services
-          </p>
-          <p className="text-green-500 text-sm mt-3 font-semibold">
-            Harshitha Arugonda - Comprehensive Data Analysis
-          </p>
-        </div>
-      </footer>
+
       </div> {/* Close z-10 div */}
     </div>
   );

@@ -256,24 +256,16 @@
       "total_rides": 3115
     },
     {
+      "stop": "Eagle Landing (combined)",
+      "total_rides": 2643
+    },
+    {
       "stop": "Lot 20 Resident",
       "total_rides": 1137
     },
     {
       "stop": "Maple Hall/Crumley Hall - Lot 24",
       "total_rides": 1077
-    },
-    {
-      "stop": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
-      "total_rides": 986
-    },
-    {
-      "stop": "Eagle Landing, BLB, Kerr/Joe Green",
-      "total_rides": 960
-    },
-    {
-      "stop": "Eagle Landing, Kerr, Joe Green",
-      "total_rides": 697
     },
     {
       "stop": "Crumley Hall",
@@ -298,12 +290,8 @@
       "total_rides": 4178
     },
     {
-      "stop": "Eagle Landing, BLB, Kerr/Joe Green",
-      "total_rides": 931
-    },
-    {
-      "stop": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
-      "total_rides": 693
+      "stop": "Eagle Landing (combined)",
+      "total_rides": 1624
     },
     {
       "stop": "Santa Fe Square",

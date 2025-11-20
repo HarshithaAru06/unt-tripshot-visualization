@@ -286,17 +286,7 @@ export default function Home() {
         </div>
 
         {/* Footer Info */}
-        <div className="mt-8 text-center">
-          <p className="text-green-400 text-sm">
-            Data visualization for UNT Transportation Services • {data.months.length} months analyzed • {data.summary.total_rides.toLocaleString()} total rides
-          </p>
-          <p className="text-green-600 text-xs mt-2">
-            Built with React, Google Maps, and Recharts • © 2025 UNT Transportation Services
-          </p>
-          <p className="text-green-500 text-sm mt-3 font-semibold">
-            Harshitha Arugonda - Comprehensive Data Analysis
-          </p>
-        </div>
+
       </main>
       </div> {/* Close z-10 div */}
     </div>

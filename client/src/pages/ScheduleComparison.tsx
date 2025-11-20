@@ -362,17 +362,7 @@ export default function ScheduleComparison() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-slate-900/50 backdrop-blur-md border-t border-white/10 py-6 mt-12">
-        <div className="container mx-auto px-6 text-center">
-          <p className="text-gray-400">
-            Schedule comparison for UNT Transportation Services • Filtered: 1PM-6PM excluded • Eagle Landing combined
-          </p>
-          <p className="text-emerald-400 font-semibold mt-2">
-            Harshitha Arugonda - Comprehensive Data Analysis
-          </p>
-        </div>
-      </footer>
+
     </div>
   );
 }

@@ -2,7 +2,7 @@ export { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
 
 export const APP_TITLE = import.meta.env.VITE_APP_TITLE || "UNT TripShot Night Flight";
 
-export const APP_LOGO = "/tripshot_assets/j8m1hlwS1osz.jpg";
+export const APP_LOGO = "/unt-shuttle.jpeg";
 
 // Generate login URL at runtime so redirect URI reflects the current origin.
 export const getLoginUrl = () => {

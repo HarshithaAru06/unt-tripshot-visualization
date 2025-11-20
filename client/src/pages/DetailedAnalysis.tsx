@@ -528,24 +528,7 @@ export default function DetailedAnalysis() {
                 </CardContent>
               </Card>
 
-              {/* Vehicle Usage */}
-              <Card className="bg-white/10 backdrop-blur-md border-white/20">
-                <CardHeader>
-                  <CardTitle className="text-white">Vehicle Fleet Usage</CardTitle>
-                  <CardDescription className="text-gray-300">Vertical Bar Chart</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ResponsiveContainer width="100%" height={400}>
-                    <BarChart data={data.vehicle_usage}>
-                      <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                      <XAxis dataKey="vehicle" stroke="#fff" angle={-45} textAnchor="end" height={80} />
-                      <YAxis stroke="#fff" />
-                      <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} />
-                      <Bar dataKey="total_rides" fill={COLORS.primary} />
-                    </BarChart>
-                  </ResponsiveContainer>
-                </CardContent>
-              </Card>
+
             </div>
           </section>
 
@@ -689,17 +672,7 @@ export default function DetailedAnalysis() {
           </section>
         </main>
 
-        {/* Footer */}
-        <footer className="bg-black/30 backdrop-blur-sm border-t border-white/10 py-6 mt-12">
-          <div className="container mx-auto px-4 text-center">
-            <p className="text-gray-300">
-              <span className="font-semibold text-white">Harshitha Arugonda</span> - Comprehensive Data Analysis
-            </p>
-            <p className="text-sm text-gray-400 mt-2">
-              UNT TripShot Night Flight Visualization | React 19, Recharts, Tailwind CSS 4
-            </p>
-          </div>
-        </footer>
+
       </div>
     </div>
   );
