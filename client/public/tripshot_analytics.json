@@ -1,0 +1,557 @@
+{
+  "monthly_stats": [
+    {
+      "month": "January",
+      "total_rides": 1178,
+      "completed_rides": 765,
+      "cancelled_rides": 413,
+      "completion_rate": 64.94,
+      "riders_with_app": 1178,
+      "riders_via_call": 0,
+      "app_adoption_rate": 100.0,
+      "pooled_rides": 263,
+      "avg_pool_size": 1.26,
+      "unique_app_riders": 381,
+      "unique_drivers": 10,
+      "unique_vehicles": 3,
+      "peak_hour": 0,
+      "peak_day": "Thursday",
+      "avg_wait_time": 3.35,
+      "avg_ride_duration": 6.16,
+      "hourly_distribution": {
+        "0": 221,
+        "23": 199,
+        "22": 196,
+        "19": 148,
+        "21": 136,
+        "1": 133,
+        "20": 132,
+        "17": 7,
+        "18": 6
+      },
+      "daily_distribution": {
+        "Thursday": 233,
+        "Friday": 190,
+        "Wednesday": 184,
+        "Monday": 154,
+        "Tuesday": 152,
+        "Sunday": 151,
+        "Saturday": 114
+      }
+    },
+    {
+      "month": "February",
+      "total_rides": 2531,
+      "completed_rides": 1608,
+      "cancelled_rides": 923,
+      "completion_rate": 63.53,
+      "riders_with_app": 2372,
+      "riders_via_call": 159,
+      "app_adoption_rate": 93.72,
+      "pooled_rides": 733,
+      "avg_pool_size": 1.5,
+      "unique_app_riders": 381,
+      "unique_drivers": 9,
+      "unique_vehicles": 5,
+      "peak_hour": 23,
+      "peak_day": "Thursday",
+      "avg_wait_time": 3.47,
+      "avg_ride_duration": 6.09,
+      "hourly_distribution": {
+        "23": 465,
+        "22": 422,
+        "0": 419,
+        "21": 343,
+        "19": 318,
+        "20": 286,
+        "1": 270,
+        "13": 5,
+        "14": 3
+      },
+      "daily_distribution": {
+        "Thursday": 481,
+        "Friday": 416,
+        "Monday": 386,
+        "Wednesday": 374,
+        "Tuesday": 337,
+        "Sunday": 299,
+        "Saturday": 238
+      }
+    },
+    {
+      "month": "March",
+      "total_rides": 2384,
+      "completed_rides": 1524,
+      "cancelled_rides": 860,
+      "completion_rate": 63.93,
+      "riders_with_app": 2202,
+      "riders_via_call": 182,
+      "app_adoption_rate": 92.37,
+      "pooled_rides": 747,
+      "avg_pool_size": 1.4,
+      "unique_app_riders": 336,
+      "unique_drivers": 12,
+      "unique_vehicles": 4,
+      "peak_hour": 22,
+      "peak_day": "Monday",
+      "avg_wait_time": 3.55,
+      "avg_ride_duration": 6.29,
+      "hourly_distribution": {
+        "22": 467,
+        "23": 400,
+        "0": 389,
+        "21": 353,
+        "20": 302,
+        "19": 245,
+        "1": 205,
+        "18": 10,
+        "17": 6,
+        "16": 5,
+        "15": 2
+      },
+      "daily_distribution": {
+        "Monday": 432,
+        "Thursday": 415,
+        "Tuesday": 401,
+        "Wednesday": 369,
+        "Sunday": 313,
+        "Friday": 241,
+        "Saturday": 213
+      }
+    },
+    {
+      "month": "April",
+      "total_rides": 3156,
+      "completed_rides": 2085,
+      "cancelled_rides": 1071,
+      "completion_rate": 66.06,
+      "riders_with_app": 2935,
+      "riders_via_call": 221,
+      "app_adoption_rate": 93.0,
+      "pooled_rides": 1040,
+      "avg_pool_size": 1.49,
+      "unique_app_riders": 331,
+      "unique_drivers": 10,
+      "unique_vehicles": 3,
+      "peak_hour": 22,
+      "peak_day": "Wednesday",
+      "avg_wait_time": 3.0,
+      "avg_ride_duration": 6.14,
+      "hourly_distribution": {
+        "22": 584,
+        "23": 540,
+        "0": 517,
+        "21": 478,
+        "19": 352,
+        "20": 351,
+        "1": 334
+      },
+      "daily_distribution": {
+        "Wednesday": 577,
+        "Tuesday": 562,
+        "Monday": 476,
+        "Thursday": 453,
+        "Saturday": 374,
+        "Friday": 365,
+        "Sunday": 349
+      }
+    },
+    {
+      "month": "May",
+      "total_rides": 674,
+      "completed_rides": 404,
+      "cancelled_rides": 270,
+      "completion_rate": 59.94,
+      "riders_with_app": 630,
+      "riders_via_call": 44,
+      "app_adoption_rate": 93.47,
+      "pooled_rides": 227,
+      "avg_pool_size": 1.51,
+      "unique_app_riders": 181,
+      "unique_drivers": 10,
+      "unique_vehicles": 4,
+      "peak_hour": 22,
+      "peak_day": "Thursday",
+      "avg_wait_time": 3.5,
+      "avg_ride_duration": 6.74,
+      "hourly_distribution": {
+        "22": 127,
+        "21": 109,
+        "0": 100,
+        "23": 98,
+        "20": 93,
+        "19": 90,
+        "1": 57
+      },
+      "daily_distribution": {
+        "Thursday": 123,
+        "Tuesday": 119,
+        "Friday": 114,
+        "Wednesday": 81,
+        "Sunday": 81,
+        "Saturday": 78,
+        "Monday": 78
+      }
+    },
+    {
+      "month": "August",
+      "total_rides": 1216,
+      "completed_rides": 758,
+      "cancelled_rides": 458,
+      "completion_rate": 62.34,
+      "riders_with_app": 1068,
+      "riders_via_call": 148,
+      "app_adoption_rate": 87.83,
+      "pooled_rides": 213,
+      "avg_pool_size": 1.19,
+      "unique_app_riders": 230,
+      "unique_drivers": 16,
+      "unique_vehicles": 5,
+      "peak_hour": 22,
+      "peak_day": "Wednesday",
+      "avg_wait_time": 3.43,
+      "avg_ride_duration": 6.05,
+      "hourly_distribution": {
+        "22": 295,
+        "21": 284,
+        "0": 230,
+        "23": 204,
+        "1": 142,
+        "18": 22,
+        "17": 13,
+        "20": 12,
+        "19": 12,
+        "16": 2
+      },
+      "daily_distribution": {
+        "Wednesday": 190,
+        "Thursday": 187,
+        "Monday": 185,
+        "Tuesday": 178,
+        "Sunday": 167,
+        "Friday": 155,
+        "Saturday": 154
+      }
+    },
+    {
+      "month": "September",
+      "total_rides": 2408,
+      "completed_rides": 1712,
+      "cancelled_rides": 696,
+      "completion_rate": 71.1,
+      "riders_with_app": 2073,
+      "riders_via_call": 335,
+      "app_adoption_rate": 86.09,
+      "pooled_rides": 679,
+      "avg_pool_size": 1.35,
+      "unique_app_riders": 301,
+      "unique_drivers": 14,
+      "unique_vehicles": 4,
+      "peak_hour": 22,
+      "peak_day": "Monday",
+      "avg_wait_time": 2.23,
+      "avg_ride_duration": 5.64,
+      "hourly_distribution": {
+        "22": 581,
+        "21": 555,
+        "23": 492,
+        "0": 447,
+        "1": 333
+      },
+      "daily_distribution": {
+        "Monday": 442,
+        "Tuesday": 431,
+        "Wednesday": 380,
+        "Thursday": 355,
+        "Sunday": 293,
+        "Friday": 270,
+        "Saturday": 237
+      }
+    },
+    {
+      "month": "October",
+      "total_rides": 2964,
+      "completed_rides": 2022,
+      "cancelled_rides": 942,
+      "completion_rate": 68.22,
+      "riders_with_app": 2512,
+      "riders_via_call": 452,
+      "app_adoption_rate": 84.75,
+      "pooled_rides": 987,
+      "avg_pool_size": 1.59,
+      "unique_app_riders": 360,
+      "unique_drivers": 14,
+      "unique_vehicles": 5,
+      "peak_hour": 21,
+      "peak_day": "Wednesday",
+      "avg_wait_time": 2.63,
+      "avg_ride_duration": 6.09,
+      "hourly_distribution": {
+        "21": 715,
+        "23": 656,
+        "0": 632,
+        "22": 617,
+        "1": 344
+      },
+      "daily_distribution": {
+        "Wednesday": 592,
+        "Thursday": 585,
+        "Friday": 423,
+        "Tuesday": 410,
+        "Monday": 361,
+        "Sunday": 305,
+        "Saturday": 288
+      }
+    }
+  ],
+  "rider_analysis": {
+    "total_unique_riders": 1330,
+    "top_riders": [
+      {
+        "name": "Soumendra Banerjee",
+        "rides": 276
+      },
+      {
+        "name": "Lucy Ntabo",
+        "rides": 181
+      },
+      {
+        "name": "Ariana Maple",
+        "rides": 158
+      },
+      {
+        "name": "Amadou Sylla",
+        "rides": 152
+      },
+      {
+        "name": "Osajele Igene",
+        "rides": 150
+      },
+      {
+        "name": "Derrick McCruse",
+        "rides": 132
+      },
+      {
+        "name": "Lauren Magutu",
+        "rides": 129
+      },
+      {
+        "name": "Adaeze Ibe",
+        "rides": 114
+      },
+      {
+        "name": "Senaya Debesai",
+        "rides": 108
+      },
+      {
+        "name": "Laiya Whitaker",
+        "rides": 107
+      },
+      {
+        "name": "Kai Jaime-Poovey",
+        "rides": 102
+      },
+      {
+        "name": "Amare Della Torre",
+        "rides": 101
+      },
+      {
+        "name": "Roman Grant",
+        "rides": 100
+      },
+      {
+        "name": "Anthony Muchina",
+        "rides": 98
+      },
+      {
+        "name": "Desire Ndabunguye",
+        "rides": 92
+      },
+      {
+        "name": "Sage Smith",
+        "rides": 92
+      },
+      {
+        "name": "Traveonn Howell-Hailes",
+        "rides": 92
+      },
+      {
+        "name": "Jacori Turner",
+        "rides": 89
+      },
+      {
+        "name": "Mark Hernandez",
+        "rides": 87
+      },
+      {
+        "name": "Trteel Nagib",
+        "rides": 84
+      }
+    ],
+    "frequent_riders": 363,
+    "occasional_riders": 967
+  },
+  "driver_analysis": {
+    "total_drivers": 23,
+    "top_drivers": [
+      {
+        "name": "Adeeb Farhan Mohammed",
+        "rides": 2269
+      },
+      {
+        "name": "Tanuj Manchikanti",
+        "rides": 1640
+      },
+      {
+        "name": "Gopi Muppuri",
+        "rides": 1611
+      },
+      {
+        "name": "Kshithij Reddy Nalla",
+        "rides": 1155
+      },
+      {
+        "name": "Afeez Shaik",
+        "rides": 1112
+      },
+      {
+        "name": "Uday Vananapu",
+        "rides": 1084
+      },
+      {
+        "name": "Sharvan Samala",
+        "rides": 902
+      },
+      {
+        "name": "Karthiek Sree Perumbuduru",
+        "rides": 864
+      },
+      {
+        "name": "Neel Patel",
+        "rides": 841
+      },
+      {
+        "name": "Priyabrata Behera",
+        "rides": 824
+      }
+    ],
+    "avg_rides_per_driver": 717.57
+  },
+  "vehicle_analysis": {
+    "total_vehicles": 6,
+    "vehicle_usage": [
+      {
+        "vehicle": "Night Flight Shuttle 509",
+        "rides": 5623
+      },
+      {
+        "vehicle": "Night Flight Shuttle 512",
+        "rides": 5061
+      },
+      {
+        "vehicle": "Night Flight Shuttle 511",
+        "rides": 4564
+      },
+      {
+        "vehicle": "Night Flight Shuttle 529",
+        "rides": 688
+      },
+      {
+        "vehicle": "Night Flight Shuttle 525",
+        "rides": 338
+      },
+      {
+        "vehicle": "Night Flight Shuttle 529 (DELETED)",
+        "rides": 230
+      }
+    ],
+    "avg_rides_per_vehicle": 2750.67
+  },
+  "time_analysis": {},
+  "advanced_insights": {
+    "total_app_bookings": 14970,
+    "total_call_bookings": 1541,
+    "app_adoption_percentage": 90.67,
+    "app_cancellation_rate": 36.26,
+    "call_cancellation_rate": 13.3,
+    "cancellation_difference": -22.96,
+    "busiest_hour": 22,
+    "busiest_day": 3,
+    "hourly_pattern": {
+      "0": 2955,
+      "1": 1818,
+      "13": 5,
+      "14": 3,
+      "15": 2,
+      "16": 7,
+      "17": 26,
+      "18": 38,
+      "19": 1165,
+      "20": 1176,
+      "21": 2973,
+      "22": 3289,
+      "23": 3054
+    },
+    "daily_pattern": {
+      "0": 2514,
+      "1": 2590,
+      "2": 2747,
+      "3": 2832,
+      "4": 2174,
+      "5": 1696,
+      "6": 1958
+    },
+    "top_hour_day_combos": [
+      {
+        "DayOfWeek": 2,
+        "Hour": 23,
+        "count": 566
+      },
+      {
+        "DayOfWeek": 3,
+        "Hour": 22,
+        "count": 545
+      },
+      {
+        "DayOfWeek": 3,
+        "Hour": 0,
+        "count": 533
+      },
+      {
+        "DayOfWeek": 0,
+        "Hour": 22,
+        "count": 526
+      },
+      {
+        "DayOfWeek": 3,
+        "Hour": 23,
+        "count": 521
+      },
+      {
+        "DayOfWeek": 2,
+        "Hour": 22,
+        "count": 520
+      },
+      {
+        "DayOfWeek": 2,
+        "Hour": 21,
+        "count": 520
+      },
+      {
+        "DayOfWeek": 1,
+        "Hour": 22,
+        "count": 520
+      },
+      {
+        "DayOfWeek": 4,
+        "Hour": 0,
+        "count": 512
+      },
+      {
+        "DayOfWeek": 3,
+        "Hour": 21,
+        "count": 510
+      }
+    ]
+  }
+}

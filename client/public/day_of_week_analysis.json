@@ -1,0 +1,74 @@
+{
+  "january": {
+    "Monday": 152,
+    "Tuesday": 159,
+    "Wednesday": 235,
+    "Thursday": 211,
+    "Friday": 167,
+    "Saturday": 94,
+    "Sunday": 160
+  },
+  "february": {
+    "Monday": 388,
+    "Tuesday": 333,
+    "Wednesday": 392,
+    "Thursday": 492,
+    "Friday": 342,
+    "Saturday": 236,
+    "Sunday": 348
+  },
+  "march": {
+    "Monday": 450,
+    "Tuesday": 368,
+    "Wednesday": 392,
+    "Thursday": 380,
+    "Friday": 217,
+    "Saturday": 197,
+    "Sunday": 380
+  },
+  "april": {
+    "Monday": 482,
+    "Tuesday": 597,
+    "Wednesday": 574,
+    "Thursday": 406,
+    "Friday": 375,
+    "Saturday": 307,
+    "Sunday": 415
+  },
+  "may": {
+    "Monday": 92,
+    "Tuesday": 105,
+    "Wednesday": 89,
+    "Thursday": 127,
+    "Friday": 113,
+    "Saturday": 60,
+    "Sunday": 88
+  },
+  "august": {
+    "Monday": 181,
+    "Tuesday": 179,
+    "Wednesday": 172,
+    "Thursday": 212,
+    "Friday": 145,
+    "Saturday": 121,
+    "Sunday": 206
+  },
+  "september": {
+    "Monday": 453,
+    "Tuesday": 433,
+    "Wednesday": 377,
+    "Thursday": 357,
+    "Friday": 255,
+    "Saturday": 214,
+    "Sunday": 319
+  },
+  "october": {
+    "Monday": 408,
+    "Tuesday": 439,
+    "Wednesday": 579,
+    "Thursday": 585,
+    "Friday": 385,
+    "Saturday": 209,
+    "Sunday": 359
+  }
+}
