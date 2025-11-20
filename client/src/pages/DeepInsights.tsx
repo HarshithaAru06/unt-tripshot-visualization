@@ -262,61 +262,28 @@ export default function DeepInsights() {
                 </p>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                  {/* Bar Chart Comparison */}
-                  <div>
-                    <h3 className="text-orange-200 text-center mb-4 font-semibold">Cancellation Rate Comparison</h3>
-                    <ResponsiveContainer width="100%" height={300}>
-                      <BarChart data={bookingMethodData}>
-                        <CartesianGrid strokeDasharray="3 3" stroke="#444" />
-                        <XAxis 
-                          dataKey="booking_method" 
-                          stroke="#fdba74"
-                          tick={{ fill: '#fdba74' }}
-                        />
-                        <YAxis 
-                          stroke="#fdba74"
-                          label={{ value: 'Cancellation Rate (%)', angle: -90, position: 'insideLeft', fill: '#fdba74' }}
-                        />
-                        <Tooltip 
-                          contentStyle={{ backgroundColor: '#1a1a2e', border: '1px solid #fdba74' }}
-                          labelStyle={{ color: '#fdba74' }}
-                          formatter={(value: any) => `${value}%`}
-                        />
-                        <Bar dataKey="cancellation_rate" name="Cancellation Rate">
-                          {bookingMethodData.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={index === 0 ? '#22c55e' : '#ef4444'} />
-                          ))}
-                        </Bar>
-                      </BarChart>
-                    </ResponsiveContainer>
-                  </div>
-
-                  {/* Grouped Bar Chart - Completed vs Cancelled */}
-                  <div>
-                    <h3 className="text-orange-200 text-center mb-4 font-semibold">Completed vs Cancelled Rides</h3>
-                    <ResponsiveContainer width="100%" height={300}>
-                      <BarChart data={bookingMethodData}>
-                        <CartesianGrid strokeDasharray="3 3" stroke="#444" />
-                        <XAxis 
-                          dataKey="booking_method" 
-                          stroke="#fdba74"
-                          tick={{ fill: '#fdba74' }}
-                        />
-                        <YAxis 
-                          stroke="#fdba74"
-                          label={{ value: 'Number of Rides', angle: -90, position: 'insideLeft', fill: '#fdba74' }}
-                        />
-                        <Tooltip 
-                          contentStyle={{ backgroundColor: '#1a1a2e', border: '1px solid #fdba74' }}
-                          labelStyle={{ color: '#fdba74' }}
-                        />
-                        <Legend />
-                        <Bar dataKey="completed" fill="#22c55e" name="Completed" />
-                        <Bar dataKey="cancelled" fill="#ef4444" name="Cancelled" />
-                      </BarChart>
-                    </ResponsiveContainer>
-                  </div>
+                {/* Simple Bar Chart - Cancelled Rides Only */}
+                <div className="max-w-3xl mx-auto">
+                  <ResponsiveContainer width="100%" height={350}>
+                    <BarChart data={bookingMethodData}>
+                      <CartesianGrid strokeDasharray="3 3" stroke="#444" />
+                      <XAxis 
+                        dataKey="booking_method" 
+                        stroke="#fdba74"
+                        tick={{ fill: '#fdba74', fontSize: 14 }}
+                      />
+                      <YAxis 
+                        stroke="#fdba74"
+                        label={{ value: 'Number of Cancelled Rides', angle: -90, position: 'insideLeft', fill: '#fdba74' }}
+                      />
+                      <Tooltip 
+                        contentStyle={{ backgroundColor: '#1a1a2e', border: '1px solid #fdba74' }}
+                        labelStyle={{ color: '#fdba74' }}
+                        formatter={(value: any) => `${value.toLocaleString()} cancelled rides`}
+                      />
+                      <Bar dataKey="cancelled" name="Cancelled Rides" fill="#ef4444" />
+                    </BarChart>
+                  </ResponsiveContainer>
                 </div>
 
                 {/* Statistics Summary */}

@@ -254,3 +254,6 @@
 
 ## New Visualization Features
 - [x] Add chart showing cancellation rates by booking method (dispatch calls vs TripShot app)
+
+## Chart Updates
+- [x] Add simple bar chart comparing cancelled rides between dispatch calls and TripShot app
