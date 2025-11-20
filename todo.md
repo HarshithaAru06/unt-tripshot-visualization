@@ -232,3 +232,13 @@
 - [x] Add explanatory text to Schedule Comparison page charts
 - [x] Test all explanations display correctly
 - [x] Create final checkpoint with explanations
+
+## Simplify to HTML/CSS/JS with Tableau-style charts
+
+- [x] Generate Tableau-style chart images using matplotlib
+- [x] Create simplified React structure with static charts
+- [x] Add basic styling (minimal, academic look)
+- [x] Add simple month navigation
+- [x] Remove footer text and extra explanations
+- [x] Test simplified version
+- [x] Create checkpoint for simplified version
