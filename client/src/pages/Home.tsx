@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { APP_LOGO, APP_TITLE } from '@/const';
 import GoogleMaps3D from '@/components/GoogleMaps3D';
+import LeafletMap from '@/components/LeafletMap';
 import StatsPanel from '@/components/StatsPanel';
 import MonthSelector from '@/components/MonthSelector';
 import { Button } from '@/components/ui/button';
@@ -265,10 +266,22 @@ export default function Home() {
                 />
               </div>
               <div className="h-[600px]">
-                <GoogleMaps3D
-                  locations={locationsArray}
-                  routes={topRoutes}
-                />
+                {import.meta.env.DEV ? (
+                  <LeafletMap
+                    locations={locationsArray.map(loc => ({
+                      name: loc.name,
+                      lat: loc.lat,
+                      lng: loc.lng,
+                      count: loc.pickups + loc.dropoffs
+                    }))}
+                    routes={currentMonth.top_routes}
+                  />
+                ) : (
+                  <GoogleMaps3D
+                    locations={locationsArray}
+                    routes={topRoutes}
+                  />
+                )}
               </div>
               <div className="p-4 bg-black/60 border-t border-green-900">
                 <p className="text-sm text-green-400 text-center">

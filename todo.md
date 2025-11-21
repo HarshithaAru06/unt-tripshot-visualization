@@ -257,3 +257,10 @@
 
 ## Chart Updates
 - [x] Add simple bar chart comparing cancelled rides between dispatch calls and TripShot app
+
+## Map Fixes for Local Development
+- [x] Fix Leaflet CSS loading in local development
+- [x] Fix marker icon paths for dev mode
+- [x] Ensure MapContainer has fixed height
+- [x] Verify all UNT campus coordinates are accurate
+- [x] Test zoom, drag, and popup functionality
