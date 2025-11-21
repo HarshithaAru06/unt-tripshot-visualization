@@ -270,3 +270,8 @@
 - [x] Replace all placeholder coordinates with real Night Flight stop coordinates from dataset
 - [x] Add demand-based polylines connecting stops (thicker = more rides)
 - [x] Verify all stop names and coordinates are accurate (no hallucinations)
+
+## Home Page Redesign
+- [x] Remove map from home page and replace with statistics cards
+- [x] Add key statistics: total rides, unique riders, completion rate, app adoption, avg wait time, pooled rides
+- [x] Remove duplicate statistics from Deep Insights page

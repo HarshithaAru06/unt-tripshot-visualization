@@ -1,0 +1,17 @@
+{
+  "total_rides": 16511,
+  "completed_rides": 10878,
+  "cancelled_rides": 5633,
+  "completion_rate": 65.88,
+  "unique_riders": 2586,
+  "dispatch_rides": 1537,
+  "app_rides": 14974,
+  "app_adoption_rate": 90.69,
+  "avg_wait_time_minutes": 2.5,
+  "avg_ride_duration_minutes": 6.1,
+  "pooled_rides_count": 4889,
+  "pooled_percentage": 29.61,
+  "unique_locations": 125,
+  "peak_hour": 22,
+  "busiest_day": "Thursday"
+}

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { APP_LOGO, APP_TITLE } from '@/const';
-import GoogleMaps3D from '@/components/GoogleMaps3D';
+import InsightfulStats from '@/components/InsightfulStats';
 import StatsPanel from '@/components/StatsPanel';
 import MonthSelector from '@/components/MonthSelector';
 import { Button } from '@/components/ui/button';
@@ -49,8 +49,7 @@ interface VisualizationData {
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
   const [data, setData] = useState<VisualizationData | null>(null);
-  const [stopCoordinates, setStopCoordinates] = useState<Record<string, {lat: number, lng: number}>>({});
-  const [routeDemand, setRouteDemand] = useState<Array<{route: string, count: number}>>([]);
+  const [homeStats, setHomeStats] = useState<any>(null);
   const [currentMonthIndex, setCurrentMonthIndex] = useState(0);
   const [loading, setLoading] = useState(true);
 
@@ -59,10 +58,9 @@ export default function Home() {
     Promise.all([
       fetch('/tripshot_data.json').then(res => res.json()),
       fetch('/day_of_week_analysis.json').then(res => res.json()),
-      fetch('/unt_stop_coordinates.json').then(res => res.json()),
-      fetch('/route_demand.json').then(res => res.json())
+      fetch('/home_stats.json').then(res => res.json())
     ])
-      .then(([tripData, dowData, coordinates, demand]) => {
+      .then(([tripData, dowData, stats]) => {
         // Merge day-of-week data into month data
         const monthNames = ['january', 'february', 'march', 'april', 'may', 'august', 'september', 'october'];
         tripData.months.forEach((month: MonthData, idx: number) => {
@@ -72,8 +70,7 @@ export default function Home() {
           }
         });
         setData(tripData);
-        setStopCoordinates(coordinates);
-        setRouteDemand(demand.routes);
+        setHomeStats(stats);
         setLoading(false);
       })
       .catch((error) => {
@@ -104,51 +101,6 @@ export default function Home() {
   }
 
   const currentMonth = data.months[currentMonthIndex];
-
-  // Transform locations using real coordinates from JSON
-  const locationsArray = Object.entries(currentMonth.top_pickup_locations)
-    .map(([name, pickupCount]) => {
-      const dropoffCount = currentMonth.top_dropoff_locations[name] || 0;
-      const coords = stopCoordinates[name];
-      
-      // Only include locations with valid coordinates
-      if (!coords) {
-        console.warn(`No coordinates found for: ${name}`);
-        return null;
-      }
-      
-      return {
-        lat: coords.lat,
-        lng: coords.lng,
-        name,
-        pickups: pickupCount,
-        dropoffs: dropoffCount,
-      };
-    })
-    .filter((loc): loc is NonNullable<typeof loc> => loc !== null);
-
-  // Get top routes with real coordinates and demand-based weights
-  const topRoutes = currentMonth.top_routes
-    .slice(0, 20)
-    .map((route) => {
-      const [from, to] = route.route.split(' → ');
-      const fromCoords = stopCoordinates[from];
-      const toCoords = stopCoordinates[to];
-      
-      if (!fromCoords || !toCoords) {
-        console.warn(`Missing coordinates for route: ${route.route}`);
-        return null;
-      }
-      
-      return {
-        from,
-        to,
-        count: route.count,
-        fromCoords: { lat: fromCoords.lat, lng: fromCoords.lng },
-        toCoords: { lat: toCoords.lat, lng: toCoords.lng },
-      };
-    })
-    .filter((r): r is NonNullable<typeof r> => r !== null);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-green-900 to-black relative">
@@ -247,35 +199,24 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* 3D Visualization - Takes 2 columns */}
-          <div className="lg:col-span-2">
-            <div className="bg-black/40 rounded-lg border border-green-900 overflow-hidden">
-              <div className="p-4 border-b border-green-900">
-                <MonthSelector
-                  months={data.months}
-                  currentIndex={currentMonthIndex}
-                  onMonthChange={setCurrentMonthIndex}
-                />
-              </div>
-              <div className="h-[600px]">
-                <GoogleMaps3D
-                  locations={locationsArray}
-                  routes={topRoutes}
-                />
-              </div>
-              <div className="p-4 bg-black/60 border-t border-green-900">
-                <p className="text-sm text-green-400 text-center">
-                  🖱️ Use mouse to rotate, zoom, and pan • Green markers show top pickup locations • Lines show top routes
-                </p>
-              </div>
-            </div>
+        {/* Insightful Statistics */}
+        {homeStats && (
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-green-100 mb-6">Key Insights</h2>
+            <InsightfulStats stats={homeStats} />
           </div>
+        )}
 
-          {/* Stats Panel - Takes 1 column */}
-          <div className="lg:col-span-1">
-            <StatsPanel monthData={currentMonth} />
+        {/* Monthly Stats */}
+        <div className="mt-8">
+          <div className="mb-6">
+            <MonthSelector
+              months={data.months}
+              currentIndex={currentMonthIndex}
+              onMonthChange={setCurrentMonthIndex}
+            />
           </div>
+          <StatsPanel monthData={currentMonth} />
         </div>
 
         {/* Footer Info */}

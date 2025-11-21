@@ -285,20 +285,6 @@ export default function DeepInsights() {
                     </BarChart>
                   </ResponsiveContainer>
                 </div>
-
-                {/* Statistics Summary */}
-                <div className="grid grid-cols-2 gap-4 mt-6">
-                  {bookingMethodData.map((method, index) => (
-                    <div key={index} className="bg-black/40 p-4 rounded-lg border border-orange-700/50">
-                      <h4 className="text-orange-200 font-semibold mb-2">{method.booking_method}</h4>
-                      <div className="space-y-1 text-sm">
-                        <p className="text-gray-300">Total Rides: <span className="text-white font-semibold">{method.total.toLocaleString()}</span></p>
-                        <p className="text-green-400">Completed: <span className="text-white font-semibold">{method.completed.toLocaleString()}</span> ({method.completion_rate}%)</p>
-                        <p className="text-red-400">Cancelled: <span className="text-white font-semibold">{method.cancelled.toLocaleString()}</span> ({method.cancellation_rate}%)</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
               </CardContent>
             </Card>
           )}
