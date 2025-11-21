@@ -275,3 +275,6 @@
 - [x] Remove map from home page and replace with statistics cards
 - [x] Add key statistics: total rides, unique riders, completion rate, app adoption, avg wait time, pooled rides
 - [x] Remove duplicate statistics from Deep Insights page
+
+## Peak Hours Badge
+- [x] Remove Peak Operations badge from home page
