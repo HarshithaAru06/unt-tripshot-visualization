@@ -229,49 +229,6 @@ export default function ScheduleComparison() {
           </div>
         </section>
 
-        {/* Wait Times Comparison */}
-        <section className="mb-8">
-          <h2 className="text-3xl font-bold text-white mb-6">Wait Times by Hour</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Jan-May Wait Times */}
-            <Card className="bg-white/10 backdrop-blur-md border-white/20">
-              <CardHeader>
-                <CardTitle className="text-white">Jan-May: Average Wait Time</CardTitle>
-                <CardDescription className="text-gray-300">Minutes</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ResponsiveContainer width="100%" height={300}>
-                  <LineChart data={data.jan_may_hourly_wait}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                    <XAxis dataKey="hourLabel" stroke="#fff" />
-                    <YAxis stroke="#fff" />
-                    <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
-                    <Line type="monotone" dataKey="avg_wait" stroke={COLORS.janMay} strokeWidth={3} dot={{ r: 4 }} />
-                  </LineChart>
-                </ResponsiveContainer>
-              </CardContent>
-            </Card>
-
-            {/* Aug-Oct Wait Times */}
-            <Card className="bg-white/10 backdrop-blur-md border-white/20">
-              <CardHeader>
-                <CardTitle className="text-white">Aug-Oct: Average Wait Time</CardTitle>
-                <CardDescription className="text-gray-300">Minutes</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ResponsiveContainer width="100%" height={300}>
-                  <LineChart data={data.aug_oct_hourly_wait}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
-                    <XAxis dataKey="hourLabel" stroke="#fff" />
-                    <YAxis stroke="#fff" />
-                    <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px' }} labelFormatter={formatHour} />
-                    <Line type="monotone" dataKey="avg_wait" stroke={COLORS.augOct} strokeWidth={3} dot={{ r: 4 }} />
-                  </LineChart>
-                </ResponsiveContainer>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
 
         {/* Top Locations Comparison */}
         <section className="mb-8">

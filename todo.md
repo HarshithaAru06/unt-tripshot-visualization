@@ -278,3 +278,6 @@
 
 ## Peak Hours Badge
 - [x] Remove Peak Operations badge from home page
+
+## Schedule Comparison Page Cleanup
+- [x] Remove empty Wait Times by Hour graphs from Schedule Comparison page
