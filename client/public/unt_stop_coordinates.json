@@ -1,0 +1,246 @@
+{
+  "Victory Hall": {
+    "lat": 33.2089,
+    "lng": -97.1542
+  },
+  "Maple Hall": {
+    "lat": 33.2098,
+    "lng": -97.1534
+  },
+  "Traditions Hall": {
+    "lat": 33.2095,
+    "lng": -97.1528
+  },
+  "Kerr Hall": {
+    "lat": 33.2102,
+    "lng": -97.152
+  },
+  "Kerr & Joe Green Hall": {
+    "lat": 33.2102,
+    "lng": -97.152
+  },
+  "Joe Greene Hall": {
+    "lat": 33.2105,
+    "lng": -97.1518
+  },
+  "Eagle Landing": {
+    "lat": 33.2115,
+    "lng": -97.151
+  },
+  "Eagle Landing, BLB, Kerr/Joe Green": {
+    "lat": 33.2115,
+    "lng": -97.151
+  },
+  "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)": {
+    "lat": 33.2115,
+    "lng": -97.151
+  },
+  "Eagle Landing, Kerr, Joe Green": {
+    "lat": 33.2115,
+    "lng": -97.151
+  },
+  "West Hall": {
+    "lat": 33.2085,
+    "lng": -97.1538
+  },
+  "Bruce Hall": {
+    "lat": 33.2092,
+    "lng": -97.1545
+  },
+  "Bruce Hall (Union alternate)": {
+    "lat": 33.2092,
+    "lng": -97.1545
+  },
+  "Crumley Hall": {
+    "lat": 33.21,
+    "lng": -97.153
+  },
+  "Maple Hall/Crumley Hall - Lot 24": {
+    "lat": 33.2098,
+    "lng": -97.1534
+  },
+  "Mozart Hall": {
+    "lat": 33.2088,
+    "lng": -97.1525
+  },
+  "Honors Hall": {
+    "lat": 33.2086,
+    "lng": -97.1522
+  },
+  "Honors/Clark/Rawlings": {
+    "lat": 33.2086,
+    "lng": -97.1522
+  },
+  "Honors/Clark/Rawlings/Mozart": {
+    "lat": 33.2086,
+    "lng": -97.1522
+  },
+  "Clark & Rawlings Hall": {
+    "lat": 33.2084,
+    "lng": -97.152
+  },
+  "Hickory Hall & GAB": {
+    "lat": 33.2078,
+    "lng": -97.1515
+  },
+  "Hickory Hall/GAB & Language": {
+    "lat": 33.2078,
+    "lng": -97.1515
+  },
+  "Santa Fe Square": {
+    "lat": 33.2092,
+    "lng": -97.1525
+  },
+  "Traditions Hall/Santa Fe Square": {
+    "lat": 33.2092,
+    "lng": -97.1525
+  },
+  "Legends": {
+    "lat": 33.207,
+    "lng": -97.156
+  },
+  "Lot 20 Resident": {
+    "lat": 33.2078,
+    "lng": -97.1548
+  },
+  "Lot 24 temporary": {
+    "lat": 33.207,
+    "lng": -97.1555
+  },
+  "Lot 14": {
+    "lat": 33.2065,
+    "lng": -97.157
+  },
+  "Lot 14/Legends": {
+    "lat": 33.2065,
+    "lng": -97.157
+  },
+  "Lot 27": {
+    "lat": 33.206,
+    "lng": -97.1545
+  },
+  "Lot 27/Coliseum": {
+    "lat": 33.206,
+    "lng": -97.1545
+  },
+  "Lot 59 - Oak Street Hall": {
+    "lat": 33.2075,
+    "lng": -97.151
+  },
+  "Lot 41": {
+    "lat": 33.2068,
+    "lng": -97.1535
+  },
+  "Fraternity Row - Lot 41": {
+    "lat": 33.2068,
+    "lng": -97.1535
+  },
+  "Union": {
+    "lat": 33.2075,
+    "lng": -97.153
+  },
+  "Art Building": {
+    "lat": 33.2082,
+    "lng": -97.1525
+  },
+  "Art Building (Union alternate)": {
+    "lat": 33.2082,
+    "lng": -97.1525
+  },
+  "Art Building/Lot 50 (Union alternate)": {
+    "lat": 33.2082,
+    "lng": -97.1525
+  },
+  "Art Annex": {
+    "lat": 33.208,
+    "lng": -97.1522
+  },
+  "Dance & Theatre": {
+    "lat": 33.2076,
+    "lng": -97.1518
+  },
+  "Speech & Hearing": {
+    "lat": 33.2074,
+    "lng": -97.1516
+  },
+  "Speech & Hearing/Dance & Theatre": {
+    "lat": 33.2074,
+    "lng": -97.1516
+  },
+  "Music Practice North/South": {
+    "lat": 33.2072,
+    "lng": -97.1514
+  },
+  "Environmental Science Building": {
+    "lat": 33.2068,
+    "lng": -97.1512
+  },
+  "Environmental Science Building - Lot 11": {
+    "lat": 33.2068,
+    "lng": -97.1512
+  },
+  "Environmental Science Building/Lot 11": {
+    "lat": 33.2068,
+    "lng": -97.1512
+  },
+  "SSB": {
+    "lat": 33.208,
+    "lng": -97.1528
+  },
+  "Pohl Rec": {
+    "lat": 33.2088,
+    "lng": -97.154
+  },
+  "Pohl Recreation": {
+    "lat": 33.2088,
+    "lng": -97.154
+  },
+  "Pohl Rec/West": {
+    "lat": 33.2088,
+    "lng": -97.154
+  },
+  "Pohl Rec/West Hall/PEB": {
+    "lat": 33.2088,
+    "lng": -97.154
+  },
+  "Apogee Stadium": {
+    "lat": 33.2055,
+    "lng": -97.1545
+  },
+  "Alumni Center": {
+    "lat": 33.2058,
+    "lng": -97.1542
+  },
+  "Alumni Center/Murchinson": {
+    "lat": 33.2058,
+    "lng": -97.1542
+  },
+  "Alumni Center/Murchinson/Coliseum": {
+    "lat": 33.2058,
+    "lng": -97.1542
+  },
+  "Highland Street Garage": {
+    "lat": 33.2065,
+    "lng": -97.156
+  },
+  "Fraternity Row": {
+    "lat": 33.2068,
+    "lng": -97.1535
+  },
+  "Sorority Row": {
+    "lat": 33.2066,
+    "lng": -97.1532
+  },
+  "Sorority Row/Fraternity & Sorority Life": {
+    "lat": 33.2066,
+    "lng": -97.1532
+  },
+  "The Center for Fraternity and Sorority Life": {
+    "lat": 33.2067,
+    "lng": -97.1533
+  },
+  "Fouts Transfer Station": {
+    "lat": 33.2062,
+    "lng": -97.155
+  }
+}

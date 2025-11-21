@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { APP_LOGO, APP_TITLE } from '@/const';
 import GoogleMaps3D from '@/components/GoogleMaps3D';
-import LeafletMap from '@/components/LeafletMap';
 import StatsPanel from '@/components/StatsPanel';
 import MonthSelector from '@/components/MonthSelector';
 import { Button } from '@/components/ui/button';
@@ -16,12 +15,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
-
-interface Location {
-  x: number;
-  y: number;
-  z: number;
-}
 
 interface MonthData {
   name: string;
@@ -39,7 +32,6 @@ interface MonthData {
 
 interface VisualizationData {
   months: MonthData[];
-  locations: Record<string, Location>;
   summary: {
     total_rides: number;
     completed_rides: number;
@@ -57,16 +49,20 @@ interface VisualizationData {
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
   const [data, setData] = useState<VisualizationData | null>(null);
+  const [stopCoordinates, setStopCoordinates] = useState<Record<string, {lat: number, lng: number}>>({});
+  const [routeDemand, setRouteDemand] = useState<Array<{route: string, count: number}>>([]);
   const [currentMonthIndex, setCurrentMonthIndex] = useState(0);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Load both trip data and day-of-week data
+    // Load all data files
     Promise.all([
       fetch('/tripshot_data.json').then(res => res.json()),
-      fetch('/day_of_week_analysis.json').then(res => res.json())
+      fetch('/day_of_week_analysis.json').then(res => res.json()),
+      fetch('/unt_stop_coordinates.json').then(res => res.json()),
+      fetch('/route_demand.json').then(res => res.json())
     ])
-      .then(([tripData, dowData]) => {
+      .then(([tripData, dowData, coordinates, demand]) => {
         // Merge day-of-week data into month data
         const monthNames = ['january', 'february', 'march', 'april', 'may', 'august', 'september', 'october'];
         tripData.months.forEach((month: MonthData, idx: number) => {
@@ -76,6 +72,8 @@ export default function Home() {
           }
         });
         setData(tripData);
+        setStopCoordinates(coordinates);
+        setRouteDemand(demand.routes);
         setLoading(false);
       })
       .catch((error) => {
@@ -106,56 +104,51 @@ export default function Home() {
   }
 
   const currentMonth = data.months[currentMonthIndex];
-  const highlightedLocations = Object.keys(currentMonth.top_pickup_locations).slice(0, 10);
 
-  // Transform locations to array with lat/lng
-  // UNT Campus bounds: approximately 33.205 to 33.215 lat, -97.155 to -97.140 lng
-  const UNT_LAT_MIN = 33.205;
-  const UNT_LAT_MAX = 33.215;
-  const UNT_LNG_MIN = -97.155;
-  const UNT_LNG_MAX = -97.140;
-  
-  const locationsArray = Object.entries(data.locations).map(([name, coords]) => {
-    // Convert normalized coordinates (0-1100) to actual GPS coordinates
-    const normalizedX = coords.x / 1100; // 0 to 1
-    const normalizedY = coords.y / 1000; // 0 to 1
-    
-    const lat = UNT_LAT_MIN + (normalizedY * (UNT_LAT_MAX - UNT_LAT_MIN));
-    const lng = UNT_LNG_MIN + (normalizedX * (UNT_LNG_MAX - UNT_LNG_MIN));
-    
-    const pickups = currentMonth.top_pickup_locations[name] || 0;
-    const dropoffs = currentMonth.top_dropoff_locations[name] || 0;
-    return {
-      lat,
-      lng,
-      name,
-      pickups,
-      dropoffs,
-    };
-  });
+  // Transform locations using real coordinates from JSON
+  const locationsArray = Object.entries(currentMonth.top_pickup_locations)
+    .map(([name, pickupCount]) => {
+      const dropoffCount = currentMonth.top_dropoff_locations[name] || 0;
+      const coords = stopCoordinates[name];
+      
+      // Only include locations with valid coordinates
+      if (!coords) {
+        console.warn(`No coordinates found for: ${name}`);
+        return null;
+      }
+      
+      return {
+        lat: coords.lat,
+        lng: coords.lng,
+        name,
+        pickups: pickupCount,
+        dropoffs: dropoffCount,
+      };
+    })
+    .filter((loc): loc is NonNullable<typeof loc> => loc !== null);
 
-  // Get top routes for visualization with coordinates
-  const topRoutes = currentMonth.top_routes.slice(0, 10).map((route) => {
-    const [from, to] = route.route.split(' → ');
-    const fromLoc = data.locations[from];
-    const toLoc = data.locations[to];
-    
-    if (!fromLoc || !toLoc) return null;
-    
-    // Convert normalized coordinates to GPS
-    const fromLat = UNT_LAT_MIN + ((fromLoc.y / 1000) * (UNT_LAT_MAX - UNT_LAT_MIN));
-    const fromLng = UNT_LNG_MIN + ((fromLoc.x / 1100) * (UNT_LNG_MAX - UNT_LNG_MIN));
-    const toLat = UNT_LAT_MIN + ((toLoc.y / 1000) * (UNT_LAT_MAX - UNT_LAT_MIN));
-    const toLng = UNT_LNG_MIN + ((toLoc.x / 1100) * (UNT_LNG_MAX - UNT_LNG_MIN));
-    
-    return {
-      from,
-      to,
-      count: route.count,
-      fromCoords: { lat: fromLat, lng: fromLng },
-      toCoords: { lat: toLat, lng: toLng },
-    };
-  }).filter((r): r is NonNullable<typeof r> => r !== null);
+  // Get top routes with real coordinates and demand-based weights
+  const topRoutes = currentMonth.top_routes
+    .slice(0, 20)
+    .map((route) => {
+      const [from, to] = route.route.split(' → ');
+      const fromCoords = stopCoordinates[from];
+      const toCoords = stopCoordinates[to];
+      
+      if (!fromCoords || !toCoords) {
+        console.warn(`Missing coordinates for route: ${route.route}`);
+        return null;
+      }
+      
+      return {
+        from,
+        to,
+        count: route.count,
+        fromCoords: { lat: fromCoords.lat, lng: fromCoords.lng },
+        toCoords: { lat: toCoords.lat, lng: toCoords.lng },
+      };
+    })
+    .filter((r): r is NonNullable<typeof r> => r !== null);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-green-900 to-black relative">
@@ -266,22 +259,10 @@ export default function Home() {
                 />
               </div>
               <div className="h-[600px]">
-                {import.meta.env.DEV ? (
-                  <LeafletMap
-                    locations={locationsArray.map(loc => ({
-                      name: loc.name,
-                      lat: loc.lat,
-                      lng: loc.lng,
-                      count: loc.pickups + loc.dropoffs
-                    }))}
-                    routes={currentMonth.top_routes}
-                  />
-                ) : (
-                  <GoogleMaps3D
-                    locations={locationsArray}
-                    routes={topRoutes}
-                  />
-                )}
+                <GoogleMaps3D
+                  locations={locationsArray}
+                  routes={topRoutes}
+                />
               </div>
               <div className="p-4 bg-black/60 border-t border-green-900">
                 <p className="text-sm text-green-400 text-center">

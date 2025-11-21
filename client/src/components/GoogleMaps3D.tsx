@@ -29,6 +29,7 @@ export default function GoogleMaps3D({ locations, routes }: GoogleMaps3DProps) {
   const animationFrameRef = useRef<number | null>(null);
 
   const handleMapReady = (map: google.maps.Map) => {
+    console.log('Map ready callback triggered');
     mapRef.current = map;
     
     // Set to regular roadmap view
@@ -46,6 +47,105 @@ export default function GoogleMaps3D({ locations, routes }: GoogleMaps3DProps) {
       fullscreenControl: true,
       streetViewControl: false,
     });
+    
+    // Force re-render markers after map is ready
+    setTimeout(() => {
+      console.log('Triggering marker render with', locations.length, 'locations');
+      if (locations.length > 0) {
+        // Clear and re-add markers
+        markersRef.current.forEach(marker => marker.setMap(null));
+        markersRef.current = [];
+        
+        locations.forEach(location => {
+          const totalActivity = location.pickups + location.dropoffs;
+          if (totalActivity === 0) return;
+
+          const size = Math.max(8, Math.min(30, totalActivity / 5));
+
+          const marker = new google.maps.Marker({
+            position: { lat: location.lat, lng: location.lng },
+            map,
+            title: `${location.name}\nPickups: ${location.pickups}\nDropoffs: ${location.dropoffs}`,
+            icon: {
+              path: google.maps.SymbolPath.CIRCLE,
+              fillColor: '#00FF00',
+              fillOpacity: 0.8,
+              strokeColor: '#00FF00',
+              strokeWeight: 2,
+              scale: size / 2,
+            },
+            optimized: false,
+          });
+
+          const infoWindow = new google.maps.InfoWindow({
+            content: `
+              <div style="color: #000; padding: 8px; font-family: system-ui;">
+                <h3 style="margin: 0 0 8px 0; font-weight: bold; font-size: 14px;">${location.name}</h3>
+                <p style="margin: 4px 0; font-size: 12px;"><strong>Pickups:</strong> ${location.pickups}</p>
+                <p style="margin: 4px 0; font-size: 12px;"><strong>Dropoffs:</strong> ${location.dropoffs}</p>
+                <p style="margin: 4px 0; font-size: 12px;"><strong>Total:</strong> ${totalActivity}</p>
+              </div>
+            `,
+          });
+
+          marker.addListener('click', () => {
+            infoWindow.open(map, marker);
+          });
+
+          markersRef.current.push(marker);
+        });
+        
+        console.log('Added', markersRef.current.length, 'markers to map');
+      }
+      
+      // Also add routes after map is ready
+      if (routes.length > 0) {
+        console.log('Adding', routes.length, 'routes to map');
+        
+        // Clear existing polylines
+        polylinesRef.current.forEach(line => line.setMap(null));
+        polylinesRef.current = [];
+        
+        const topRoutes = routes.slice(0, 20);
+        const maxCount = Math.max(...topRoutes.map(r => r.count));
+        const minCount = Math.min(...topRoutes.map(r => r.count));
+        
+        topRoutes.forEach((route, index) => {
+          const normalizedDemand = (route.count - minCount) / (maxCount - minCount);
+          const weight = 2 + (normalizedDemand * 8);
+          const opacity = Math.max(0.4, 1 - (index * 0.03));
+
+          const polyline = new google.maps.Polyline({
+            path: [route.fromCoords, route.toCoords],
+            geodesic: true,
+            strokeColor: '#00FF00',
+            strokeOpacity: opacity,
+            strokeWeight: weight,
+            map,
+          });
+          
+          const infoWindow = new google.maps.InfoWindow({
+            content: `
+              <div style="color: #000; padding: 8px; font-family: system-ui;">
+                <h3 style="margin: 0 0 8px 0; font-weight: bold; font-size: 14px;">${route.from} → ${route.to}</h3>
+                <p style="margin: 4px 0; font-size: 12px;"><strong>Rides:</strong> ${route.count}</p>
+              </div>
+            `,
+          });
+          
+          polyline.addListener('click', (e: google.maps.MapMouseEvent) => {
+            if (e.latLng) {
+              infoWindow.setPosition(e.latLng);
+              infoWindow.open(map);
+            }
+          });
+
+          polylinesRef.current.push(polyline);
+        });
+        
+        console.log('Added', polylinesRef.current.length, 'route polylines to map');
+      }
+    }, 500);
   };
 
   useEffect(() => {
@@ -112,12 +212,20 @@ export default function GoogleMaps3D({ locations, routes }: GoogleMaps3DProps) {
     polylinesRef.current.forEach(line => line.setMap(null));
     polylinesRef.current = [];
 
-    // Add top routes as polylines
-    const topRoutes = routes.slice(0, 10);
+    // Add top routes as polylines with demand-based thickness
+    const topRoutes = routes.slice(0, 20);
+    
+    // Find max count for normalization
+    const maxCount = Math.max(...topRoutes.map(r => r.count));
+    const minCount = Math.min(...topRoutes.map(r => r.count));
     
     topRoutes.forEach((route, index) => {
-      const opacity = 1 - (index * 0.07);
-      const weight = Math.max(2, 6 - index * 0.3);
+      // Calculate stroke weight based on demand (2-10 range)
+      const normalizedDemand = (route.count - minCount) / (maxCount - minCount);
+      const weight = 2 + (normalizedDemand * 8); // 2 to 10 pixels
+      
+      // Opacity based on ranking (top routes more visible)
+      const opacity = Math.max(0.4, 1 - (index * 0.03));
 
       const polyline = new google.maps.Polyline({
         path: [route.fromCoords, route.toCoords],
@@ -126,6 +234,23 @@ export default function GoogleMaps3D({ locations, routes }: GoogleMaps3DProps) {
         strokeOpacity: opacity,
         strokeWeight: weight,
         map,
+      });
+      
+      // Add info window to show demand
+      const infoWindow = new google.maps.InfoWindow({
+        content: `
+          <div style="color: #000; padding: 8px; font-family: system-ui;">
+            <h3 style="margin: 0 0 8px 0; font-weight: bold; font-size: 14px;">${route.from} → ${route.to}</h3>
+            <p style="margin: 4px 0; font-size: 12px;"><strong>Rides:</strong> ${route.count}</p>
+          </div>
+        `,
+      });
+      
+      polyline.addListener('click', (e: google.maps.MapMouseEvent) => {
+        if (e.latLng) {
+          infoWindow.setPosition(e.latLng);
+          infoWindow.open(map);
+        }
       });
 
       polylinesRef.current.push(polyline);

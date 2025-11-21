@@ -1,0 +1,3909 @@
+{
+  "routes": [
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Victory Hall",
+      "count": 376
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Victory Hall",
+      "count": 308
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Victory Hall",
+      "count": 265
+    },
+    {
+      "route": "Victory Hall \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 256
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Victory Hall",
+      "count": 248
+    },
+    {
+      "route": "Victory Hall \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 214
+    },
+    {
+      "route": "Victory Hall \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 180
+    },
+    {
+      "route": "Crumley Hall \u2192 Victory Hall",
+      "count": 162
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Victory Hall",
+      "count": 140
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Maple Hall",
+      "count": 136
+    },
+    {
+      "route": "Bruce Hall \u2192 Victory Hall",
+      "count": 123
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Traditions Hall/Santa Fe Square",
+      "count": 122
+    },
+    {
+      "route": "Victory Hall \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 109
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Pohl Rec/West Hall/PEB",
+      "count": 106
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 106
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Traditions Hall/Santa Fe Square",
+      "count": 105
+    },
+    {
+      "route": "Victory Hall \u2192 Maple Hall",
+      "count": 102
+    },
+    {
+      "route": "Victory Hall \u2192 Honors/Clark/Rawlings",
+      "count": 102
+    },
+    {
+      "route": "Legends \u2192 Victory Hall",
+      "count": 98
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Pohl Rec/West Hall/PEB",
+      "count": 94
+    },
+    {
+      "route": "Santa Fe Square \u2192 Victory Hall",
+      "count": 93
+    },
+    {
+      "route": "Maple Hall \u2192 Victory Hall",
+      "count": 91
+    },
+    {
+      "route": "Victory Hall \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 86
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Honors/Clark/Rawlings",
+      "count": 84
+    },
+    {
+      "route": "Victory Hall \u2192 Bruce Hall",
+      "count": 83
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Santa Fe Square",
+      "count": 81
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Pohl Rec/West",
+      "count": 81
+    },
+    {
+      "route": "Victory Hall \u2192 Pohl Rec/West Hall/PEB",
+      "count": 80
+    },
+    {
+      "route": "Victory Hall \u2192 Traditions Hall",
+      "count": 77
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 77
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Victory Hall",
+      "count": 76
+    },
+    {
+      "route": "Union \u2192 Lot 14",
+      "count": 75
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 73
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Victory Hall",
+      "count": 72
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 69
+    },
+    {
+      "route": "Crumley Hall \u2192 Pohl Rec/West",
+      "count": 68
+    },
+    {
+      "route": "Victory Hall \u2192 Mozart Hall",
+      "count": 67
+    },
+    {
+      "route": "Victory Hall \u2192 Crumley Hall",
+      "count": 63
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 63
+    },
+    {
+      "route": "Victory Hall \u2192 Bruce Hall (Union alternate)",
+      "count": 61
+    },
+    {
+      "route": "Union \u2192 Santa Fe Square",
+      "count": 57
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Victory Hall",
+      "count": 57
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Santa Fe Square",
+      "count": 54
+    },
+    {
+      "route": "Victory Hall \u2192 Santa Fe Square",
+      "count": 53
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Bruce Hall (Union alternate)",
+      "count": 51
+    },
+    {
+      "route": "Traditions Hall \u2192 Victory Hall",
+      "count": 50
+    },
+    {
+      "route": "Victory Hall \u2192 Legends",
+      "count": 50
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Victory Hall",
+      "count": 47
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Bruce Hall",
+      "count": 46
+    },
+    {
+      "route": "Victory Hall \u2192 Alumni Center/Murchinson/Coliseum",
+      "count": 46
+    },
+    {
+      "route": "Union \u2192 Victory Hall",
+      "count": 45
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Fraternity Row",
+      "count": 45
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 45
+    },
+    {
+      "route": "Santa Fe Square \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 44
+    },
+    {
+      "route": "Mozart Hall \u2192 Victory Hall",
+      "count": 41
+    },
+    {
+      "route": "Victory Hall \u2192 Pohl Rec/West",
+      "count": 41
+    },
+    {
+      "route": "Traditions Hall \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 41
+    },
+    {
+      "route": "Legends \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 40
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Victory Hall",
+      "count": 39
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 39
+    },
+    {
+      "route": "Crumley Hall \u2192 Traditions Hall",
+      "count": 38
+    },
+    {
+      "route": "Bruce Hall \u2192 Pohl Rec/West",
+      "count": 37
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Pohl Rec/West",
+      "count": 37
+    },
+    {
+      "route": "Lot 14 \u2192 Crumley Hall",
+      "count": 37
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Maple Hall",
+      "count": 37
+    },
+    {
+      "route": "Alumni Center/Murchinson/Coliseum \u2192 Victory Hall",
+      "count": 37
+    },
+    {
+      "route": "Crumley Hall \u2192 Santa Fe Square",
+      "count": 36
+    },
+    {
+      "route": "Santa Fe Square \u2192 Union",
+      "count": 36
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Lot 14",
+      "count": 36
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Traditions Hall/Santa Fe Square",
+      "count": 36
+    },
+    {
+      "route": "Legends \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 36
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 36
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 35
+    },
+    {
+      "route": "Victory Hall \u2192 Lot 59 - Oak Street Hall",
+      "count": 34
+    },
+    {
+      "route": "Victory Hall \u2192 Traditions Hall/Santa Fe Square",
+      "count": 34
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 33
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 33
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 33
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Traditions Hall/Santa Fe Square",
+      "count": 32
+    },
+    {
+      "route": "Art Building \u2192 Victory Hall",
+      "count": 31
+    },
+    {
+      "route": "Traditions Hall \u2192 Hickory Hall & GAB",
+      "count": 31
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Traditions Hall",
+      "count": 31
+    },
+    {
+      "route": "Maple Hall \u2192 Lot 20 Resident",
+      "count": 30
+    },
+    {
+      "route": "Crumley Hall \u2192 Lot 14",
+      "count": 30
+    },
+    {
+      "route": "Music Practice North/South \u2192 Victory Hall",
+      "count": 30
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Pohl Rec/West Hall/PEB",
+      "count": 30
+    },
+    {
+      "route": "Union \u2192 Mozart Hall",
+      "count": 29
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Victory Hall",
+      "count": 28
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Victory Hall",
+      "count": 28
+    },
+    {
+      "route": "Victory Hall \u2192 Union",
+      "count": 27
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Victory Hall",
+      "count": 27
+    },
+    {
+      "route": "Pohl Rec/West \u2192 The Center for Fraternity and Sorority Life",
+      "count": 27
+    },
+    {
+      "route": "Maple Hall \u2192 Pohl Rec/West",
+      "count": 27
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Legends",
+      "count": 27
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Santa Fe Square",
+      "count": 27
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Hickory Hall & GAB",
+      "count": 27
+    },
+    {
+      "route": "Victory Hall \u2192 Hickory Hall & GAB",
+      "count": 26
+    },
+    {
+      "route": "Bruce Hall \u2192 Santa Fe Square",
+      "count": 26
+    },
+    {
+      "route": "Victory Hall \u2192 Alumni Center/Murchinson",
+      "count": 26
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Dance & Theatre",
+      "count": 25
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Honors/Clark/Rawlings",
+      "count": 25
+    },
+    {
+      "route": "Santa Fe Square \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 25
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 25
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Bruce Hall (Union alternate)",
+      "count": 25
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Sorority Row/Fraternity & Sorority Life",
+      "count": 25
+    },
+    {
+      "route": "Santa Fe Square \u2192 Bruce Hall",
+      "count": 24
+    },
+    {
+      "route": "Union \u2192 Legends",
+      "count": 24
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Lot 20 Resident",
+      "count": 24
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Lot 20 Resident",
+      "count": 24
+    },
+    {
+      "route": "SSB \u2192 Victory Hall",
+      "count": 24
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Legends",
+      "count": 24
+    },
+    {
+      "route": "Bruce Hall \u2192 Traditions Hall",
+      "count": 23
+    },
+    {
+      "route": "Victory Hall \u2192 The Center for Fraternity and Sorority Life",
+      "count": 23
+    },
+    {
+      "route": "Fraternity Row - Lot 41 \u2192 Victory Hall",
+      "count": 23
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Pohl Rec/West",
+      "count": 22
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Hickory Hall & GAB",
+      "count": 22
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Lot 14",
+      "count": 22
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Speech & Hearing/Dance & Theatre",
+      "count": 22
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Traditions Hall",
+      "count": 21
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Honors/Clark/Rawlings",
+      "count": 21
+    },
+    {
+      "route": "Santa Fe Square \u2192 Honors/Clark/Rawlings",
+      "count": 21
+    },
+    {
+      "route": "Speech & Hearing/Dance & Theatre \u2192 Traditions Hall/Santa Fe Square",
+      "count": 21
+    },
+    {
+      "route": "Sorority Row/Fraternity & Sorority Life \u2192 Victory Hall",
+      "count": 21
+    },
+    {
+      "route": "Victory Hall \u2192 Kerr & Joe Green Hall",
+      "count": 20
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Pohl Rec/West",
+      "count": 20
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Crumley Hall",
+      "count": 20
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Lot 27/Coliseum",
+      "count": 20
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Sorority Row/Fraternity & Sorority Life",
+      "count": 20
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Pohl Rec/West",
+      "count": 19
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 19
+    },
+    {
+      "route": "Victory Hall \u2192 Clark & Rawlings Hall",
+      "count": 18
+    },
+    {
+      "route": "Traditions Hall \u2192 Crumley Hall",
+      "count": 18
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 18
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Lot 20 Resident",
+      "count": 18
+    },
+    {
+      "route": "Hickory Hall/GAB & Language \u2192 Traditions Hall/Santa Fe Square",
+      "count": 18
+    },
+    {
+      "route": "Union \u2192 Sorority Row",
+      "count": 17
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Legends",
+      "count": 17
+    },
+    {
+      "route": "Victory Hall \u2192 Lot 27/Coliseum",
+      "count": 17
+    },
+    {
+      "route": "Dance & Theatre \u2192 Santa Fe Square",
+      "count": 17
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Lot 59 - Oak Street Hall",
+      "count": 17
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Victory Hall",
+      "count": 17
+    },
+    {
+      "route": "Victory Hall \u2192 Hickory Hall/GAB & Language",
+      "count": 17
+    },
+    {
+      "route": "Alumni Center/Murchinson/Coliseum \u2192 Traditions Hall/Santa Fe Square",
+      "count": 17
+    },
+    {
+      "route": "Kerr & Joe Green Hall \u2192 Victory Hall",
+      "count": 16
+    },
+    {
+      "route": "Fraternity Row \u2192 Santa Fe Square",
+      "count": 16
+    },
+    {
+      "route": "Union \u2192 Traditions Hall",
+      "count": 16
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Honors Hall",
+      "count": 16
+    },
+    {
+      "route": "Victory Hall \u2192 Art Building",
+      "count": 16
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Traditions Hall",
+      "count": 16
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Sorority Row",
+      "count": 16
+    },
+    {
+      "route": "Alumni Center/Murchinson \u2192 Victory Hall",
+      "count": 16
+    },
+    {
+      "route": "Hickory Hall/GAB & Language \u2192 Victory Hall",
+      "count": 16
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 16
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Lot 20 Resident",
+      "count": 16
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Legends",
+      "count": 16
+    },
+    {
+      "route": "Legends \u2192 Union",
+      "count": 15
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Lot 20 Resident",
+      "count": 15
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Hickory Hall & GAB",
+      "count": 15
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Victory Hall",
+      "count": 15
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Bruce Hall",
+      "count": 15
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Hickory Hall/GAB & Language",
+      "count": 15
+    },
+    {
+      "route": "Victory Hall \u2192 West Hall",
+      "count": 14
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Dance & Theatre",
+      "count": 14
+    },
+    {
+      "route": "Crumley Hall \u2192 Speech & Hearing",
+      "count": 14
+    },
+    {
+      "route": "Santa Fe Square \u2192 Hickory Hall & GAB",
+      "count": 14
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 14
+    },
+    {
+      "route": "Hickory Hall/GAB & Language \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 14
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Lot 59 - Oak Street Hall",
+      "count": 14
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Hickory Hall/GAB & Language",
+      "count": 14
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 14
+    },
+    {
+      "route": "Hickory Hall/GAB & Language \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 14
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Hickory Hall/GAB & Language",
+      "count": 14
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Pohl Rec/West Hall/PEB",
+      "count": 14
+    },
+    {
+      "route": "Art Building/Lot 50 (Union alternate) \u2192 Victory Hall",
+      "count": 14
+    },
+    {
+      "route": "nan \u2192 nan",
+      "count": 14
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Maple Hall",
+      "count": 13
+    },
+    {
+      "route": "Santa Fe Square \u2192 Lot 59 - Oak Street Hall",
+      "count": 13
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Pohl Rec/West",
+      "count": 13
+    },
+    {
+      "route": "Crumley Hall \u2192 Honors/Clark/Rawlings",
+      "count": 13
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Legends",
+      "count": 13
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Lot 27/Coliseum",
+      "count": 13
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 13
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 13
+    },
+    {
+      "route": "Victory Hall \u2192 Sorority Row/Fraternity & Sorority Life",
+      "count": 13
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Lot 14",
+      "count": 13
+    },
+    {
+      "route": "Victory Hall \u2192 Art Building/Lot 50 (Union alternate)",
+      "count": 13
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Kerr & Joe Green Hall",
+      "count": 12
+    },
+    {
+      "route": "Honors Hall \u2192 Victory Hall",
+      "count": 12
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Crumley Hall",
+      "count": 12
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 West Hall",
+      "count": 12
+    },
+    {
+      "route": "Union \u2192 Hickory Hall & GAB",
+      "count": 12
+    },
+    {
+      "route": "Traditions Hall \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 12
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Hickory Hall & GAB",
+      "count": 12
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Mozart Hall",
+      "count": 12
+    },
+    {
+      "route": "Legends \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 12
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Bruce Hall",
+      "count": 12
+    },
+    {
+      "route": "Bruce Hall \u2192 Honors/Clark/Rawlings",
+      "count": 12
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Honors/Clark/Rawlings",
+      "count": 12
+    },
+    {
+      "route": "Crumley Hall \u2192 The Center for Fraternity and Sorority Life",
+      "count": 12
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 12
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Santa Fe Square",
+      "count": 12
+    },
+    {
+      "route": "Speech & Hearing \u2192 Santa Fe Square",
+      "count": 12
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Lot 14",
+      "count": 12
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Clark & Rawlings Hall",
+      "count": 11
+    },
+    {
+      "route": "West Hall \u2192 Victory Hall",
+      "count": 11
+    },
+    {
+      "route": "Bruce Hall \u2192 Lot 14",
+      "count": 11
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 Victory Hall",
+      "count": 11
+    },
+    {
+      "route": "Bruce Hall \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 11
+    },
+    {
+      "route": "Fraternity Row \u2192 Pohl Rec/West",
+      "count": 11
+    },
+    {
+      "route": "Union \u2192 Fraternity Row",
+      "count": 11
+    },
+    {
+      "route": "Mozart Hall \u2192 Union",
+      "count": 11
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Music Practice North/South",
+      "count": 11
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Mozart Hall",
+      "count": 11
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Lot 59 - Oak Street Hall",
+      "count": 11
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 11
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Alumni Center/Murchinson/Coliseum",
+      "count": 11
+    },
+    {
+      "route": "Alumni Center/Murchinson/Coliseum \u2192 Hickory Hall/GAB & Language",
+      "count": 11
+    },
+    {
+      "route": "Sorority Row \u2192 Traditions Hall",
+      "count": 10
+    },
+    {
+      "route": "Maple Hall \u2192 Santa Fe Square",
+      "count": 10
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Bruce Hall",
+      "count": 10
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Mozart Hall",
+      "count": 10
+    },
+    {
+      "route": "Union \u2192 Lot 27/Coliseum",
+      "count": 10
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Lot 59 - Oak Street Hall",
+      "count": 10
+    },
+    {
+      "route": "Union \u2192 Honors/Clark/Rawlings",
+      "count": 10
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Lot 59 - Oak Street Hall",
+      "count": 10
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Hickory Hall/GAB & Language",
+      "count": 10
+    },
+    {
+      "route": "Fraternity Row - Lot 41 \u2192 Pohl Rec/West Hall/PEB",
+      "count": 10
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Bruce Hall (Union alternate)",
+      "count": 10
+    },
+    {
+      "route": "Art Building/Lot 50 (Union alternate) \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 10
+    },
+    {
+      "route": "Bruce Hall \u2192 Mozart Hall",
+      "count": 9
+    },
+    {
+      "route": "Santa Fe Square \u2192 Maple Hall",
+      "count": 9
+    },
+    {
+      "route": "Mozart Hall \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 9
+    },
+    {
+      "route": "Santa Fe Square \u2192 Art Annex",
+      "count": 9
+    },
+    {
+      "route": "Mozart Hall \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 9
+    },
+    {
+      "route": "Alumni Center/Murchinson/Coliseum \u2192 Pohl Rec/West Hall/PEB",
+      "count": 9
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Hickory Hall/GAB & Language",
+      "count": 9
+    },
+    {
+      "route": "Legends \u2192 Hickory Hall/GAB & Language",
+      "count": 9
+    },
+    {
+      "route": "Hickory Hall/GAB & Language \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 9
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Union",
+      "count": 8
+    },
+    {
+      "route": "West Hall \u2192 Union",
+      "count": 8
+    },
+    {
+      "route": "Traditions Hall \u2192 Maple Hall",
+      "count": 8
+    },
+    {
+      "route": "Bruce Hall \u2192 Lot 20 Resident",
+      "count": 8
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Union",
+      "count": 8
+    },
+    {
+      "route": "Crumley Hall \u2192 Fraternity Row",
+      "count": 8
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Pohl Rec/West",
+      "count": 8
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Honors/Clark/Rawlings",
+      "count": 8
+    },
+    {
+      "route": "Legends \u2192 Lot 20 Resident",
+      "count": 8
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Speech & Hearing",
+      "count": 8
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Environmental Science Building/Lot 11",
+      "count": 8
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Lot 59 - Oak Street Hall",
+      "count": 8
+    },
+    {
+      "route": "Victory Hall \u2192 SSB",
+      "count": 8
+    },
+    {
+      "route": "Sorority Row/Fraternity & Sorority Life \u2192 Bruce Hall (Union alternate)",
+      "count": 8
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Fraternity Row - Lot 41",
+      "count": 8
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 8
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 Lot 20 Resident",
+      "count": 7
+    },
+    {
+      "route": "Crumley Hall \u2192 Union",
+      "count": 7
+    },
+    {
+      "route": "Union \u2192 Dance & Theatre",
+      "count": 7
+    },
+    {
+      "route": "Union \u2192 Pohl Rec/West",
+      "count": 7
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Lot 20 Resident",
+      "count": 7
+    },
+    {
+      "route": "Legends \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 7
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Bruce Hall",
+      "count": 7
+    },
+    {
+      "route": "Victory Hall \u2192 Art Building (Union alternate)",
+      "count": 7
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Legends",
+      "count": 7
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Traditions Hall/Santa Fe Square",
+      "count": 7
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 7
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Fraternity Row - Lot 41",
+      "count": 7
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Traditions Hall/Santa Fe Square",
+      "count": 7
+    },
+    {
+      "route": "Traditions Hall \u2192 Union",
+      "count": 6
+    },
+    {
+      "route": "West Hall \u2192 Kerr & Joe Green Hall",
+      "count": 6
+    },
+    {
+      "route": "Bruce Hall \u2192 West Hall",
+      "count": 6
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Crumley Hall",
+      "count": 6
+    },
+    {
+      "route": "Union \u2192 West Hall",
+      "count": 6
+    },
+    {
+      "route": "Art Building \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 6
+    },
+    {
+      "route": "Victory Hall \u2192 Honors Hall",
+      "count": 6
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Speech & Hearing",
+      "count": 6
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Lot 27/Coliseum",
+      "count": 6
+    },
+    {
+      "route": "Santa Fe Square \u2192 Crumley Hall",
+      "count": 6
+    },
+    {
+      "route": "Lot 14 \u2192 Maple Hall",
+      "count": 6
+    },
+    {
+      "route": "Art Building \u2192 Honors/Clark/Rawlings",
+      "count": 6
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Lot 14",
+      "count": 6
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Santa Fe Square",
+      "count": 6
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Speech & Hearing/Dance & Theatre",
+      "count": 6
+    },
+    {
+      "route": "Hickory Hall/GAB & Language \u2192 Bruce Hall (Union alternate)",
+      "count": 6
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Music Practice North/South",
+      "count": 6
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Pohl Rec/West Hall/PEB",
+      "count": 6
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Bruce Hall (Union alternate)",
+      "count": 6
+    },
+    {
+      "route": "Sorority Row/Fraternity & Sorority Life \u2192 Lot 59 - Oak Street Hall",
+      "count": 6
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Sorority Row/Fraternity & Sorority Life",
+      "count": 6
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Art Building/Lot 50 (Union alternate)",
+      "count": 6
+    },
+    {
+      "route": "Eagle Landing \u2192 Lot 14",
+      "count": 5
+    },
+    {
+      "route": "Crumley Hall \u2192 West Hall",
+      "count": 5
+    },
+    {
+      "route": "Crumley Hall \u2192 Mozart Hall",
+      "count": 5
+    },
+    {
+      "route": "Crumley Hall \u2192 Hickory Hall & GAB",
+      "count": 5
+    },
+    {
+      "route": "Eagle Landing \u2192 West Hall",
+      "count": 5
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Lot 14",
+      "count": 5
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 Bruce Hall",
+      "count": 5
+    },
+    {
+      "route": "Fraternity Row \u2192 Lot 14",
+      "count": 5
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 West Hall",
+      "count": 5
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 5
+    },
+    {
+      "route": "Santa Fe Square \u2192 Dance & Theatre",
+      "count": 5
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 5
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Fraternity Row",
+      "count": 5
+    },
+    {
+      "route": "Crumley Hall \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 5
+    },
+    {
+      "route": "Union \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 5
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Union",
+      "count": 5
+    },
+    {
+      "route": "Current Location \u2192 Victory Hall",
+      "count": 5
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Maple Hall",
+      "count": 5
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Traditions Hall",
+      "count": 5
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 5
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Pohl Rec/West",
+      "count": 5
+    },
+    {
+      "route": "Union \u2192 Maple Hall",
+      "count": 5
+    },
+    {
+      "route": "Union \u2192 Bruce Hall",
+      "count": 5
+    },
+    {
+      "route": "Mozart Hall \u2192 Traditions Hall",
+      "count": 5
+    },
+    {
+      "route": "Traditions Hall \u2192 Bruce Hall",
+      "count": 5
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Traditions Hall",
+      "count": 5
+    },
+    {
+      "route": "Union \u2192 Speech & Hearing",
+      "count": 5
+    },
+    {
+      "route": "Traditions Hall \u2192 Honors/Clark/Rawlings",
+      "count": 5
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Lot 14",
+      "count": 5
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 5
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Alumni Center/Murchinson",
+      "count": 5
+    },
+    {
+      "route": "Legends \u2192 Honors/Clark/Rawlings",
+      "count": 5
+    },
+    {
+      "route": "Maple Hall \u2192 Hickory Hall & GAB",
+      "count": 5
+    },
+    {
+      "route": "Crumley Hall \u2192 Lot 27/Coliseum",
+      "count": 5
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Speech & Hearing",
+      "count": 5
+    },
+    {
+      "route": "Art Annex \u2192 Santa Fe Square",
+      "count": 5
+    },
+    {
+      "route": "Alumni Center/Murchinson/Coliseum \u2192 Lot 59 - Oak Street Hall",
+      "count": 5
+    },
+    {
+      "route": "Art Building (Union alternate) \u2192 Victory Hall",
+      "count": 5
+    },
+    {
+      "route": "Legends \u2192 Pohl Rec/West Hall/PEB",
+      "count": 5
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Speech & Hearing/Dance & Theatre",
+      "count": 5
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Legends",
+      "count": 5
+    },
+    {
+      "route": "Speech & Hearing/Dance & Theatre \u2192 Victory Hall",
+      "count": 5
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Lot 14",
+      "count": 5
+    },
+    {
+      "route": "Speech & Hearing/Dance & Theatre \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 5
+    },
+    {
+      "route": "Hickory Hall/GAB & Language \u2192 Alumni Center/Murchinson/Coliseum",
+      "count": 5
+    },
+    {
+      "route": "Speech & Hearing/Dance & Theatre \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 5
+    },
+    {
+      "route": "Alumni Center/Murchinson/Coliseum \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 5
+    },
+    {
+      "route": "Victory Hall \u2192 Fraternity Row - Lot 41",
+      "count": 5
+    },
+    {
+      "route": "Alumni Center/Murchinson/Coliseum \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 5
+    },
+    {
+      "route": "SSB \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 5
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 5
+    },
+    {
+      "route": "Art Building/Lot 50 (Union alternate) \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 5
+    },
+    {
+      "route": "Kerr & Joe Green Hall \u2192 Traditions Hall",
+      "count": 4
+    },
+    {
+      "route": "Kerr & Joe Green Hall \u2192 Clark & Rawlings Hall",
+      "count": 4
+    },
+    {
+      "route": "Pohl Recreation \u2192 Kerr & Joe Green Hall",
+      "count": 4
+    },
+    {
+      "route": "Union \u2192 Clark & Rawlings Hall",
+      "count": 4
+    },
+    {
+      "route": "Maple Hall \u2192 Pohl Recreation",
+      "count": 4
+    },
+    {
+      "route": "Crumley Hall \u2192 Legends",
+      "count": 4
+    },
+    {
+      "route": "West Hall \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 4
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Honors Hall",
+      "count": 4
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Lot 59 - Oak Street Hall",
+      "count": 4
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Clark & Rawlings Hall",
+      "count": 4
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Legends",
+      "count": 4
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Fraternity Row",
+      "count": 4
+    },
+    {
+      "route": "Lot 14 \u2192 Victory Hall",
+      "count": 4
+    },
+    {
+      "route": "Lot 14 \u2192 Dance & Theatre",
+      "count": 4
+    },
+    {
+      "route": "Music Practice North/South \u2192 Union",
+      "count": 4
+    },
+    {
+      "route": "Music Practice North/South \u2192 Pohl Rec/West",
+      "count": 4
+    },
+    {
+      "route": "Crumley Hall \u2192 Maple Hall",
+      "count": 4
+    },
+    {
+      "route": "Victory Hall \u2192 Lot 20 Resident",
+      "count": 4
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Art Building",
+      "count": 4
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Lot 27/Coliseum",
+      "count": 4
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Crumley Hall",
+      "count": 4
+    },
+    {
+      "route": "Maple Hall \u2192 Lot 14",
+      "count": 4
+    },
+    {
+      "route": "Fraternity Row \u2192 Union",
+      "count": 4
+    },
+    {
+      "route": "Alumni Center/Murchinson \u2192 Pohl Rec/West",
+      "count": 4
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Santa Fe Square",
+      "count": 4
+    },
+    {
+      "route": "Crumley Hall \u2192 Sorority Row",
+      "count": 4
+    },
+    {
+      "route": "Bruce Hall \u2192 Sorority Row",
+      "count": 4
+    },
+    {
+      "route": "Legends \u2192 Mozart Hall",
+      "count": 4
+    },
+    {
+      "route": "Crumley Hall \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 4
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Art Annex",
+      "count": 4
+    },
+    {
+      "route": "Fraternity Row \u2192 Speech & Hearing",
+      "count": 4
+    },
+    {
+      "route": "Football Blue Shuttle \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 4
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Environmental Science Building - Lot 11",
+      "count": 4
+    },
+    {
+      "route": "Speech & Hearing/Dance & Theatre \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 4
+    },
+    {
+      "route": "Victory Hall \u2192 Music Practice North/South",
+      "count": 4
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 4
+    },
+    {
+      "route": "Football Blue Shuttle \u2192 Pohl Rec/West Hall/PEB",
+      "count": 4
+    },
+    {
+      "route": "Fraternity Row - Lot 41 \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 4
+    },
+    {
+      "route": "Music Practice North/South \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 4
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Bruce Hall (Union alternate)",
+      "count": 4
+    },
+    {
+      "route": "SSB \u2192 Traditions Hall/Santa Fe Square",
+      "count": 4
+    },
+    {
+      "route": "Fraternity Row - Lot 41 \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 4
+    },
+    {
+      "route": "Current Location \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 4
+    },
+    {
+      "route": "Fraternity Row - Lot 41 \u2192 Traditions Hall/Santa Fe Square",
+      "count": 4
+    },
+    {
+      "route": "Art Building/Lot 50 (Union alternate) \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 4
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Legends",
+      "count": 4
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Lot 20 Resident",
+      "count": 4
+    },
+    {
+      "route": "Fraternity Row - Lot 41 \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 4
+    },
+    {
+      "route": "Eagle Landing \u2192 Victory Hall",
+      "count": 3
+    },
+    {
+      "route": "Kerr & Joe Green Hall \u2192 Lot 20 Resident",
+      "count": 3
+    },
+    {
+      "route": "Mozart Hall \u2192 West Hall",
+      "count": 3
+    },
+    {
+      "route": "Kerr & Joe Green Hall \u2192 West Hall",
+      "count": 3
+    },
+    {
+      "route": "Honors Hall \u2192 Lot 20 Resident",
+      "count": 3
+    },
+    {
+      "route": "West Hall \u2192 Mozart Hall",
+      "count": 3
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Traditions Hall",
+      "count": 3
+    },
+    {
+      "route": "Bruce Hall \u2192 Honors Hall",
+      "count": 3
+    },
+    {
+      "route": "Bruce Hall \u2192 Union",
+      "count": 3
+    },
+    {
+      "route": "Crumley Hall \u2192 Honors Hall",
+      "count": 3
+    },
+    {
+      "route": "Art Building \u2192 Sorority Row",
+      "count": 3
+    },
+    {
+      "route": "Union \u2192 Art Annex",
+      "count": 3
+    },
+    {
+      "route": "West Hall \u2192 Lot 59 - Oak Street Hall",
+      "count": 3
+    },
+    {
+      "route": "Honors Hall \u2192 Bruce Hall",
+      "count": 3
+    },
+    {
+      "route": "Pohl Rec \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 3
+    },
+    {
+      "route": "Fraternity Row \u2192 Pohl Rec",
+      "count": 3
+    },
+    {
+      "route": "Dance & Theatre \u2192 Legends",
+      "count": 3
+    },
+    {
+      "route": "Bruce Hall \u2192 Clark & Rawlings Hall",
+      "count": 3
+    },
+    {
+      "route": "Current Location \u2192 Pohl Rec/West",
+      "count": 3
+    },
+    {
+      "route": "Dance & Theatre \u2192 Pohl Rec/West",
+      "count": 3
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 Pohl Rec/West",
+      "count": 3
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 Crumley Hall",
+      "count": 3
+    },
+    {
+      "route": "1416 Maple Street \u2192 Santa Fe Square",
+      "count": 3
+    },
+    {
+      "route": "Current Location \u2192 Speech & Hearing",
+      "count": 3
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Santa Fe Square",
+      "count": 3
+    },
+    {
+      "route": "Mozart Hall \u2192 Legends",
+      "count": 3
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Environmental Science Building/Lot 11",
+      "count": 3
+    },
+    {
+      "route": "Environmental Science Building/Lot 11 \u2192 Honors/Clark/Rawlings",
+      "count": 3
+    },
+    {
+      "route": "Music Practice North/South \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 3
+    },
+    {
+      "route": "Maple Hall \u2192 Lot 59 - Oak Street Hall",
+      "count": 3
+    },
+    {
+      "route": "Victory Hall \u2192 Fraternity Row",
+      "count": 3
+    },
+    {
+      "route": "Alumni Center/Murchinson \u2192 Union",
+      "count": 3
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Traditions Hall",
+      "count": 3
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Legends",
+      "count": 3
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Fraternity Row",
+      "count": 3
+    },
+    {
+      "route": "Victory Hall \u2192 Sorority Row",
+      "count": 3
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Fraternity Row",
+      "count": 3
+    },
+    {
+      "route": "Santa Fe Square \u2192 Lot 27/Coliseum",
+      "count": 3
+    },
+    {
+      "route": "Bruce Hall \u2192 Hickory Hall & GAB",
+      "count": 3
+    },
+    {
+      "route": "Art Building \u2192 Pohl Rec/West",
+      "count": 3
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Art Building",
+      "count": 3
+    },
+    {
+      "route": "Fraternity Row \u2192 Crumley Hall",
+      "count": 3
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Fraternity Row",
+      "count": 3
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Dance & Theatre",
+      "count": 3
+    },
+    {
+      "route": "Lot 14 \u2192 Honors/Clark/Rawlings",
+      "count": 3
+    },
+    {
+      "route": "Environmental Science Building/Lot 11 \u2192 Victory Hall",
+      "count": 3
+    },
+    {
+      "route": "Union \u2192 Alumni Center/Murchinson",
+      "count": 3
+    },
+    {
+      "route": "Lot 14 \u2192 Fraternity Row",
+      "count": 3
+    },
+    {
+      "route": "Alumni Center/Murchinson \u2192 Traditions Hall",
+      "count": 3
+    },
+    {
+      "route": "Music Practice North/South \u2192 The Center for Fraternity and Sorority Life",
+      "count": 3
+    },
+    {
+      "route": "Lot 14 \u2192 Speech & Hearing",
+      "count": 3
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Union",
+      "count": 3
+    },
+    {
+      "route": "Music Practice North/South \u2192 Fraternity Row",
+      "count": 3
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Traditions Hall",
+      "count": 3
+    },
+    {
+      "route": "Union \u2192 The Center for Fraternity and Sorority Life",
+      "count": 3
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 3
+    },
+    {
+      "route": "Bruce Hall \u2192 Lot 59 - Oak Street Hall",
+      "count": 3
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Speech & Hearing",
+      "count": 3
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Lot 59 - Oak Street Hall",
+      "count": 3
+    },
+    {
+      "route": "Santa Fe Square \u2192 Speech & Hearing",
+      "count": 3
+    },
+    {
+      "route": "Maple Hall \u2192 Traditions Hall",
+      "count": 3
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Sorority Row",
+      "count": 3
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Maple Hall",
+      "count": 3
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Art Annex",
+      "count": 3
+    },
+    {
+      "route": "Maple Hall \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 3
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 The Center for Fraternity and Sorority Life",
+      "count": 3
+    },
+    {
+      "route": "Crumley Hall \u2192 Fouts Transfer Station",
+      "count": 3
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Mozart Hall",
+      "count": 3
+    },
+    {
+      "route": "Santa Fe Square \u2192 Traditions Hall",
+      "count": 3
+    },
+    {
+      "route": "Speech & Hearing \u2192 Lot 14",
+      "count": 3
+    },
+    {
+      "route": "Art Building \u2192 The Center for Fraternity and Sorority Life",
+      "count": 3
+    },
+    {
+      "route": "Santa Fe Square \u2192 Fraternity Row",
+      "count": 3
+    },
+    {
+      "route": "Music Practice North/South \u2192 Honors/Clark/Rawlings",
+      "count": 3
+    },
+    {
+      "route": "Fraternity Row \u2192 Victory Hall",
+      "count": 3
+    },
+    {
+      "route": "Traditions Hall \u2192 Mozart Hall",
+      "count": 3
+    },
+    {
+      "route": "Art Building (Union alternate) \u2192 Traditions Hall/Santa Fe Square",
+      "count": 3
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Speech & Hearing/Dance & Theatre",
+      "count": 3
+    },
+    {
+      "route": "Music Practice North/South \u2192 Hickory Hall/GAB & Language",
+      "count": 3
+    },
+    {
+      "route": "Football Orange Shuttle \u2192 Gate 2 - Datcu Stadium",
+      "count": 3
+    },
+    {
+      "route": "620 Avenue A \u2192 Football Orange Shuttle",
+      "count": 3
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Alumni Center/Murchinson/Coliseum",
+      "count": 3
+    },
+    {
+      "route": "Legends \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 3
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Lot 59 - Oak Street Hall",
+      "count": 3
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Music Practice North/South",
+      "count": 3
+    },
+    {
+      "route": "Art Building (Union alternate) \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 3
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Alumni Center/Murchinson/Coliseum",
+      "count": 3
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Lot 59 - Oak Street Hall",
+      "count": 3
+    },
+    {
+      "route": "1510 Maple Street \u2192 Victory Hall",
+      "count": 3
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Environmental Science Building - Lot 11",
+      "count": 3
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Lot 20 Resident",
+      "count": 3
+    },
+    {
+      "route": "SSB \u2192 Hickory Hall/GAB & Language",
+      "count": 3
+    },
+    {
+      "route": "1416 Maple Street \u2192 Victory Hall",
+      "count": 3
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Sorority Row/Fraternity & Sorority Life",
+      "count": 3
+    },
+    {
+      "route": "Speech & Hearing/Dance & Theatre \u2192 Fraternity Row - Lot 41",
+      "count": 3
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Art Building/Lot 50 (Union alternate)",
+      "count": 3
+    },
+    {
+      "route": "Music Practice North/South \u2192 Traditions Hall/Santa Fe Square",
+      "count": 3
+    },
+    {
+      "route": "Environmental Science Building - Lot 11 \u2192 Traditions Hall/Santa Fe Square",
+      "count": 3
+    },
+    {
+      "route": "Music Practice North/South \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 3
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Art Building/Lot 50 (Union alternate)",
+      "count": 3
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Fraternity Row - Lot 41",
+      "count": 3
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Sorority Row/Fraternity & Sorority Life",
+      "count": 3
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Hickory Hall/GAB & Language",
+      "count": 3
+    },
+    {
+      "route": "Hickory Hall/GAB & Language \u2192 Lot 14",
+      "count": 3
+    },
+    {
+      "route": "Hickory Hall/GAB & Language \u2192 Pohl Rec/West Hall/PEB",
+      "count": 3
+    },
+    {
+      "route": "1717 Maple Street \u2192 Bruce Hall",
+      "count": 2
+    },
+    {
+      "route": "West Hall \u2192 Bruce Hall",
+      "count": 2
+    },
+    {
+      "route": "Lot 20 Resident \u2192 West Hall",
+      "count": 2
+    },
+    {
+      "route": "West Hall \u2192 Maple Hall",
+      "count": 2
+    },
+    {
+      "route": "Eagle Landing \u2192 Clark & Rawlings Hall",
+      "count": 2
+    },
+    {
+      "route": "Traditions Hall \u2192 Sorority Row",
+      "count": 2
+    },
+    {
+      "route": "Pohl Recreation \u2192 Crumley Hall",
+      "count": 2
+    },
+    {
+      "route": "Sorority Row \u2192 Legends",
+      "count": 2
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 Kerr & Joe Green Hall",
+      "count": 2
+    },
+    {
+      "route": "Bruce Hall \u2192 Kerr & Joe Green Hall",
+      "count": 2
+    },
+    {
+      "route": "Victory Hall \u2192 Pohl Recreation",
+      "count": 2
+    },
+    {
+      "route": "Honors Hall \u2192 Lot 14",
+      "count": 2
+    },
+    {
+      "route": "Eagle Landing \u2192 Traditions Hall",
+      "count": 2
+    },
+    {
+      "route": "Legends \u2192 Eagle Landing",
+      "count": 2
+    },
+    {
+      "route": "West Hall \u2192 Eagle Landing",
+      "count": 2
+    },
+    {
+      "route": "West Hall \u2192 Clark & Rawlings Hall",
+      "count": 2
+    },
+    {
+      "route": "Victory Hall \u2192 Dance & Theatre",
+      "count": 2
+    },
+    {
+      "route": "Eagle Landing \u2192 Santa Fe Square",
+      "count": 2
+    },
+    {
+      "route": "Traditions Hall \u2192 Clark & Rawlings Hall",
+      "count": 2
+    },
+    {
+      "route": "Bruce Hall \u2192 Crumley Hall",
+      "count": 2
+    },
+    {
+      "route": "Traditions Hall \u2192 Kerr & Joe Green Hall",
+      "count": 2
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 Eagle Landing",
+      "count": 2
+    },
+    {
+      "route": "Bruce Hall \u2192 Fraternity Row",
+      "count": 2
+    },
+    {
+      "route": "Alumni Center \u2192 Clark & Rawlings Hall",
+      "count": 2
+    },
+    {
+      "route": "West, Pohl Rec \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 2
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Union",
+      "count": 2
+    },
+    {
+      "route": "Lot 14 \u2192 Art Annex",
+      "count": 2
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Lot 27",
+      "count": 2
+    },
+    {
+      "route": "Lot 27 \u2192 West Hall",
+      "count": 2
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Honors Hall",
+      "count": 2
+    },
+    {
+      "route": "Union \u2192 Honors Hall",
+      "count": 2
+    },
+    {
+      "route": "Maple Hall \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 2
+    },
+    {
+      "route": "Environmental Science Building \u2192 Victory Hall",
+      "count": 2
+    },
+    {
+      "route": "Honors Hall \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 2
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Lot 59 - Oak Street Hall",
+      "count": 2
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 2
+    },
+    {
+      "route": "Fouts Transfer Station \u2192 Clark & Rawlings Hall",
+      "count": 2
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Union",
+      "count": 2
+    },
+    {
+      "route": "Honors Hall \u2192 Union",
+      "count": 2
+    },
+    {
+      "route": "Santa Fe Square \u2192 Pohl Rec/West",
+      "count": 2
+    },
+    {
+      "route": "Environmental Science Building \u2192 Mozart Hall",
+      "count": 2
+    },
+    {
+      "route": "Environmental Science Building \u2192 Clark & Rawlings Hall",
+      "count": 2
+    },
+    {
+      "route": "Speech & Hearing \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 2
+    },
+    {
+      "route": "Bruce Hall \u2192 Lot 27/Coliseum",
+      "count": 2
+    },
+    {
+      "route": "Victory Hall \u2192 Environmental Science Building",
+      "count": 2
+    },
+    {
+      "route": "Lot 14 \u2192 Union",
+      "count": 2
+    },
+    {
+      "route": "Highland Street Garage \u2192 Honors Hall",
+      "count": 2
+    },
+    {
+      "route": "Crumley Hall \u2192 Lot 59 - Oak Street Hall",
+      "count": 2
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Honors/Clark/Rawlings",
+      "count": 2
+    },
+    {
+      "route": "Art Building \u2192 Maple Hall",
+      "count": 2
+    },
+    {
+      "route": "Mozart Hall \u2192 Pohl Rec/West",
+      "count": 2
+    },
+    {
+      "route": "Crumley Hall \u2192 Lot 20 Resident",
+      "count": 2
+    },
+    {
+      "route": "Maple Hall \u2192 Honors/Clark/Rawlings",
+      "count": 2
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Santa Fe Square",
+      "count": 2
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Lot 20 Resident",
+      "count": 2
+    },
+    {
+      "route": "Bruce Hall \u2192 Environmental Science Building/Lot 11",
+      "count": 2
+    },
+    {
+      "route": "Maple Hall \u2192 Environmental Science Building/Lot 11",
+      "count": 2
+    },
+    {
+      "route": "Maple Hall \u2192 Legends",
+      "count": 2
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Crumley Hall",
+      "count": 2
+    },
+    {
+      "route": "Union \u2192 Environmental Science Building/Lot 11",
+      "count": 2
+    },
+    {
+      "route": "Maple Hall \u2192 Bruce Hall",
+      "count": 2
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Legends",
+      "count": 2
+    },
+    {
+      "route": "Art Annex \u2192 Dance & Theatre",
+      "count": 2
+    },
+    {
+      "route": "Mozart Hall \u2192 Honors/Clark/Rawlings",
+      "count": 2
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Dance & Theatre",
+      "count": 2
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Lot 59 - Oak Street Hall",
+      "count": 2
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Union",
+      "count": 2
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Hickory Hall & GAB",
+      "count": 2
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Lot 14",
+      "count": 2
+    },
+    {
+      "route": "Art Building \u2192 Mozart Hall",
+      "count": 2
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Honors/Clark/Rawlings",
+      "count": 2
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Lot 20 Resident",
+      "count": 2
+    },
+    {
+      "route": "Bruce Hall \u2192 Maple Hall",
+      "count": 2
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Bruce Hall",
+      "count": 2
+    },
+    {
+      "route": "Sorority Row \u2192 Santa Fe Square",
+      "count": 2
+    },
+    {
+      "route": "Union \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 2
+    },
+    {
+      "route": "1622 Maple Street \u2192 Bruce Hall",
+      "count": 2
+    },
+    {
+      "route": "Lot 14 \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 2
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Sorority Row",
+      "count": 2
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Honors/Clark/Rawlings",
+      "count": 2
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Lot 27/Coliseum",
+      "count": 2
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Bruce Hall",
+      "count": 2
+    },
+    {
+      "route": "Sorority Row \u2192 Union",
+      "count": 2
+    },
+    {
+      "route": "Victory Hall \u2192 Lot 14",
+      "count": 2
+    },
+    {
+      "route": "Sorority Row \u2192 Pohl Rec/West",
+      "count": 2
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Alumni Center/Murchinson",
+      "count": 2
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Fouts Transfer Station",
+      "count": 2
+    },
+    {
+      "route": "Union \u2192 Crumley Hall",
+      "count": 2
+    },
+    {
+      "route": "1500 Maple Street \u2192 Victory Hall",
+      "count": 2
+    },
+    {
+      "route": "Traditions Hall \u2192 Lot 27/Coliseum",
+      "count": 2
+    },
+    {
+      "route": "Fraternity Row \u2192 Honors/Clark/Rawlings",
+      "count": 2
+    },
+    {
+      "route": "SSB \u2192 Pohl Rec/West",
+      "count": 2
+    },
+    {
+      "route": "Sorority Row \u2192 Environmental Science Building/Lot 11",
+      "count": 2
+    },
+    {
+      "route": "Fraternity Row \u2192 Lot 59 - Oak Street Hall",
+      "count": 2
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Crumley Hall",
+      "count": 2
+    },
+    {
+      "route": "Fouts Transfer Station \u2192 Pohl Rec/West",
+      "count": 2
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Football Blue Shuttle",
+      "count": 2
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Fraternity Row - Lot 41",
+      "count": 2
+    },
+    {
+      "route": "Sorority Row/Fraternity & Sorority Life \u2192 Hickory Hall/GAB & Language",
+      "count": 2
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Lot 14/Legends",
+      "count": 2
+    },
+    {
+      "route": "Football Orange Shuttle \u2192 Victory Hall",
+      "count": 2
+    },
+    {
+      "route": "620 Avenue A \u2192 Gate 2 - Datcu Stadium",
+      "count": 2
+    },
+    {
+      "route": "Football Orange Shuttle \u2192 Gate 2 - Datcu - Orange Stop",
+      "count": 2
+    },
+    {
+      "route": "Victory Hall \u2192 Speech & Hearing/Dance & Theatre",
+      "count": 2
+    },
+    {
+      "route": "620 Avenue A \u2192 Gate 2 - Datcu - Orange Stop",
+      "count": 2
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Art Building (Union alternate)",
+      "count": 2
+    },
+    {
+      "route": "Football Blue Shuttle \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 2
+    },
+    {
+      "route": "Alumni Center/Murchinson/Coliseum \u2192 Bruce Hall (Union alternate)",
+      "count": 2
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Bruce Hall (Union alternate)",
+      "count": 2
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Sorority Row/Fraternity & Sorority Life",
+      "count": 2
+    },
+    {
+      "route": "Lot 14 \u2192 Bruce Hall (Union alternate)",
+      "count": 2
+    },
+    {
+      "route": "Football Blue: Victory \u2192 Traditions Hall/Santa Fe Square",
+      "count": 2
+    },
+    {
+      "route": "Speech & Hearing/Dance & Theatre \u2192 Alumni Center/Murchinson/Coliseum",
+      "count": 2
+    },
+    {
+      "route": "Environmental Science Building - Lot 11 \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 2
+    },
+    {
+      "route": "Current Location \u2192 Football Orange: Gates 2/3",
+      "count": 2
+    },
+    {
+      "route": "Football Blue: Gate 1 \u2192 Victory Hall",
+      "count": 2
+    },
+    {
+      "route": "SSB \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 2
+    },
+    {
+      "route": "Lot 14 \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 2
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Traditions Hall/Santa Fe Square",
+      "count": 2
+    },
+    {
+      "route": "Environmental Science Building - Lot 11 \u2192 Fraternity Row - Lot 41",
+      "count": 2
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 SSB",
+      "count": 2
+    },
+    {
+      "route": "912 West Sycamore Street \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 2
+    },
+    {
+      "route": "Environmental Science Building - Lot 11 \u2192 Victory Hall",
+      "count": 2
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Lot 20 Resident",
+      "count": 2
+    },
+    {
+      "route": "Environmental Science Building - Lot 11 \u2192 Legends",
+      "count": 2
+    },
+    {
+      "route": "Music Practice North/South \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 2
+    },
+    {
+      "route": "Music Practice North/South \u2192 Bruce Hall (Union alternate)",
+      "count": 2
+    },
+    {
+      "route": "Legends \u2192 Traditions Hall/Santa Fe Square",
+      "count": 2
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 2
+    },
+    {
+      "route": "Speech & Hearing/Dance & Theatre \u2192 Sorority Row/Fraternity & Sorority Life",
+      "count": 2
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Speech & Hearing/Dance & Theatre",
+      "count": 2
+    },
+    {
+      "route": "Art Building/Lot 50 (Union alternate) \u2192 Traditions Hall/Santa Fe Square",
+      "count": 2
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Music Practice North/South",
+      "count": 2
+    },
+    {
+      "route": "1416 Maple Street \u2192 Traditions Hall/Santa Fe Square",
+      "count": 2
+    },
+    {
+      "route": "Alumni Center/Murchinson/Coliseum \u2192 Music Practice North/South",
+      "count": 2
+    },
+    {
+      "route": "Football Blue: ADA Victory \u2192 Pohl Rec/West Hall/PEB",
+      "count": 2
+    },
+    {
+      "route": "Hickory Hall/GAB & Language \u2192 Legends",
+      "count": 2
+    },
+    {
+      "route": "Environmental Science Building - Lot 11 \u2192 Pohl Rec/West Hall/PEB",
+      "count": 2
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Sorority Row/Fraternity & Sorority Life",
+      "count": 2
+    },
+    {
+      "route": "Lot 14 \u2192 Eagle Landing",
+      "count": 1
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Lot 27",
+      "count": 1
+    },
+    {
+      "route": "Honors Hall \u2192 Maple Hall",
+      "count": 1
+    },
+    {
+      "route": "Environmental Science Building \u2192 Lot 20 Resident",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing \u2192 Bruce Hall",
+      "count": 1
+    },
+    {
+      "route": "927 West Highland Street \u2192 Traditions Hall",
+      "count": 1
+    },
+    {
+      "route": "Kerr & Joe Green Hall \u2192 Art Annex",
+      "count": 1
+    },
+    {
+      "route": "Santa Fe Square \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing \u2192 Lot 59 - Oak Street Hall",
+      "count": 1
+    },
+    {
+      "route": "Current Location \u2192 Fraternity Row",
+      "count": 1
+    },
+    {
+      "route": "Pohl Recreation \u2192 The Center for Fraternity and Sorority Life",
+      "count": 1
+    },
+    {
+      "route": "2201 West Prairie Street \u2192 Kerr & Joe Green Hall",
+      "count": 1
+    },
+    {
+      "route": "Honors Hall \u2192 Lot 27",
+      "count": 1
+    },
+    {
+      "route": "Santa Fe Square \u2192 Kerr & Joe Green Hall",
+      "count": 1
+    },
+    {
+      "route": "600 North Texas Boulevard \u2192 Clark & Rawlings Hall",
+      "count": 1
+    },
+    {
+      "route": "2217 West Prairie Street \u2192 Hickory Hall & GAB",
+      "count": 1
+    },
+    {
+      "route": "2217 West Prairie Street \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 Union",
+      "count": 1
+    },
+    {
+      "route": "Santa Fe Square \u2192 Clark & Rawlings Hall",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall \u2192 Eagle Landing",
+      "count": 1
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "1621 West Highland Street \u2192 Clark & Rawlings Hall",
+      "count": 1
+    },
+    {
+      "route": "1621 West Highland Street \u2192 Mozart Hall",
+      "count": 1
+    },
+    {
+      "route": "Current Location \u2192 Pohl Recreation",
+      "count": 1
+    },
+    {
+      "route": "1621 West Highland Street \u2192 Legends",
+      "count": 1
+    },
+    {
+      "route": "West Hall \u2192 Crumley Hall",
+      "count": 1
+    },
+    {
+      "route": "620 Central Avenue \u2192 Union",
+      "count": 1
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Eagle Landing",
+      "count": 1
+    },
+    {
+      "route": "Lot 27 \u2192 Eagle Landing",
+      "count": 1
+    },
+    {
+      "route": "Lot 14 \u2192 Bruce Hall",
+      "count": 1
+    },
+    {
+      "route": "Crumley Hall \u2192 Pohl Recreation",
+      "count": 1
+    },
+    {
+      "route": "Maple Hall \u2192 Fraternity Row",
+      "count": 1
+    },
+    {
+      "route": "West Hall \u2192 Honors Hall",
+      "count": 1
+    },
+    {
+      "route": "Pohl Recreation, West, Chestnut \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 1
+    },
+    {
+      "route": "Kerr & Joe Green Hall \u2192 Lot 27",
+      "count": 1
+    },
+    {
+      "route": "Kerr & Joe Green Hall \u2192 Legends",
+      "count": 1
+    },
+    {
+      "route": "Kerr & Joe Green Hall \u2192 Maple Hall",
+      "count": 1
+    },
+    {
+      "route": "Honors Hall \u2192 Legends",
+      "count": 1
+    },
+    {
+      "route": "Bruce Hall \u2192 Eagle Landing",
+      "count": 1
+    },
+    {
+      "route": "1629 Chestnut Street \u2192 Union",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 West, Pohl Rec",
+      "count": 1
+    },
+    {
+      "route": "Crumley Hall \u2192 Clark & Rawlings Hall",
+      "count": 1
+    },
+    {
+      "route": "604 Avenue C \u2192 Victory Hall",
+      "count": 1
+    },
+    {
+      "route": "Honors Hall \u2192 West Hall",
+      "count": 1
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Pohl Rec",
+      "count": 1
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 West Hall",
+      "count": 1
+    },
+    {
+      "route": "Pohl Rec \u2192 Sorority Row",
+      "count": 1
+    },
+    {
+      "route": "Pohl Rec \u2192 Clark & Rawlings Hall",
+      "count": 1
+    },
+    {
+      "route": "West Hall \u2192 Lot 27",
+      "count": 1
+    },
+    {
+      "route": "West Hall \u2192 Hickory Hall & GAB",
+      "count": 1
+    },
+    {
+      "route": "Current Location \u2192 Hickory Hall & GAB",
+      "count": 1
+    },
+    {
+      "route": "Art Annex \u2192 Union",
+      "count": 1
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 West Hall",
+      "count": 1
+    },
+    {
+      "route": "Alumni Center \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 1
+    },
+    {
+      "route": "SSB \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 1
+    },
+    {
+      "route": "Pohl Rec \u2192 The Center for Fraternity and Sorority Life",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Pohl Rec",
+      "count": 1
+    },
+    {
+      "route": "Fraternity Row \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 1
+    },
+    {
+      "route": "Pohl Rec \u2192 Crumley Hall",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Union",
+      "count": 1
+    },
+    {
+      "route": "Pohl Rec \u2192 Lot 59 - Oak Street Hall",
+      "count": 1
+    },
+    {
+      "route": "West Hall \u2192 Fraternity Row",
+      "count": 1
+    },
+    {
+      "route": "1717 Maple Street \u2192 Lot 20 Resident",
+      "count": 1
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Honors Hall",
+      "count": 1
+    },
+    {
+      "route": "Santa Fe Square \u2192 West Hall",
+      "count": 1
+    },
+    {
+      "route": "Maple Hall \u2192 Clark & Rawlings Hall",
+      "count": 1
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 West Hall",
+      "count": 1
+    },
+    {
+      "route": "Environmental Science Building \u2192 Lot 27",
+      "count": 1
+    },
+    {
+      "route": "Union \u2192 Lot 27",
+      "count": 1
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Clark & Rawlings Hall",
+      "count": 1
+    },
+    {
+      "route": "Lot 20 Resident \u2192 SSB",
+      "count": 1
+    },
+    {
+      "route": "901 Eagle Drive \u2192 Victory Hall",
+      "count": 1
+    },
+    {
+      "route": "Maple Hall \u2192 Environmental Science Building",
+      "count": 1
+    },
+    {
+      "route": "Union \u2192 Lot 20 Resident",
+      "count": 1
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Dance & Theatre",
+      "count": 1
+    },
+    {
+      "route": "Alumni Center \u2192 Fraternity Row",
+      "count": 1
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 The Center for Fraternity and Sorority Life",
+      "count": 1
+    },
+    {
+      "route": "Current Location \u2192 Santa Fe Square",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing, Kerr, Joe Green \u2192 Environmental Science Building",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall \u2192 Environmental Science Building/Lot 11",
+      "count": 1
+    },
+    {
+      "route": "Alumni Center/Murchinson \u2192 Bruce Hall",
+      "count": 1
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Environmental Science Building",
+      "count": 1
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Pohl Recreation",
+      "count": 1
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Art Annex",
+      "count": 1
+    },
+    {
+      "route": "Lot 14 \u2192 Honors Hall",
+      "count": 1
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Clark & Rawlings Hall",
+      "count": 1
+    },
+    {
+      "route": "Lot 14 \u2192 Clark & Rawlings Hall",
+      "count": 1
+    },
+    {
+      "route": "1622 Maple Street \u2192 Victory Hall",
+      "count": 1
+    },
+    {
+      "route": "Honors Hall \u2192 Hickory Hall & GAB",
+      "count": 1
+    },
+    {
+      "route": "Current Location \u2192 Maple Hall",
+      "count": 1
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 Environmental Science Building",
+      "count": 1
+    },
+    {
+      "route": "Art Building \u2192 Clark & Rawlings Hall",
+      "count": 1
+    },
+    {
+      "route": "1730 West Highland Street \u2192 Lot 20 Resident",
+      "count": 1
+    },
+    {
+      "route": "Highland Street Garage \u2192 Clark & Rawlings Hall",
+      "count": 1
+    },
+    {
+      "route": "1717 Maple Street \u2192 Crumley Hall",
+      "count": 1
+    },
+    {
+      "route": "Bruce Hall \u2192 Legends",
+      "count": 1
+    },
+    {
+      "route": "Highland Street Garage \u2192 Pohl Rec/West",
+      "count": 1
+    },
+    {
+      "route": "Art Building \u2192 Honors Hall",
+      "count": 1
+    },
+    {
+      "route": "Honors Hall \u2192 Highland Street Garage",
+      "count": 1
+    },
+    {
+      "route": "Clark & Rawlings Hall \u2192 Santa Fe Square",
+      "count": 1
+    },
+    {
+      "route": "Art Annex \u2192 Mozart Hall",
+      "count": 1
+    },
+    {
+      "route": "Alumni Center/Murchinson \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 1
+    },
+    {
+      "route": "Current Location \u2192 Traditions Hall",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall \u2192 Pohl Rec/West",
+      "count": 1
+    },
+    {
+      "route": "Santa Fe Square \u2192 Lot 20 Resident",
+      "count": 1
+    },
+    {
+      "route": "1629 Chestnut Street \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 1
+    },
+    {
+      "route": "415 Avenue A \u2192 Sorority Row",
+      "count": 1
+    },
+    {
+      "route": "SSB \u2192 Traditions Hall",
+      "count": 1
+    },
+    {
+      "route": "Environmental Science Building/Lot 11 \u2192 Dance & Theatre",
+      "count": 1
+    },
+    {
+      "route": "Legends \u2192 Hickory Hall & GAB",
+      "count": 1
+    },
+    {
+      "route": "1629 Chestnut Street \u2192 Lot 59 - Oak Street Hall",
+      "count": 1
+    },
+    {
+      "route": "1629 Chestnut Street \u2192 Traditions Hall",
+      "count": 1
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Legends",
+      "count": 1
+    },
+    {
+      "route": "Environmental Science Building/Lot 11 \u2192 Legends",
+      "count": 1
+    },
+    {
+      "route": "Union \u2192 Music Practice North/South",
+      "count": 1
+    },
+    {
+      "route": "Current Location \u2192 Honors/Clark/Rawlings",
+      "count": 1
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Crumley Hall",
+      "count": 1
+    },
+    {
+      "route": "SSB \u2192 Honors/Clark/Rawlings",
+      "count": 1
+    },
+    {
+      "route": "Crumley Hall \u2192 Alumni Center/Murchinson",
+      "count": 1
+    },
+    {
+      "route": "1916 Chestnut Street \u2192 Honors/Clark/Rawlings",
+      "count": 1
+    },
+    {
+      "route": "Dance & Theatre \u2192 Honors/Clark/Rawlings",
+      "count": 1
+    },
+    {
+      "route": "Mozart Hall \u2192 Bruce Hall",
+      "count": 1
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Sorority Row",
+      "count": 1
+    },
+    {
+      "route": "Alumni Center/Murchinson \u2192 Hickory Hall & GAB",
+      "count": 1
+    },
+    {
+      "route": "Dance & Theatre \u2192 The Center for Fraternity and Sorority Life",
+      "count": 1
+    },
+    {
+      "route": "Crumley Hall \u2192 Art Annex",
+      "count": 1
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Bruce Hall",
+      "count": 1
+    },
+    {
+      "route": "Legends \u2192 Dance & Theatre",
+      "count": 1
+    },
+    {
+      "route": "RAUC (observatory) \u2192 Environmental Science Building/Lot 11",
+      "count": 1
+    },
+    {
+      "route": "Fouts Transfer Station \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 1
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Fraternity Row",
+      "count": 1
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Eagle Landing, Kerr, Joe Green",
+      "count": 1
+    },
+    {
+      "route": "Music Practice North/South \u2192 Fouts Transfer Station",
+      "count": 1
+    },
+    {
+      "route": "Art Building \u2192 Environmental Science Building/Lot 11",
+      "count": 1
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Lot 20 Resident",
+      "count": 1
+    },
+    {
+      "route": "Gate 1/ Blue Stop \u2192 Pohl Rec/West",
+      "count": 1
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Mozart Hall",
+      "count": 1
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Art Annex",
+      "count": 1
+    },
+    {
+      "route": "Mozart Hall \u2192 Lot 20 Resident",
+      "count": 1
+    },
+    {
+      "route": "Bruce Hall \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 1
+    },
+    {
+      "route": "Maple Hall \u2192 Mozart Hall",
+      "count": 1
+    },
+    {
+      "route": "Fouts Transfer Station \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 1
+    },
+    {
+      "route": "Art Building \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 1
+    },
+    {
+      "route": "Alumni Center/Murchinson \u2192 Art Building",
+      "count": 1
+    },
+    {
+      "route": "SSB \u2192 Union",
+      "count": 1
+    },
+    {
+      "route": "Legends \u2192 Crumley Hall",
+      "count": 1
+    },
+    {
+      "route": "Fraternity Row \u2192 Art Annex",
+      "count": 1
+    },
+    {
+      "route": "Honors/Clark/Rawlings \u2192 Maple Hall",
+      "count": 1
+    },
+    {
+      "route": "Speech & Hearing \u2192 Fraternity Row",
+      "count": 1
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 1
+    },
+    {
+      "route": "Bruce Hall \u2192 Speech & Hearing",
+      "count": 1
+    },
+    {
+      "route": "Alumni Center/Murchinson \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 1
+    },
+    {
+      "route": "Speech & Hearing \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 1
+    },
+    {
+      "route": "800 Avenue A \u2192 Honors/Clark/Rawlings",
+      "count": 1
+    },
+    {
+      "route": "1500 Maple Street \u2192 Bruce Hall",
+      "count": 1
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Mozart Hall",
+      "count": 1
+    },
+    {
+      "route": "Art Building \u2192 Santa Fe Square",
+      "count": 1
+    },
+    {
+      "route": "Lot 14 \u2192 Santa Fe Square",
+      "count": 1
+    },
+    {
+      "route": "Fouts Transfer Station \u2192 Maple Hall",
+      "count": 1
+    },
+    {
+      "route": "Art Building \u2192 Traditions Hall",
+      "count": 1
+    },
+    {
+      "route": "Music Practice North/South \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 1
+    },
+    {
+      "route": "Fraternity Row \u2192 Traditions Hall",
+      "count": 1
+    },
+    {
+      "route": "1201 West Highland Street \u2192 Santa Fe Square",
+      "count": 1
+    },
+    {
+      "route": "The Center for Fraternity and Sorority Life \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 1
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Mozart Hall",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Art Building",
+      "count": 1
+    },
+    {
+      "route": "Santa Fe Square \u2192 Mozart Hall",
+      "count": 1
+    },
+    {
+      "route": "Art Annex \u2192 Honors/Clark/Rawlings",
+      "count": 1
+    },
+    {
+      "route": "450 North Texas Boulevard \u2192 Honors/Clark/Rawlings",
+      "count": 1
+    },
+    {
+      "route": "Bruce Hall \u2192 Art Building",
+      "count": 1
+    },
+    {
+      "route": "Bruce Hall \u2192 Art Annex",
+      "count": 1
+    },
+    {
+      "route": "Speech & Hearing \u2192 Honors/Clark/Rawlings",
+      "count": 1
+    },
+    {
+      "route": "Lot 27/Coliseum \u2192 Maple Hall",
+      "count": 1
+    },
+    {
+      "route": "621 Avenue A \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "Bruce Hall \u2192 Fouts Transfer Station",
+      "count": 1
+    },
+    {
+      "route": "Environmental Science Building/Lot 11 \u2192 Lot 20 Resident",
+      "count": 1
+    },
+    {
+      "route": "Fouts Transfer Station \u2192 Honors/Clark/Rawlings",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Union",
+      "count": 1
+    },
+    {
+      "route": "Mozart Hall \u2192 The Center for Fraternity and Sorority Life",
+      "count": 1
+    },
+    {
+      "route": "1504 West Mulberry Street \u2192 Mozart Hall",
+      "count": 1
+    },
+    {
+      "route": "Sorority Row \u2192 Victory Hall",
+      "count": 1
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Lot 27/Coliseum",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall \u2192 Lot 59 - Oak Street Hall",
+      "count": 1
+    },
+    {
+      "route": "Pohl Rec/West \u2192 Traditions Hall",
+      "count": 1
+    },
+    {
+      "route": "Art Annex \u2192 Fraternity Row",
+      "count": 1
+    },
+    {
+      "route": "1716 Eagle Drive \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 1
+    },
+    {
+      "route": "Victory Hall \u2192 Art Annex",
+      "count": 1
+    },
+    {
+      "route": "1920 West Highland Street \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 1
+    },
+    {
+      "route": "Crumley Hall \u2192 Dance & Theatre",
+      "count": 1
+    },
+    {
+      "route": "Music Practice North/South \u2192 Hickory Hall & GAB",
+      "count": 1
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Bruce Hall",
+      "count": 1
+    },
+    {
+      "route": "Art Annex \u2192 Bruce Hall",
+      "count": 1
+    },
+    {
+      "route": "Dance & Theatre \u2192 Crumley Hall",
+      "count": 1
+    },
+    {
+      "route": "Dance & Theatre \u2192 Victory Hall",
+      "count": 1
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Maple Hall",
+      "count": 1
+    },
+    {
+      "route": "Speech & Hearing \u2192 Sorority Row",
+      "count": 1
+    },
+    {
+      "route": "Legends \u2192 Speech & Hearing",
+      "count": 1
+    },
+    {
+      "route": "Speech & Hearing \u2192 Pohl Rec/West",
+      "count": 1
+    },
+    {
+      "route": "1131 North Texas Boulevard \u2192 Honors/Clark/Rawlings",
+      "count": 1
+    },
+    {
+      "route": "818 Avenue D \u2192 Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY)",
+      "count": 1
+    },
+    {
+      "route": "Bruce Hall \u2192 The Center for Fraternity and Sorority Life",
+      "count": 1
+    },
+    {
+      "route": "Hickory Hall & GAB \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall \u2192 Speech & Hearing",
+      "count": 1
+    },
+    {
+      "route": "Crumley Hall \u2192 Bruce Hall",
+      "count": 1
+    },
+    {
+      "route": "SSB \u2192 Maple Hall",
+      "count": 1
+    },
+    {
+      "route": "Mozart Hall \u2192 Crumley Hall",
+      "count": 1
+    },
+    {
+      "route": "SSB \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "600 North Texas Boulevard \u2192 Lot 59 - Oak Street Hall",
+      "count": 1
+    },
+    {
+      "route": "Environmental Science Building/Lot 11 \u2192 Maple Hall",
+      "count": 1
+    },
+    {
+      "route": "214 Bernard Street \u2192 Honors/Clark/Rawlings",
+      "count": 1
+    },
+    {
+      "route": "Fraternity Row \u2192 Lot 27/Coliseum",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall \u2192 Fraternity Row",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Sorority Row",
+      "count": 1
+    },
+    {
+      "route": "Dance & Theatre \u2192 Hickory Hall & GAB",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing, BLB/Kerr/Joe Green -> GO TO Lot 24 (TEMPORARY) \u2192 Environmental Science Building/Lot 11",
+      "count": 1
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Traditions Hall",
+      "count": 1
+    },
+    {
+      "route": "1416 Maple Street \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 1
+    },
+    {
+      "route": "1624 Maple Street \u2192 Victory Hall",
+      "count": 1
+    },
+    {
+      "route": "1379 Bonnie Brae Street \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 1
+    },
+    {
+      "route": "Lot 14/Legends \u2192 Art Building (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "620 Avenue A \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 1
+    },
+    {
+      "route": "Football Orange Shuttle \u2192 Football Blue Shuttle",
+      "count": 1
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Lot 27/Coliseum",
+      "count": 1
+    },
+    {
+      "route": "Victory Hall \u2192 Lot 14/Legends",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Lot 14/Legends",
+      "count": 1
+    },
+    {
+      "route": "1717 Maple Street \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 1
+    },
+    {
+      "route": "1202 Maple Street \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 1
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Art Building (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "620 Avenue A \u2192 Bruce Hall (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "Football Blue Shuttle \u2192 Gate 1 - Blue Stop",
+      "count": 1
+    },
+    {
+      "route": "Football Blue Shuttle \u2192 Football Orange Shuttle",
+      "count": 1
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Environmental Science Building - Lot 11",
+      "count": 1
+    },
+    {
+      "route": "Music Practice North/South \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "620 Avenue A \u2192 Gate 1 - Blue Stop",
+      "count": 1
+    },
+    {
+      "route": "620 Avenue A \u2192 Gate 3 - Datcu/Lot 86/ADA - Orange Stop",
+      "count": 1
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Football Blue Shuttle",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Football Blue Shuttle",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Art Building (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Football Blue Shuttle",
+      "count": 1
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Gate 1 - Blue Stop",
+      "count": 1
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Art Building (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "621 Avenue A \u2192 Sorority Row/Fraternity & Sorority Life",
+      "count": 1
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Bruce Hall",
+      "count": 1
+    },
+    {
+      "route": "Music Practice North/South \u2192 SSB",
+      "count": 1
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Fraternity Row - Lot 41",
+      "count": 1
+    },
+    {
+      "route": "Sorority Row/Fraternity & Sorority Life \u2192 Speech & Hearing/Dance & Theatre",
+      "count": 1
+    },
+    {
+      "route": "620 Avenue A \u2192 Football Blue Shuttle",
+      "count": 1
+    },
+    {
+      "route": "Football Blue: Victory \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 1
+    },
+    {
+      "route": "Environmental Science Building - Lot 11 \u2192 Bruce Hall (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "1919 Eagle Drive \u2192 Football Blue: Victory",
+      "count": 1
+    },
+    {
+      "route": "Football Blue: Gate 1 \u2192 Football Blue: Victory",
+      "count": 1
+    },
+    {
+      "route": "1251 Bonnie Brae Street \u2192 Football Orange: Fouts",
+      "count": 1
+    },
+    {
+      "route": "Football Blue: Victory \u2192 Football Blue: Gate 1",
+      "count": 1
+    },
+    {
+      "route": "2103-2111 East Prairie Street \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 1
+    },
+    {
+      "route": "Football Orange: Gates 2/3 \u2192 Victory Hall",
+      "count": 1
+    },
+    {
+      "route": "Football Orange: Gates 2/3 \u2192 Hickory Hall/GAB & Language",
+      "count": 1
+    },
+    {
+      "route": "Football Blue: Gate 1 \u2192 Legends",
+      "count": 1
+    },
+    {
+      "route": "1554 Bonnie Brae Street \u2192 Victory Hall",
+      "count": 1
+    },
+    {
+      "route": "Victory Hall \u2192 Football Blue: Gate 1",
+      "count": 1
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Alumni Center/Murchinson/Coliseum",
+      "count": 1
+    },
+    {
+      "route": "Legends \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "Alumni Center/Murchinson/Coliseum \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "Sorority Row/Fraternity & Sorority Life \u2192 Environmental Science Building - Lot 11",
+      "count": 1
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "Fraternity Row - Lot 41 \u2192 Lot 59 - Oak Street Hall",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Art Building (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Alumni Center/Murchinson/Coliseum",
+      "count": 1
+    },
+    {
+      "route": "1131 North Texas Boulevard \u2192 Pohl Rec/West Hall/PEB",
+      "count": 1
+    },
+    {
+      "route": "Art Building (Union alternate) \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 1
+    },
+    {
+      "route": "Current Location \u2192 Sorority Row/Fraternity & Sorority Life",
+      "count": 1
+    },
+    {
+      "route": "1416 Maple Street \u2192 Lot 20 Resident",
+      "count": 1
+    },
+    {
+      "route": "Current Location \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 1
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Sorority Row/Fraternity & Sorority Life",
+      "count": 1
+    },
+    {
+      "route": "615 Avenue C \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "Art Building (Union alternate) \u2192 Bruce Hall (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "Fraternity Row - Lot 41 \u2192 Bruce Hall (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Bruce Hall (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "Sorority Row/Fraternity & Sorority Life \u2192 Pohl Rec/West Hall/PEB",
+      "count": 1
+    },
+    {
+      "route": "620 Avenue A \u2192 Football Orange: Fouts",
+      "count": 1
+    },
+    {
+      "route": "620 Avenue A \u2192 Fraternity Row - Lot 41",
+      "count": 1
+    },
+    {
+      "route": "620 Avenue A \u2192 Football Orange: Gates 2/3",
+      "count": 1
+    },
+    {
+      "route": "1416 Maple Street \u2192 Bruce Hall (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 SSB",
+      "count": 1
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 SSB",
+      "count": 1
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Pohl Rec/West Hall/PEB",
+      "count": 1
+    },
+    {
+      "route": "1600 West Mulberry Street \u2192 Pohl Rec/West Hall/PEB",
+      "count": 1
+    },
+    {
+      "route": "1416 Maple Street \u2192 Pohl Rec/West Hall/PEB",
+      "count": 1
+    },
+    {
+      "route": "1131 North Texas Boulevard \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 1
+    },
+    {
+      "route": "Environmental Science Building - Lot 11 \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 1
+    },
+    {
+      "route": "Current Location \u2192 Traditions Hall/Santa Fe Square",
+      "count": 1
+    },
+    {
+      "route": "1416 Maple Street \u2192 Lot 59 - Oak Street Hall",
+      "count": 1
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Environmental Science Building - Lot 11",
+      "count": 1
+    },
+    {
+      "route": "Hickory Hall/GAB & Language \u2192 Speech & Hearing/Dance & Theatre",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Music Practice North/South",
+      "count": 1
+    },
+    {
+      "route": "Music Practice North/South \u2192 Alumni Center/Murchinson/Coliseum",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 SSB",
+      "count": 1
+    },
+    {
+      "route": "Speech & Hearing/Dance & Theatre \u2192 Bruce Hall (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "Honors/Clark/Rawlings/Mozart \u2192 Fraternity Row - Lot 41",
+      "count": 1
+    },
+    {
+      "route": "Current Location \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "Sorority Row/Fraternity & Sorority Life \u2192 Fraternity Row - Lot 41",
+      "count": 1
+    },
+    {
+      "route": "1716 Eagle Drive \u2192 Legends",
+      "count": 1
+    },
+    {
+      "route": "Alumni Center/Murchinson/Coliseum \u2192 Legends",
+      "count": 1
+    },
+    {
+      "route": "Bruce Hall (Union alternate) \u2192 Alumni Center/Murchinson/Coliseum",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Lot 20 Resident",
+      "count": 1
+    },
+    {
+      "route": "Sorority Row/Fraternity & Sorority Life \u2192 Legends",
+      "count": 1
+    },
+    {
+      "route": "1622 Maple Street \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 1
+    },
+    {
+      "route": "600 North Texas Boulevard \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 1
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Fraternity Row - Lot 41",
+      "count": 1
+    },
+    {
+      "route": "Legends \u2192 Alumni Center/Murchinson/Coliseum",
+      "count": 1
+    },
+    {
+      "route": "Fraternity Row - Lot 41 \u2192 Hickory Hall/GAB & Language",
+      "count": 1
+    },
+    {
+      "route": "604 Avenue C \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 1
+    },
+    {
+      "route": "Sorority Row/Fraternity & Sorority Life \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 1
+    },
+    {
+      "route": "Speech & Hearing/Dance & Theatre \u2192 Lot 59 - Oak Street Hall",
+      "count": 1
+    },
+    {
+      "route": "Eagle Landing, BLB, Kerr/Joe Green \u2192 Alumni Center/Murchinson/Coliseum",
+      "count": 1
+    },
+    {
+      "route": "Football Blue: ADA Victory \u2192 Art Building/Lot 50 (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "Football Orange: Drop/PU @ Gates 2/3 \u2192 Hickory Hall/GAB & Language",
+      "count": 1
+    },
+    {
+      "route": "Football Blue: ADA Gate 1 \u2192 Alumni Center/Murchinson/Coliseum",
+      "count": 1
+    },
+    {
+      "route": "Football Blue: ADA Victory \u2192 Traditions Hall/Santa Fe Square",
+      "count": 1
+    },
+    {
+      "route": "Football Blue: ADA Victory \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 1
+    },
+    {
+      "route": "Football Orange: Drop/PU @ Gates 2/3 \u2192 Traditions Hall/Santa Fe Square",
+      "count": 1
+    },
+    {
+      "route": "Football Orange: Drop/PU @ Gates 2/3 \u2192 Lot 20 Resident",
+      "count": 1
+    },
+    {
+      "route": "Art Building/Lot 50 (Union alternate) \u2192 Lot 59 - Oak Street Hall",
+      "count": 1
+    },
+    {
+      "route": "1200 West Oak Street \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Fraternity Row - Lot 41",
+      "count": 1
+    },
+    {
+      "route": "Alumni Center/Murchinson/Coliseum \u2192 Art Building/Lot 50 (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "Art Building/Lot 50 (Union alternate) \u2192 Hickory Hall/GAB & Language",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Art Building/Lot 50 (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "Lot 20 Resident \u2192 Art Building/Lot 50 (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "Art Building/Lot 50 (Union alternate) \u2192 Fraternity Row - Lot 41",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Environmental Science Building - Lot 11",
+      "count": 1
+    },
+    {
+      "route": "1510 Maple Street \u2192 Honors/Clark/Rawlings/Mozart",
+      "count": 1
+    },
+    {
+      "route": "Traditions Hall/Santa Fe Square \u2192 Pohl Rec/West Hall/PEB",
+      "count": 1
+    },
+    {
+      "route": "1925 Eagle Drive \u2192 Victory Hall",
+      "count": 1
+    },
+    {
+      "route": "621 Avenue A \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 1
+    },
+    {
+      "route": "Legends \u2192 Sorority Row/Fraternity & Sorority Life",
+      "count": 1
+    },
+    {
+      "route": "Maple Hall/Crumley Hall - Lot 24 \u2192 Art Building/Lot 50 (Union alternate)",
+      "count": 1
+    },
+    {
+      "route": "Lot 59 - Oak Street Hall \u2192 Maple Hall/Crumley Hall - Lot 24",
+      "count": 1
+    },
+    {
+      "route": "Pohl Rec/West Hall/PEB \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "Music Practice North/South \u2192 Lot 59 - Oak Street Hall",
+      "count": 1
+    },
+    {
+      "route": "Speech & Hearing/Dance & Theatre \u2192 Lot 14",
+      "count": 1
+    },
+    {
+      "route": "Sorority Row/Fraternity & Sorority Life \u2192 Eagle Landing, BLB, Kerr/Joe Green",
+      "count": 1
+    },
+    {
+      "route": "SSB \u2192 Speech & Hearing/Dance & Theatre",
+      "count": 1
+    },
+    {
+      "route": "Lot 14 \u2192 Hickory Hall/GAB & Language",
+      "count": 1
+    }
+  ],
+  "total_routes": 976
+}

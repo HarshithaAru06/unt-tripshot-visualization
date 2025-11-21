@@ -264,3 +264,9 @@
 - [x] Ensure MapContainer has fixed height
 - [x] Verify all UNT campus coordinates are accurate
 - [x] Test zoom, drag, and popup functionality
+
+## Google Maps 3D Updates
+- [x] Enable GoogleMaps3D on both localhost and production
+- [x] Replace all placeholder coordinates with real Night Flight stop coordinates from dataset
+- [x] Add demand-based polylines connecting stops (thicker = more rides)
+- [x] Verify all stop names and coordinates are accurate (no hallucinations)
